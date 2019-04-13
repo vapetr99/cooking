@@ -1,0 +1,61 @@
+concept_rolling_pin <- concept_cutlery_item;;
+concept_rolling_pin => nrel_main_idtf:
+	[скалка](* <- lang_ru;; *);
+	[rolling pin](* <- lang_en;; *);;
+
+concept_rolling_pin<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(скалка)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Скалка - деревянный валик для раскатывания теста.](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_rolling_pin <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_rolling_pin.jpg";;
+		*);;
+	*);;
+
+concept_rolling_pin 
+	<=nrel_possible_material:...
+	(*
+		->concept_plastic;;
+	*);;
+concept_rolling_pin 
+	<=nrel_possible_material:...
+	(*
+		->concept_stone;;
+	*);;
+concept_rolling_pin
+	<=nrel_possible_material:...
+	(*
+		->concept_wood;;
+	*);;
+concept_rolling_pin 
+	<=nrel_possible_material:...
+	(*
+		->concept_stone;;
+		->concept_wood;;
+	*);;
+concept_rolling_pin 
+	<=nrel_possible_material:...
+	(*
+		->concept_wood;;
+		->concept_metal;;
+	*);;
+concept_rolling_pin 
+	<=nrel_possible_material:...
+	(*
+		->concept_plastic;;
+		->concept_silicone;;
+	*);;

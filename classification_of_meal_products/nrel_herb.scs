@@ -1,0 +1,67 @@
+nrel_herb=>nrel_idtf:[herb*] (* <- lang_en;; *);;
+nrel_herb=>nrel_main_idtf:[пряность*] (* <- lang_ru;; *);;
+
+nrel_herb<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(пряность*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+		->[Пряность - различные части растений, обладающие специфическим, в той или иной мере устойчивым ароматом и вкусом, традиционно добавляемые в пищу в малых дозах, в основном, с целью улучшения вкусовых качеств продуктов, а также для предотвращения их быстрой порчи.](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->concept_food;;
+	*);;
+*);;
+
+nrel_herb=>nrel_first_domain:concept_food;;
+nrel_herb=>nrel_second_domain:concept_food;;
+concept_food<-...
+(*
+	->concept_food;;
+	=>nrel_combination:...
+	(*
+		<=nrel_definitional_domain:nrel_herb;;
+	*);;
+*);;
+
+concept_spice<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//herb.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+nrel_herb<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_herb<-oriented_relation;;
+antisymmetric_relation->nrel_herb;;
+antitransitive_relation->nrel_herb;;
+antireflexive_relation->nrel_herb;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+nrel_herb<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_bay_leaf;nrel_herb;;
+	<-statement;;
+	=>nrel_idtf:[Утв.(лавровый лист, пряность*)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Лавровый лист является наиболее распространенной пряностью](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_bay_leaf<=nrel_herb:concept_meat;;
+		

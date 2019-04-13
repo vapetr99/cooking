@@ -1,0 +1,44 @@
+concept_baking_tray <- concept_cutlery_item;;
+concept_baking_tray => nrel_main_idtf:
+	[противень](* <- lang_ru;; *);
+	[baking tray](* <- lang_en;; *);;
+
+concept_baking_tray<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(противень)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Противень -  тонкий металлический (или стеклянный) лист с загнутыми краями и невысоким бортиком для приготовления пищи (жарения и выпекания).](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_baking_tray <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_baking_tray.jpg";;
+		*);;
+	*);;
+
+concept_cup
+	<=nrel_possible_material:...
+	(*
+		->concept_silicone;;
+	*);;
+concept_cup
+	<=nrel_possible_material:...
+	(*
+		->concept_metal;;
+	*);;
+concept_cup
+	<=nrel_possible_material:...
+	(*
+		->concept_metal;;
+		->concept_silicone;;
+	*);;

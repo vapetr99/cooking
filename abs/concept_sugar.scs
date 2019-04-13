@@ -1,0 +1,36 @@
+concept_sugar=>nrel_idtf:[sugar] (* <- lang_en;; *);;
+concept_sugar=>nrel_main_idtf:[сахар] (* <- lang_ru;; *);;
+concept_sugar<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(сахар)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[бытовое название сахарозы, пищевой продукт, белый кристаллический порошок сладкого вкуса, или куски, прессуемые из такого порошка](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_foodstuffs;;
+    *);;
+*);;	
+concept_sugar->rrel_example:concept_sand_sugar;;
+concept_sugar<-rrel_key_sc_element:...
+(*
+	<-illustration;;<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example: "file://pictures/sugar.jpg"
+			(*
+				=>nrel_format:format_jpg;;
+			*);;
+		*);;
+	*);;
+concept_sugar<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_sugar;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.( сахар ))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Чрезмерное употребление сахара влечет за собой ожирение](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_sugar=>nrel_inclusion:concept_cube_sugar;concept_brown_sugar;;

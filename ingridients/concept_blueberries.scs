@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_blueberries;;
+
+concept_blueberries => nrel_main_idtf:
+[черника] (* <- lang_ru;; *);
+[blueberries] (* <- lang_en;; *);;
+concept_blueberries <- concept_ingridient;;
+concept_blueberries<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://images/blueberries.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_blueberries => nrel_type:concept_fetus;;
+concept_blueberries => nrel_kkal : 44_kkal
+(*
+=> nrel_main_idtf:
+[44 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_blueberries => nrel_price : 4_rub
+(*
+=> nrel_main_idtf:
+[4 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_blueberries => nrel_storage_time: 7_days
+(*
+=> nrel_main_idtf:
+[7 дней]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_blueberries => nrel_storage_conditions: fridge
+(*
+=> nrel_main_idtf:
+[холодильник]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_blueberries=> nrel_glycemic_index: 43
+
+(*
+=> nrel_main_idtf:
+[43]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;

@@ -1,0 +1,41 @@
+concept_alcohol=>nrel_idtf:[alcohol] (* <- lang_en;; *);;
+concept_alcohol=>nrel_main_idtf:[алкоголь] (* <- lang_ru;; *);;
+concept_alcohol<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(алкоголь)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Напитки, содержащий этиловый спирт в существенных концентрациях](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_drink;;->concept_spirt;;
+    *);;
+*);;	
+concept_alcohol->rrel_example:concept_beer;;
+concept_alcohol<-rrel_key_sc_element:...
+(*
+	<-illustration;;<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example: "file://pictures/alcohol.jpg"
+			(*
+				=>nrel_format:format_jpg;;
+			*);;
+		*);;
+	*);;
+concept_alcohol<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_alcohol;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.( алкоголь ))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Чрезмерное употребление алкоголя вредит вашему здоровью](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_strong_alcohol<-...
+(*
+	->concept_weak_alcohol;;
+	=>nrel_main_idtf:[Разбиение по признаку крепости](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_alcohol;;
+*);;
+concept_alcohol=>nrel_inclusion:concept_vodka;concept_wine;concept_djin;;

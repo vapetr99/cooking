@@ -1,0 +1,48 @@
+concept_bottle <- concept_cutlery_item;;
+concept_bottle => nrel_main_idtf:
+	[бутылка](* <- lang_ru;; *);
+	[bottle](* <- lang_en;; *);;
+
+concept_bottle<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(бутылка)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Бутылка -  ёмкость для долговременного хранения жидкостей, высокий сосуд преимущественно цилиндрической формы и с узким горлом, удобным для закупоривания пробкой.](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_bottle <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_bottle.jpg";;
+		*);;
+	*);;
+
+concept_bottle
+	<=nrel_possible_material:...
+	(*
+		->concept_ceramics;;
+	*);;
+concept_bottle
+	<=nrel_possible_material:...
+	(*
+		->concept_glass;;
+	*);;
+concept_bottle
+	<=nrel_possible_material:...
+	(*
+		->concept_metal;;
+	*);;
+concept_bottle
+	<=nrel_possible_material:...
+	(*
+		->concept_plastic;;
+	*);;

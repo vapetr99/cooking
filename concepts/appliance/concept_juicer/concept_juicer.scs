@@ -1,0 +1,35 @@
+concept_juicer <- concept_cooking_device;;
+concept_juicer => nrel_main_idtf:
+	[соковыжималка](* <- lang_ru;; *);
+	[juicer](* <- lang_en;; *);;
+
+concept_juicer<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(соковыжималка)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Соковыжималка - устройство для выжимания сока из фруктов, ягод.](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_juicer <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_juicer.jpg";;
+		*);;
+	*);;
+
+concept_juiser
+	<=nrel_possible_material:...
+	(*
+		->concept_plastic;;
+		->concept_metal;;
+		->concept_glass;;
+	*);;

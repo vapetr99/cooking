@@ -1,0 +1,29 @@
+subject_domain_of_classification_of_meal_products
+=> nrel_main_idtf:
+    [Предметная область классификации продуктов питания]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Subject domain of classification of meal products]
+    (* <- lang_en;; *);;
+sc_node_struct -> subject_domain_of_classification_of_meal_products;;
+
+subject_domain_of_classification_of_meal_products -> rrel_not_maximum_studied_object_class: 
+	concept_bakery;
+	concept_beans;
+	concept_beans;
+	concept_canned_food;
+	concept_drink;
+	concept_egg_product;
+	concept_fast_food;
+	concept_fish_product;
+	concept_cereals;;
+
+subject_domain_of_classification_of_meal_products -> rrel_explored_relation:
+		nrel_spice;
+		nrel_herb;
+		nrel_protein_content;
+		nrel_fats_content;
+		nrel_carbohydrates_content;
+		nrel_seasoning;;	
+
+subject_domain_of_classification_of_meal_products <- subject_domain;;

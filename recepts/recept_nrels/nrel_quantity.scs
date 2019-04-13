@@ -1,0 +1,11 @@
+sc_node_norole_relation -> nrel_quantity;;
+nrel_quantity=>nrel_main_idtf:[количество*] (* <- lang_ru;; *);;
+nrel_quantity=>nrel_main_idtf:[quantity*] (* <- lang_en;; *);;
+nrel_quantity=>nrel_idtf:[количество объектов*] (* <- lang_ru;; *);;
+nrel_quantity<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+antisymmetric_relation->nrel_quantity;;
+antitransitive_relation->nrel_quantity;;
+antireflexive_relation->nrel_quantity;;
+nrel_quantity<-oriented_relation;;

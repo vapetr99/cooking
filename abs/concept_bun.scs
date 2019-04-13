@@ -1,0 +1,40 @@
+concept_bun=>nrel_idtf:[bun] (* <- lang_en;; *);;
+concept_bun=>nrel_main_idtf:[булка] (* <- lang_ru;; *);;
+concept_bun<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(булка))] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[белый пшеничный хлеб, обычно круглой или овальной формы](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_bread;;
+    *);;
+*);;	
+concept_bun->rrel_example:concept_top;;
+concept_bun<-rrel_key_sc_element:...
+(*
+	<-illustration;;<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example: "file://pictures/bun.jpg"
+			(*
+				=>nrel_format:format_jpg;;
+			*);;
+		*);;
+	*);;
+concept_bun<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_bun;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.( булка ))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Булки вредны для вашего веса](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_filled_bun<-...
+(*
+	->concept_not_filled_bun;;
+	=>nrel_main_idtf:[Разбиение по признаку наличия начинки](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_bun;;
+*);;

@@ -1,0 +1,38 @@
+concept_colander <- concept_cutlery_item;;
+concept_colander => nrel_main_idtf:
+	[дуршлаг](* <- lang_ru;; *);
+	[colander](* <- lang_en;; *);;
+
+concept_colander<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(дуршлаг)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Дуршлаг - кухонная посуда в виде металлического решета с ручкой для отцеживания чего-н., варившегося в воде.](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_colander <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_colander.jpg";;
+		*);;
+	*);;
+
+concept_colander
+	<=nrel_possible_material:...
+	(*
+		->concept_metal;;
+	*);;
+concept_colander
+	<=nrel_possible_material:...
+	(*
+		->concept_plastic;;
+	*);;

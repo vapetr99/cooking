@@ -1,0 +1,44 @@
+concept_shawarma=>nrel_idtf:[shawarma] (* <- lang_en;; *);;
+concept_shawarma=>nrel_main_idtf:[шаурма] (* <- lang_ru;; *);;
+concept_shawarma=>nrel_main_idtf:[шаверма] (* <- lang_ru;; *);;
+concept_shawarma<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(шаурма)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Пища богов, принесенная перуном людям на землю](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_food;;
+    *);;
+*);;	
+concept_shawarma->rrel_example:concept_cheese_shawarma;;
+concept_shawarma<-rrel_key_sc_element:...
+(*
+	<-illustration;;<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example: "file://pictures/shawarma.jpg"
+			(*
+				=>nrel_format:format_jpg;;
+			*);;
+		*);;
+	*);;
+concept_shawarma<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_shawarma;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.( шаума ))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Потребление шавермы удвоит вашу работоспособность и приведет ваще тело в состояние экстаза](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_chicken_shawarma<-...
+(*
+	->concept_pork_shawarma;;
+	->concept_shrimp_shawarma;;
+	->concept_beef_shawarma;;
+	=>nrel_main_idtf:[Разбиение по признаку вида используемого мяса](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_shawarma;;
+*);;
+concept_shawarma=>nrel_inclusion:concept_cheese_shawarma;concept_black_shawarma;;

@@ -1,0 +1,35 @@
+concept_electric_mixer <- concept_cooking_device;;
+concept_electric_mixer => nrel_main_idtf:
+	[электрический миксер](* <- lang_ru;; *);
+	[electric mixer](* <- lang_en;; *);;
+
+concept_electric_mixer<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(электрический миксер)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Электрический миксер - электрическое устройство для приготовления пищи путем перемешивания ее компонентов до создания однородной массы и обогащения взбиваемой жидкости воздухом.](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_electric_mixer <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_electric_mixer.jpg";;
+		*);;
+	*);;
+
+concept_electric_mixer
+	<=nrel_possible_material:...
+	(*
+		->concept_plastic;;
+		->concept_metal;;
+		->concept_glass;;
+	*);;

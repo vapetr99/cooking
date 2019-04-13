@@ -1,0 +1,46 @@
+concept_saucepan_lid <- concept_cutlery_item;;
+concept_saucepan_lid => nrel_main_idtf:
+	[крышка кастрюли](* <- lang_ru;; *);
+	[saucepan lid](* <- lang_en;; *);;
+
+concept_saucepan_lid<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(крышка кастрюли)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Крышка кастрюли - укупорочное средство, закрепляемое по всему наружному периметру верха или горловины кастрюли.](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_saucepan_lid <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_saucepan_lid.jpg";;
+		*);;
+	*);;
+
+concept_saucepan_lid
+	<=nrel_possible_material:...
+	(*
+		->concept_metal;;
+	*);;
+concept_saucepan_lid 
+	<=nrel_possible_material:...
+	(*
+		->concept_plastic;;
+		->concept_metal;;
+	*);;
+concept_saucepan_lid
+	<=nrel_possible_material:...
+	(*
+		->concept_plastic;;
+		->concept_metal;;
+		->concept_glass;;
+	*);;

@@ -1,0 +1,35 @@
+concept_juice=>nrel_idtf:[сок] (* <- lang_en;; *);;
+concept_juice=>nrel_idtf:[множество соков] (* <- lang_ru;; *);;
+concept_juice<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(сок)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Жидкий пищевой продукт, результат отжима съедобных спелых плодов овощных или фруктовых культур](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_vegetable;;->concept_fruit;;
+    *);;
+*);;	
+concept_juice->rrel_example:concept_apple_juice;;
+concept_juice<-rrel_key_sc_element:...
+(*
+	<-illustration;;<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example: "file://pictures/juice.jpg"
+			(*
+				=>nrel_format:format_jpg;;
+			*);;
+		*);;
+	*);;
+concept_juice<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_vegetable;concept_fruit;concept_juice;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.( плод, фрукты, овощи))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Сок получают путем отжима съедобных спелых плодов овощей или фруктов](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_juice=>nrel_inclusion:concept_orange_juice;concept_cherry_juice;;

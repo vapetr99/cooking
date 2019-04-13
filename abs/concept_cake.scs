@@ -1,0 +1,45 @@
+concept_cake=>nrel_idtf:[cake] (* <- lang_en;; *);;
+concept_cake=>nrel_idtf:[множество пирожных] (* <- lang_ru;; *);;
+concept_cake=>nrel_main_idtf:[пирожное] (* <- lang_ru;; *);;
+concept_cake<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(пирожное)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Кондитерское изделие небольших размеров из различных видов сдобного теста, преимущественно со сладкой начинкой](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_dough;;->concept_filling;;
+    *);;
+*);;	
+concept_cake->rrel_example:concept_potato_cake;;
+concept_cake<-rrel_key_sc_element:...
+(*
+	<-illustration;;<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example: "file://pictures/cake.jpg"
+			(*
+				=>nrel_format:format_jpg;;
+			*);;
+		*);;
+	*);;
+concept_cake<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_ingredient;concept_kkal;concept_cake;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.( энергетическая ценность*, пирожное, ингредиенты*))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Энергетическая ценность пирожного определяется ингредиентами, входящими в состав этого пирожного](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_buscuit_cake<-...
+(*
+	->concept_shortbread_cake;;
+	->concept_puff_pastry;;
+	->concept_brewing_cake;;
+	->concept_whipped_cake;;
+	=>nrel_main_idtf:[Разбиение по признаку способа приготовления](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_cake;;
+*);;
+concept_cake=>nrel_inclusion:concept_whipped_cake;concept_brewing_cake;concept_puff_pastry;concept_shortbread_cake;concept_buscuit_cake;;

@@ -1,0 +1,79 @@
+concept_coconut_milk=>nrel_idtf:[coconut milk] (* <- lang_en;; *);;
+concept_coconut_milk=>nrel_main_idtf:[кокосовое молоко] (* <- lang_ru;; *);;
+
+concept_coconut_milk<-rrel_key_sc_element:...
+(*
+  <-illustration;;<=nrel_sc_text_translation:...
+  (*
+        ->rrel_example: "file://pictures/coconut_milk.jpg"
+      (*
+        =>nrel_format:format_jpg;;
+      *);;
+    *);;
+  *);;
+
+concept_coconut_milk<-rrel_key_sc_element:...
+(*
+->rrel_key_sc_element:nrel_fats_content;concept_coconut_milk;;
+<-statement;;
+=>nrel_main_idtf:[Утв.(содержание жиров*, кокосовое молоко)](* <- lang_ru;; *);;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example:[Содержание жиров в кокосовом молоке на 100 г продукта: 14,9 г](* <- lang_ru;; *);;
+*);;
+
+->rrel_key_sc_element:nrel_protein_content;concept_coconut_milk;;
+<-statement;;
+=>nrel_main_idtf:[Утв.(содержание белков*, кокосовое молоко)](* <- lang_ru;; *);;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example:[Содержание белков в кокосовом молоке на 100 г продукта: 1,9 г](* <- lang_ru;; *);;
+*);;
+
+->rrel_key_sc_element:nrel_carbohydrates_content;concept_coconut_milk;;
+<-statement;;
+=>nrel_main_idtf:[Утв.(содержание углеводов*, кокосовое молоко)](* <- lang_ru;; *);;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example:[Содержание углеводов в кокосовом молоке на 100 г продукта: 2,7 г](* <- lang_ru;; *);;
+*);;
+*);;
+
+
+
+concept_coconut_milk => nrel_kkal : 230_kkal
+(*
+=> nrel_main_idtf:
+[230 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+
+concept_coconut_milk => nrel_storage_time: 3_weeks
+(*
+=> nrel_main_idtf:
+[3 недели]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_coconut_milk => nrel_storage_conditions: dark_place
+(*
+=> nrel_main_idtf:
+[темное место]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_coconut_milk=> nrel_glycemic_index: 41
+ (*
+=> nrel_main_idtf:
+[41]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;

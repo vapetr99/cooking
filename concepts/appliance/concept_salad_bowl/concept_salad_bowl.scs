@@ -1,0 +1,43 @@
+concept_salad_bowl <- concept_cutlery_item;;
+concept_salad_bowl => nrel_main_idtf:
+	[салатник](* <- lang_ru;; *);
+	[salad bowl](* <- lang_en;; *);;
+
+concept_salad_bowl<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(салатник)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Салатник - широкий сосуд с высокими стенками, в котором держат или приготавливают салаты.](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_salad_bowl <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_salad_bowl.jpg";;
+		*);;
+	*);;
+
+concept_salad_bowl 
+	<=nrel_possible_material:...
+	(*
+		->concept_metal;;
+	*);;
+concept_salad_bowl 
+	<=nrel_possible_material:...
+	(*
+		->concept_ceramics;;
+	*);;
+concept_salad_bowl
+	<=nrel_possible_material:...
+	(*
+		->concept_glass;;
+	*);;

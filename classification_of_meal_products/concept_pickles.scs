@@ -1,0 +1,71 @@
+concept_pickles=>nrel_idtf:[pickles] (* <- lang_en;; *);;
+concept_pickles=>nrel_idtf:[закатки] (* <- lang_ru;; *);;
+concept_pickles=>nrel_main_idtf:[соленья] (* <- lang_ru;; *);;
+
+concept_pickles<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(соленья)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Соленья -  продукты питания, консервированные при помощи соли, высокое содержание которой в продуктах затрудняет развитие бактерий и плесеней.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;;
+	*);;
+
+*);;
+
+concept_pickles->rrel_example:concept_sauerkraut;;
+
+concept_pickles<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//pickles.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_pickles<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_pickles;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, соленья)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в соленьях на 100 г продукта: 0.8 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_pickles<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_pickles;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, соленья)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в соленьях на 100 г продукта: 0.4 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_pickles<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_pickles;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, соленья)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в соленьях на 100 г продукта: 2.68 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_pickles_vegetables<-...
+	(*
+		->concept_pickles_meat;;
+		->concept_pickles_fish;;
+		=>nrel_main_idtf:[Разбиение по признаку продукт соления](* <- lang_ru;; *);;
+		=>nrel_subdividing:concept_pickles;;
+	*);;
+
+concept_pickles=>nrel_inclusion:concept_salted_cucumbers;concept_sauerkraut;concept_pickled_tomatoes;;

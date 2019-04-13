@@ -1,0 +1,36 @@
+concept_microwave <- concept_cooking_device;;
+concept_microwave => nrel_main_idtf:
+	[микроволновая печь](* <- lang_ru;; *);
+	[microwave](* <- lang_en;; *);;
+
+concept_microwave<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(микроволновая печь)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Микроволновая печь -  электроприбор, позволяющий совершать разогрев водосодержащих веществ благодаря электромагнитным излучением дециметрового диапазона и предназначенный для быстрого приготовления, подогрева или размораживания пищи.](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_microwave <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_microwave.jpg";;
+		*);;
+	*);;
+
+concept_microwave
+	<=nrel_possible_material:...
+	(*
+		->concept_plastic;;
+		->concept_metal;;
+		->concept_glass;;
+		->concept_silicone;;
+	*);;

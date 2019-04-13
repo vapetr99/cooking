@@ -1,0 +1,511 @@
+sc_node_not_relation->concept_juice_my_family;;
+concept_juice_my_family=>nrel_main_idtf:
+[сок "Моя семья"](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_value;;
+concept_value=>nrel_main_idtf:
+[величина](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_liquid;;
+concept_liquid=>nrel_main_idtf:
+[жидкость](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_non_alcohol_drink;;
+concept_non_alcohol_drink=>nrel_main_idtf:
+[безалкогольный напиток](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_alcohol_drink;;
+concept_alcohol_drink=>nrel_main_idtf:
+[алкогольный напиток](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_not_carbonated_drink;;
+concept_not_carbonated_drink=>nrel_main_idtf:
+[негазированный напиток](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_carbonated_drink;;
+concept_carbonated_drink=>nrel_main_idtf:
+[газированный напиток](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_food;;
+concept_food=>nrel_main_idtf:
+[продукт питания](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_juice;;
+concept_juice=>nrel_main_idtf:
+[сок](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_kvass;;
+concept_kvass=>nrel_main_idtf:
+[квас](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_compote;;
+concept_compote=>nrel_main_idtf:
+[компот](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_cookie_slodych;;
+concept_cookie_slodych=>nrel_main_idtf:
+[печенье "Слодыч"](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_cookie;;
+concept_cookie=>nrel_main_idtf:
+[печенье](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_cake;;
+concept_cake=>nrel_main_idtf:
+[торт](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_pie;;
+concept_pie=>nrel_main_idtf:
+[пирог](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_amaranth;;
+concept_amaranth=>nrel_main_idtf:
+[амарант](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_bread_groat;;
+concept_bread_groat=>nrel_main_idtf:
+[хлебная крупа](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_beans_groat;;
+concept_beans_groat=>nrel_main_idtf:
+[бобовая крупа](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_buckwheat;;
+concept_buckwheat=>nrel_main_idtf:
+[гречиха](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_banana;;
+concept_banana=>nrel_main_idtf:
+[банан](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_rosaceous_fruit;;
+concept_rosaceous_fruit=>nrel_main_idtf:
+[розоцветный фрукт](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_citrus_fruit;;
+concept_citrus_fruit=>nrel_main_idtf:
+[цитрусовый фрукт](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_drupaceous_fruit;;
+concept_drupaceous_fruit=>nrel_main_idtf:
+[косточковый](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_potato;;
+concept_potato=>nrel_main_idtf:
+[картофель](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_nightshade_vegetable;;
+concept_nightshade_vegetable=>nrel_main_idtf:
+[пасленовые овощи](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_pumpkin_vegetable;;
+concept_pumpkin_vegetable=>nrel_main_idtf:
+[тыквенные овощи](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_cruciferous_vegetable;;
+concept_cruciferous_vegetable=>nrel_main_idtf:
+[крестоцветные овощи](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_milk;;
+concept_milk=>nrel_main_idtf:
+[молоко](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_dairy_product;;
+concept_dairy_product=>nrel_main_idtf:
+[кисломолочные продукты](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_cheese;;
+concept_cheese=>nrel_main_idtf:
+[сыр](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_cheesecake;;
+concept_cheesecake=>nrel_main_idtf:
+[сырок](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_french_meat;;
+concept_french_meat=>nrel_main_idtf:
+[мясо по-французски](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_beef;;
+concept_beef=>nrel_main_idtf:
+[говядина](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_pork;;
+concept_pork=>nrel_main_idtf:
+[свинина](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_wild_meat;;
+concept_wild_meat=>nrel_main_idtf:
+[мясо диких животных](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_mutton;;
+concept_mutton=>nrel_main_idtf:
+[баранина](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_salt;;
+concept_salt=>nrel_main_idtf:
+[соль](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_sugar;;
+concept_sugar=>nrel_main_idtf:
+[сахар](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_canned_meat;;
+concept_canned_meat=>nrel_main_idtf:
+[консервированные мясные продукты](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_canned_milk;;
+concept_canned_milk=>nrel_main_idtf:
+[консервированные молочные продукты](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_canned_vegetables;;
+concept_canned_vegetables=>nrel_main_idtf:
+[консервированные овощные продукты](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_canned_fruits;;
+concept_canned_fruits=>nrel_main_idtf:
+[консервированные фруктовые продукты](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_canned_fish;;
+concept_canned_fish=>nrel_main_idtf:
+[консервированные рыбные продукты](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_condensed_milk;;
+concept_condensed_milk=>nrel_main_idtf:
+[сгущенка](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_cherry;;
+concept_cherry=>nrel_main_idtf:
+[вишня](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_real_berry;;
+concept_real_berry=>nrel_main_idtf:
+[настоящая ягода](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_false_berry;;
+concept_false_berry=>nrel_main_idtf:
+[ложная ягода](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_complex_berry;;
+concept_complex_berry=>nrel_main_idtf:
+[сложная ягода](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_squid;;
+concept_squid=>nrel_main_idtf:
+[кальмар](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_crustaceans;;
+concept_crustaceans=>nrel_main_idtf:
+[ракообразные](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_seaweed;;
+concept_seaweed=>nrel_main_idtf:
+[водоросли](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_shellfish;;
+concept_shellfish=>nrel_main_idtf:
+[моллюски](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_minced_meat;;
+concept_minced_meat=>nrel_main_idtf:
+[фарш](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_meat_semi_finished_products;;
+concept_meat_semi_finished_products=>nrel_main_idtf:
+[мясные полуфабрикаты](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_fish_semi_finished_products;;
+concept_fish_semi_finished_products=>nrel_main_idtf:
+[рыбные полуфабрикаты](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_dumplings_semi_finished;;
+concept_dumplings_semi_finished=>nrel_main_idtf:
+[замороженные пельмени](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_pancakes_semi_finished;;
+concept_pancakes_semi_finished=>nrel_main_idtf:
+[замороженные блинчики](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_boletus;;
+concept_boletus=>nrel_main_idtf:
+[боровик](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_edible_mushrooms;;
+concept_edible_mushrooms=>nrel_main_idtf:
+[cъедобный гриб](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_non_edible_mushrooms;;
+concept_non_edible_mushrooms=>nrel_main_idtf:
+[неcъедобный гриб](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_grown_mushroom;;
+concept_grown_mushroom=>nrel_main_idtf:
+[выращиваемый гриб](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_collected_mushroom;;
+concept_collected_mushroom=>nrel_main_idtf:
+[собираемый гриб](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_bakery_yeast;;
+concept_bakery_yeast=>nrel_main_idtf:
+[хлебопекарные дрожжи](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_compressed_yeast;;
+concept_compressed_yeast=>nrel_main_idtf:
+[пресованные дрожжи](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_liquid_yeast;;
+concept_liquid_yeast=>nrel_main_idtf:
+[жидкие дрожжи](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_dry_yeast;;
+concept_dry_yeast=>nrel_main_idtf:
+[сухие дрожжи](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_brewing_yeast;;
+concept_brewing_yeast=>nrel_main_idtf:
+[пивоваренные дрожжи](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_bread_yeast;;
+concept_bread_yeast=>nrel_main_idtf:
+[хлебная закваска](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_solid_fats;;
+concept_bread_yeast=>nrel_main_idtf:
+[твердые жиры](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_liquid_fats;;
+concept_bread_yeast=>nrel_main_idtf:
+[жидкие жиры](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_milk_fat;;
+concept_milk_fat=>nrel_main_idtf:
+[молочный жир](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_animal_fats;;
+concept_animal_fats=>nrel_main_idtf:
+[животный жир](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_vegatable_fats;;
+concept_vegatable_fats=>nrel_main_idtf:
+[растительный жир](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_beef_tongue;;
+concept_beef_tongue=>nrel_main_idtf:
+[говяжий язык](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_beef_subproducts;;
+concept_beef_subproducts=>nrel_main_idtf:
+[говяжие субпродукты](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_pork_subproducts;;
+concept_pork_subproducts=>nrel_main_idtf:
+[свиные субпродукты](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_lamb_subproducts;;
+concept_lamb_subproducts=>nrel_main_idtf:
+[бараньи субпродукты](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_cornflakes;;
+concept_cornflakes=>nrel_main_idtf:
+[кукурузные хлопьи](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_oat_flakes;;
+concept_oat_flakes=>nrel_main_idtf:
+[овсяные хлопьи](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_mayonnaise;;
+concept_mayonnaise=>nrel_main_idtf:
+[майонез](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_chicken_egg;;
+concept_chicken_egg=>nrel_main_idtf:
+[куриное яйцо](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_duck_egg;;
+concept_duck_egg=>nrel_main_idtf:
+[утиное яйцо](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_goose_egg;;
+concept_goose_egg=>nrel_main_idtf:
+[гусиное яйцо](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_turkey_egg;;
+concept_turkey_egg=>nrel_main_idtf:
+[индюшиное яйцо](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_ostrich_egg;;
+concept_ostrich_egg=>nrel_main_idtf:
+[страусиное яйцо](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_egg_powder;;
+concept_egg_powder=>nrel_main_idtf:
+[яичный порошок](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_melange;;
+concept_melange=>nrel_main_idtf:
+[меланж](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_chocolate_bar;;
+concept_chocolate_bar=>nrel_main_idtf:
+[шоколадный батончик](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_sweet_snack;;
+concept_sweet_snack=>nrel_main_idtf:
+[сладкие снэки](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_non_sweet_snack;;
+concept_non_sweet_snack=>nrel_main_idtf:
+[несладкие снэки](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_chips;;
+concept_chips=>nrel_main_idtf:
+[чипсы](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_crackers;;
+concept_crackers=>nrel_main_idtf:
+[сухарики](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_dried_squid;;
+concept_dried_squid=>nrel_main_idtf:
+[сушеные кальмары](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_sauerkraut;;
+concept_sauerkraut=>nrel_main_idtf:
+[квашеная капуста](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_pickles_vegetables;;
+concept_pickles_vegetables=>nrel_main_idtf:
+[овощные соленья](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_pickles_meat;;
+concept_pickles_meat=>nrel_main_idtf:
+[мясные соленья](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_pickles_fish;;
+concept_pickles_fish=>nrel_main_idtf:
+[рыбные соленья](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_salted_cucumbers;;
+concept_salted_cucumbers=>nrel_main_idtf:
+[соленые огурцы](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_pickled_tomatoes;;
+concept_pickled_tomatoes=>nrel_main_idtf:
+[соленые помидоры](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_oolong_tea;;
+concept_oolong_tea=>nrel_main_idtf:
+[чай улун](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_china_tea;;
+concept_china_tea=>nrel_main_idtf:
+[китайский чай](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_assam_tea;;
+concept_assam_tea=>nrel_main_idtf:
+[ассамский чай](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_cambodian_tea;;
+concept_cambodian_tea=>nrel_main_idtf:
+[камбоджийский чай](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_black_tea;;
+concept_black_tea=>nrel_main_idtf:
+[черный чай](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_green_tea;;
+concept_green_tea=>nrel_main_idtf:
+[зеленый чай](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_espresso;;
+concept_espresso=>nrel_main_idtf:
+[эспрессо](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_coffee_with_milk;;
+concept_coffee_with_milk=>nrel_main_idtf:
+[кофе с молоком](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_coffee_without_milk;;
+concept_coffee_without_milk=>nrel_main_idtf:
+[кофе без молока](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_macchiato;;
+concept_macchiato=>nrel_main_idtf:
+[макиато](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_amerikano;;
+concept_amerikano=>nrel_main_idtf:
+[американо](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_cappuccino;;
+concept_cappuccino=>nrel_main_idtf:
+[капучино](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_pizza;;
+concept_pizza=>nrel_main_idtf:
+[пицца](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_hot_fast_food;;
+concept_hot_fast_food=>nrel_main_idtf:
+[горячий фаст-фуд](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_cold_fast_food;;
+concept_cold_fast_food=>nrel_main_idtf:
+[холодный фаст-фуд](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_hamburger;;
+concept_hamburger=>nrel_main_idtf:
+[гамбургер](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_sandwich;;
+concept_sandwich=>nrel_main_idtf:
+[сэндвич](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_hot_dog;;
+concept_hot_dog=>nrel_main_idtf:
+[хот-дог](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_fish_fillet;;
+concept_fish_fillet=>nrel_main_idtf:
+[рыбное филе](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_ocean_fish;;
+concept_ocean_fish=>nrel_main_idtf:
+[океаническая рыба](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_river_fish;;
+concept_river_fish=>nrel_main_idtf:
+[речная рыба](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_fish_pate;;
+concept_fish_pate=>nrel_main_idtf:
+[рыбный паштет](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_caviar;;
+concept_caviar=>nrel_main_idtf:
+[икра](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_bay_leaf;;
+concept_bay_leaf=>nrel_main_idtf:
+[лавровый лист](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_sour_cream;;
+concept_sour_cream=>nrel_main_idtf:
+[сметана](* <-lang_ru;; *);;
+
+sc_node_role_relation->rrel_value;;
+rrel_value=>nrel_main_idtf:
+[г'](* <-lang_ru;; *);;
+
+sc_node_norole_relation->nrel_baking;;
+nrel_baking=>nrel_main_idtf:
+[выпекание*](* <-lang_ru;; *);;
+
+sc_node_norole_relation->nrel_kkal;;
+nrel_kkal=>nrel_main_idtf:
+[пищевая ценность*](* <-lang_ru;; *);;
+
+sc_node_norole_relation->nrel_fetus;;
+nrel_fetus=>nrel_main_idtf:
+[плод*](* <-lang_ru;; *);;

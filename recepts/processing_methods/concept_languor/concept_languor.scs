@@ -1,0 +1,28 @@
+concept_languor => nrel_main_idtf:
+	[томление](* <- lang_ru;; *);
+	[languor](* <- lang_en;; *);;
+
+concept_languor<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(томление)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Томление - метод приготовления блюд с помощью медленного, длительного тушения при постоянной невысокой температуре в плотно закрытой посуде. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_languor <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_languor.jpg";;
+		*);;
+	*);;
+
+concept_languor <- concept_processing_method;;

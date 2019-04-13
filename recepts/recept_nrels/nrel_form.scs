@@ -1,0 +1,11 @@
+sc_node_norole_relation -> nrel_form;;
+nrel_form=>nrel_main_idtf:[форма*] (* <- lang_ru;; *);;
+nrel_form=>nrel_main_idtf:[form*] (* <- lang_en;; *);;
+nrel_form=>nrel_idtf:[форма продукта*] (* <- lang_ru;; *);;
+nrel_form<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+antisymmetric_relation->nrel_form;;
+antitransitive_relation->nrel_form;;
+antireflexive_relation->nrel_form;;
+nrel_form<-oriented_relation;;

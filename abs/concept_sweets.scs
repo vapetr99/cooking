@@ -1,0 +1,35 @@
+concept_sweets=>nrel_idtf:[sweets] (* <- lang_en;; *);;
+concept_sweets=>nrel_main_idtf:[сладости] (* <- lang_ru;; *);;
+concept_sweets<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(сладости)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[сладкое кондитерское изделие, конфета, варенье, мёд и т.п.](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_pastry;concept_sweet;concept_honey;;
+    *);;
+*);;	
+concept_sweets->rrel_example:concept_snikers;;
+concept_sweets<-rrel_key_sc_element:...
+(*
+	<-illustration;;<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example: "file://pictures/sweets.jpg"
+			(*
+				=>nrel_format:format_jpg;;
+			*);;
+		*);;
+	*);;
+concept_sweets<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_sweets;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.( сладости ))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Чрезмерное потребление сладостей приводит к проблемам с зубами](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_shawarma=>nrel_inclusion:concept_bun;concept_cake;concept_ice_cream;;

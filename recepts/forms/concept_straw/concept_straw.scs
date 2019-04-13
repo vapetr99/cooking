@@ -1,0 +1,28 @@
+concept_straw => nrel_main_idtf:
+	[соломка](* <- lang_ru;; *);
+	[straw](* <- lang_en;; *);;
+
+concept_straw<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(соломка)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Соломка - форма объемной полоски.](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_straw <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_straw.jpg";;
+		*);;
+	*);;
+
+concept_straw <- concept_form;;

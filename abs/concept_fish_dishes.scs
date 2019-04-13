@@ -1,0 +1,36 @@
+concept_fish_dishes=>nrel_idtf:[fish_dishes] (* <- lang_en;; *);;
+concept_fish_dishes=>nrel_main_idtf:[рыбные блюда] (* <- lang_ru;; *);;
+concept_fish_dishes<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(рыбное блюдо))] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[блюдо, основным ингридиентом которого является рыба](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_dish;;->concept_fish;;->concept_ingredient;;
+    *);;
+*);;	
+concept_fish_dishes->rrel_example:concept_fish_soup;;
+concept_fish_dishes<-rrel_key_sc_element:...
+(*
+	<-illustration;;<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example: "file://pictures/fish_dish.jpg"
+			(*
+				=>nrel_format:format_jpg;;
+			*);;
+		*);;
+	*);;
+concept_fish_dishes<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fat;concept_protein;concept_fish;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.( энергетическая ценность*, десерт, ингредиенты*))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[В рыбе содержится много белка и полезных жиров](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_fish_dishes=>nrel_inclusion:concept_fish_in_fur_coat;concept_cake;concept_fried_fish;concept_fish_soup;;

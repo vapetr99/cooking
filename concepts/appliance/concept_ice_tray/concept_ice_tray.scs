@@ -1,0 +1,38 @@
+concept_ice_tray <- concept_cutlery_item;;
+concept_ice_tray => nrel_main_idtf:
+	[лоток для льда](* <- lang_ru;; *);
+	[ice tray](* <- lang_en;; *);;
+
+concept_ice_tray<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(лоток для льда)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Лоток для льда - форма с некоторым количеством отсеков для воды, предназначенной для замерзания.](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_ice_tray <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_ice_tray.jpg";;
+		*);;
+	*);;
+
+concept_ice_tray 
+	<=nrel_possible_material:...
+	(*
+		->concept_plastic;;
+	*);;
+concept_ice_tray 
+	<=nrel_possible_material:...
+	(*
+		->concept_silicone;;
+	*);;

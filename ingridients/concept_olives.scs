@@ -1,0 +1,56 @@
+sc_node_not_relation -> concept_olives;;
+
+concept_olives => nrel_main_idtf:
+[оливки] (* <- lang_ru;; *);
+[olives] (* <- lang_en;; *);;
+concept_olives <- concept_ingridient;;
+concept_olives<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://images/olives.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_olives => nrel_type:concept_fetus;;
+concept_olives => nrel_kkal : 115_kkal
+(*
+=> nrel_main_idtf:
+[115 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_olives => nrel_price : 9_rub
+(*
+=> nrel_main_idtf:
+[9 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_olives => nrel_storage_time: 8_month
+(*
+=> nrel_main_idtf:
+[8 месяцев]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_olives => nrel_storage_conditions: bank;;
+concept_olives=> nrel_glycemic_index: 15
+(*
+=> nrel_main_idtf:
+[15]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;

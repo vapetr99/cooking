@@ -1,0 +1,73 @@
+concept_egg_product=>nrel_idtf:[edge product] (* <- lang_en;; *);;
+concept_egg_product=>nrel_idtf:[продукты из яиц] (* <- lang_ru;; *);;
+concept_egg_product=>nrel_main_idtf:[продукт из яиц] (* <- lang_ru;; *);;
+
+concept_egg_product<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(продукт из яиц)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Продукт из яиц - пищевой продукт, в состав которого входят куриные яйца или яйца другого приосхождения.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;;
+	*);;
+
+*);;
+
+concept_egg_product->rrel_example:concept_mayonnaise;;
+
+concept_egg_product<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//edge_product.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_egg_product<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_egg_product;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, продукт из яиц)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в продуктах из яиц на 100 г продукта: 12.2 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_egg_product<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_egg_product;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, продукт из яиц)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в продуктах из яиц на 100 г продукта: 12.57 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_egg_product<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_egg_product;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, продукт из яиц)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в продуктах из яиц на 100 г продукта: 0.67 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_chicken_egg<-...
+	(*
+		->concept_duck_egg;;
+		->concept_goose_egg;;
+		->concept_turkey_egg;;
+		->concept_ostrich_egg;;
+		=>nrel_main_idtf:[Разбиение по признаку приосхождение яйца](* <- lang_ru;; *);;
+		=>nrel_subdividing:concept_egg_product;;
+	*);;
+
+concept_egg_product=>nrel_inclusion:concept_egg_powder;concept_melange;;

@@ -1,0 +1,58 @@
+concept_nut=>nrel_idtf:[nut] (* <- lang_en;; *);;
+concept_nut=>nrel_idtf:[множество орехов] (* <- lang_ru;; *);;
+concept_nut=>nrel_main_idtf:[орех] (* <- lang_ru;; *);;
+
+concept_nut<-rrel_key_sc_element:...
+  (*
+  <-definition;;=>nrel_main_idtf:[Опр.(орех)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+  (*
+        ->[Орех - плод некоторых растений, как правило, со съедобным ядром и твердой скорлупой.](* <- lang_ru;; *);;
+  *);;
+
+  <=nrel_using_constants:...
+  (*
+  ->concept_plant;;->concept_fetus;;
+  *);;
+
+*);;
+
+concept_nut->nut_1;;
+
+concept_nut<-rrel_key_sc_element:...
+  (*
+    <-illustration;;<=nrel_sc_text_translation:...
+      (*
+          ->rrel_example: "file://nut.jpg"
+      (*
+    =>nrel_format:format_jpg;;
+    *);;
+  *);;
+*);;
+
+concept_nut<-rrel_key_sc_element:...
+(*
+  ->rrel_key_sc_element:nrel_caloricity;concept_nut;nrel_cooking_method;concept_plant;;
+  <-statement;;
+  =>nrel_main_idtf:[Утв.(калорийность*, орех, способ приготовления*, растение)](* <- lang_ru;; *);;
+  <=nrel_sc_text_translation:...
+  (*
+    ->rrel_example:[Калорийность ореха зависит от растения, плодом которого является орех, и способа приготовления.](* <- lang_ru;; *);;
+  *);;
+*);;
+
+concept_nut<=nrel_subdividing:...
+  (*
+    ->concept_walnut;;
+    ->concept_coconut;;
+    ->concept_chestnut;;
+    ->concept_pine_nut;;
+    ->concept_cashew_nuts;;
+    ->concept_hazelnut;;
+    ->concept_peanut;;
+    ->concept_almond;;
+    ->concept_pistachios;;
+    ->concept_nutmeg;;
+    =>nrel_main_idtf:[Разбиение по признаку сортов](* <- lang_ru;; *);;
+  *);;
+
+concept_fetus=>nrel_inclusion:concept_nut;;

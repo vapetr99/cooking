@@ -1,0 +1,47 @@
+concept_ice_cream=>nrel_idtf:[ice_cream] (* <- lang_en;; *);;
+concept_ice_cream=>nrel_main_idtf:[мороженое] (* <- lang_ru;; *);;
+concept_ice_cream<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(мороженое))] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[сладкое замороженное десертное лакомство, обычно на основе молока, сливок, масла или фруктов](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_sweet;;->concept_dessert;;->concept_milk;;->concept_fruit;;
+    *);;
+*);;	
+concept_ice_cream->rrel_example:concept_top;;
+concept_ice_cream<-rrel_key_sc_element:...
+(*
+	<-illustration;;<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example: "file://pictures/ice_cream.jpg"
+			(*
+				=>nrel_format:format_jpg;;
+			*);;
+		*);;
+	*);;
+concept_ice_cream<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_ingredient;concept_kkal;concept_ice_cream;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.( энергетическая ценность*, десерт, ингредиенты*))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Энергетическая ценность десерта определяется ингредиентами, входящими в состав этого десерта](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_cold_ice_creams<-...
+(*
+	->concept_hot_ice_creams;;
+	=>nrel_main_idtf:[Разбиение по признаку температуры](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_ice_cream;;
+*);;
+concept_sweet_ice_creams<-...
+(*
+	->concept_not_sweet_ice_creams;;
+	=>nrel_main_idtf:[Разбиение по признаку сладости](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_ice_cream;;
+*);;
+concept_ice_cream=>nrel_inclusion:concept_food;concept_cake;concept_pie;concept_strudel;concept_sweets;concept_tiramisu;;

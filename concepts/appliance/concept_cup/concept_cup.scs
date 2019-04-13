@@ -1,0 +1,58 @@
+concept_cup <- concept_cutlery_item;;
+concept_cup => nrel_main_idtf:
+	[чашка](* <- lang_ru;; *);
+	[ice tray](* <- lang_en;; *);;
+
+concept_cup<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(чашка)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Чашка - сосуд небольшого объёма (прибл. 200 мл), имеющий форму полусферы (с возможными вариациями), к которой опционально присоединена кольцевидная "ручка" для держания.](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_cup <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_cup.jpg";;
+		*);;
+	*);;
+
+concept_cup
+	<=nrel_possible_material:...
+	(*
+		->concept_ceramics;;
+	*);;
+concept_cup
+	<=nrel_possible_material:...
+	(*
+		->concept_stone;;
+	*);;
+concept_cup 
+	<=nrel_possible_material:...
+	(*
+		->concept_wood;;
+	*);;
+concept_cup
+	<=nrel_possible_material:...
+	(*
+		->concept_glass;;
+	*);;
+concept_cup
+	<=nrel_possible_material:...
+	(*
+		->concept_metal;;
+	*);;
+concept_cup
+	<=nrel_possible_material:...
+	(*
+		->concept_plastic;;
+	*);;

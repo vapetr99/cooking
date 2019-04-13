@@ -1,0 +1,61 @@
+concept_cereal=>nrel_idtf:[cereals] (* <- lang_en;; *);;
+concept_cereal=>nrel_idtf:[сухие завтраки] (* <- lang_ru;; *);;
+concept_cereal=>nrel_main_idtf:[хлопья] (* <- lang_ru;; *);;
+
+concept_cereal<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(хлопья)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Хлопья - пищевой продукт из зёрен разлчиных растительных продуктов, не предполагающей дальнейшей кулинарной обработки.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;;
+	*);;
+
+*);;
+
+concept_cereal<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//cereals.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_cereal<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_cereal;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, хлопья)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в хлопьях на 100 г продукта: 0.4 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_cereal<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_cereal;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, хлопья)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в хлопьях на 100 г продукта: 8 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_cereal<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_cereal;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, хлопья)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в хлопьях на 100 г продукта: 84 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_cereal=>nrel_inclusion:concept_cornflakes;concept_oat_flakes;;

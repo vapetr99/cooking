@@ -1,0 +1,77 @@
+concept_almond_milk=>nrel_idtf:[almond milk] (* <- lang_en;; *);;
+concept_almond_milk=>nrel_main_idtf:[миндальное молоко] (* <- lang_ru;; *);;
+
+concept_almond_milk<-rrel_key_sc_element:...
+(*
+  <-illustration;;<=nrel_sc_text_translation:...
+  (*
+        ->rrel_example: "file://pictures/almond_milk.jpg"
+      (*
+        =>nrel_format:format_jpg;;
+      *);;
+    *);;
+  *);;
+
+concept_almond_milk<-rrel_key_sc_element:...
+(*
+->rrel_key_sc_element:nrel_fats_content;concept_almond_milk;;
+<-statement;;
+=>nrel_main_idtf:[Утв.(содержание жиров*, миндальное молоко)](* <- lang_ru;; *);;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example:[Содержание жиров в миндальном молоке на 100 г продукта: 53,7 г](* <- lang_ru;; *);;
+*);;
+
+->rrel_key_sc_element:nrel_protein_content;concept_almond_milk;;
+<-statement;;
+=>nrel_main_idtf:[Утв.(содержание белков*, миндальное молоко)](* <- lang_ru;; *);;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example:[Содержание белков в миндальном молоке на 100 г продукта: 18,6 г](* <- lang_ru;; *);;
+*);;
+
+->rrel_key_sc_element:nrel_carbohydrates_content;concept_almond_milk;;
+<-statement;;
+=>nrel_main_idtf:[Утв.(содержание углеводов*, миндальное молоко)](* <- lang_ru;; *);;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example:[Содержание углеводов в миндальном молоке на 100 г продукта: 13 г](* <- lang_ru;; *);;
+*);;
+*);;
+
+concept_almond_milk => nrel_kkal : 51_kkal
+(*
+=> nrel_main_idtf:
+[51 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+
+concept_almond_milk => nrel_storage_time: 3_days
+(*
+=> nrel_main_idtf:
+[3 суток]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_almond_milk => nrel_storage_conditions: refrigerator
+(*
+=> nrel_main_idtf:
+[холодильник]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_almond_milk=> nrel_glycemic_index: 10
+ (*
+=> nrel_main_idtf:
+[10]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;

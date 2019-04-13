@@ -1,0 +1,70 @@
+concept_fast_food=>nrel_idtf:[fast food] (* <- lang_en;; *);;
+concept_fast_food=>nrel_idtf:[пищевой продукт быстрого приготовления] (* <- lang_ru;; *);;
+concept_fast_food=>nrel_main_idtf:[фаст-фуд] (* <- lang_ru;; *);;
+
+concept_fast_food<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(фаст-фуд)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Фаст-фуд -  питание с уменьшенным временем употребления и приготовления пищи, с упрощёнными или упразднёнными столовыми приборами или вне стола.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;;
+	*);;
+
+*);;
+
+concept_fast_food->rrel_example:concept_pizza;;
+
+concept_fast_food<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//fast_food.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_fast_food<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_fast_food;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, фаст-фуд)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в фаст-фуде на 100 г продукта: 11 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_fast_food<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_fast_food;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, фаст-фуд)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в фаст-фуде на 100 г продукта: 15 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_fast_food<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_fast_food;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, фаст-фуд)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в фаст-фуде на 100 г продукта: 34 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_hot_fast_food<-...
+	(*
+		->concept_cold_fast_food;;
+		=>nrel_main_idtf:[Разбиение по признаку температура подачи](* <- lang_ru;; *);;
+		=>nrel_subdividing:concept_fast_food;;
+	*);;
+
+concept_fast_food=>nrel_inclusion:concept_hamburger;concept_sandwich;concept_hot_dog;concept_pizza;;

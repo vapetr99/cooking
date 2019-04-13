@@ -1,0 +1,4 @@
+concept_form => nrel_main_idtf:
+	[форма](* <- lang_ru;; *);
+	[form](* <- lang_en;; *);;
+concept_form => nrel_idtf:	[форма изделия](* <- lang_ru;; *);;

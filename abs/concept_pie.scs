@@ -1,0 +1,41 @@
+concept_pie=>nrel_idtf:[pie] (* <- lang_en;; *);;
+concept_pie=>nrel_idtf:[множество пирогов] (* <- lang_ru;; *);;
+concept_pie<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(пирог)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Печёное изделие из теста, обычно с начинкой, которое выпекается или жарится](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_dough;;->concept_filling;;
+    *);;
+*);;	
+concept_pie->rrel_example:concept_apple_pie;;
+concept_pie<-rrel_key_sc_element:...
+(*
+	<-illustration;;<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example: "file://pictures/pie.jpg"
+			(*
+				=>nrel_format:format_jpg;;
+			*);;
+		*);;
+	*);;
+concept_pie<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_ingredient;concept_kkal;concept_pie;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.( энергетическая ценность*, пирог, ингредиенты*))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Энергетическая ценность пирога определяется ингредиентами, входящими в состав этого торта](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_homemade_pie<-...
+(*
+	->concept_store_pie;;
+	=>nrel_main_idtf:[Разбиение по признаку места приготовления](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_pie;;
+*);;
+concept_pie=>nrel_inclusion:concept_apple_pie;concept_fruit_pie;;

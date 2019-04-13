@@ -1,0 +1,63 @@
+concept_subproducts=>nrel_idtf:[subproduct] (* <- lang_en;; *);;
+concept_subproducts=>nrel_idtf:[субпродукты] (* <- lang_ru;; *);;
+concept_subproducts=>nrel_main_idtf:[субпродукт] (* <- lang_ru;; *);;
+
+concept_subproducts<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(субпродукт)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Субпродукт - внутренние органы и менее ценные части туш убойных животных.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;;
+	*);;
+
+*);;
+
+concept_subproducts->rrel_example:concept_beef_tongue;;
+
+concept_subproducts<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//subproducts.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_subproducts<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_subproducts;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, субпродукты)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в субпродуктах на 100 г продукта: 8 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_subproducts<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_subproducts;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, субпродукты)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в субпродуктах на 100 г продукта: 24 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_subproducts<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_subproducts;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, субпродукты)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в субпродуктах на 100 г продукта: 0 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_subproducts=>nrel_inclusion:concept_beef_subproducts;concept_pork_subproducts;concept_lamb_subproducts;;

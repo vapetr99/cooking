@@ -1,0 +1,78 @@
+concept_urbach=>nrel_idtf:[urbach] (* <- lang_en;; *);;
+concept_urbach=>nrel_main_idtf:[урбеч] (* <- lang_ru;; *);;
+
+concept_urbach<-rrel_key_sc_element:...
+(*
+  <-illustration;;<=nrel_sc_text_translation:...
+  (*
+        ->rrel_example: "file://pictures/urbach.jpg"
+      (*
+        =>nrel_format:format_jpg;;
+      *);;
+    *);;
+  *);;
+
+concept_urbach<-rrel_key_sc_element:...
+(*
+->rrel_key_sc_element:nrel_fats_content;concept_urbach;;
+<-statement;;
+=>nrel_main_idtf:[Утв.(содержание жиров*, урбеч)](* <- lang_ru;; *);;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example:[Содержание жиров в урбече на 100 г продукта: 50 г](* <- lang_ru;; *);;
+*);;
+
+->rrel_key_sc_element:nrel_protein_content;concept_urbach;;
+<-statement;;
+=>nrel_main_idtf:[Утв.(содержание белков*, урбеч)](* <- lang_ru;; *);;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example:[Содержание белков в урбече на 100 г продукта: 25 г](* <- lang_ru;; *);;
+*);;
+
+->rrel_key_sc_element:nrel_carbohydrates_content;concept_urbach;;
+<-statement;;
+=>nrel_main_idtf:[Утв.(содержание углеводов*, урбеч)](* <- lang_ru;; *);;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example:[Содержание углеводов в урбече на 100 г продукта: 20 г](* <- lang_ru;; *);;
+*);;
+*);;
+
+
+concept_urbach => nrel_kkal : 588_kkal
+(*
+=> nrel_main_idtf:
+[588 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+
+concept_urbach => nrel_storage_time: 3_months
+(*
+=> nrel_main_idtf:
+[3 месяца]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_urbach => nrel_storage_conditions: dark_place
+(*
+=> nrel_main_idtf:
+[темное место]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_urbach=> nrel_glycemic_index: 36
+ (*
+=> nrel_main_idtf:
+[36]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;

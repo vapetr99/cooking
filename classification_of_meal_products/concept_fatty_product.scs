@@ -1,0 +1,75 @@
+concept_fatty_product=>nrel_idtf:[food fats] (* <- lang_en;; *);;
+concept_fatty_product=>nrel_idtf:[пищевые жиры] (* <- lang_ru;; *);;
+concept_fatty_product=>nrel_main_idtf:[пищевой жир] (* <- lang_ru;; *);;
+
+concept_fatty_product<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(пищевой жир)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Пищевой жир -  растительные или животныежиры, а также их композиции, используемые при жарке, выпекании и других приёмах приготовления пищи.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;;
+	*);;
+
+*);;
+
+concept_fatty_product->rrel_example:concept_milk_fat;;
+
+concept_fatty_product<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//food_fats.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_fatty_product<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_fatty_product;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, пищевой жир)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в пищевых жирах на 100 г продукта: 100 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_fatty_product<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_fatty_product;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, пищевой жир)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в пищевых жирах на 100 г продукта: 0 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_fatty_product<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_fatty_product;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, пищевой жир)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в пищевых жирах на 100 г продукта: 0 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_solid_fats<-...
+	(*
+		->concept_liquid_fats;;
+		=>nrel_main_idtf:[Разбиение по признаку консистенция](* <- lang_ru;; *);;
+		=>nrel_subdividing:concept_fatty_product;;
+	*);;
+
+concept_animal_fats<-...
+	(*
+		->concept_vegatable_fats;;
+		=>nrel_main_idtf:[Разбиение по признаку происхождение](* <- lang_ru;; *);;
+		=>nrel_subdividing:concept_fatty_product;;
+	*);;

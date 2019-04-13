@@ -1,0 +1,39 @@
+concept_possible_material => nrel_main_idtf:
+[вид материала] (* <- lang_ru;; *);
+[possible_material type] (* <- lang_en;; *);;
+
+concept_metal => nrel_main_idtf:
+[металл] (* <- lang_ru;; *);
+[metal] (* <- lang_en;; *);;
+concept_metal <- concept_possible_material;;
+
+concept_ceramics => nrel_main_idtf:
+[керамика] (* <- lang_ru;; *);
+[ceramic] (* <- lang_en;; *);;
+concept_ceramics <- concept_possible_material;;
+
+concept_glass => nrel_main_idtf:
+[стекло] (* <- lang_ru;; *);
+[glass] (* <- lang_en;; *);;
+concept_glass <- concept_possible_material;;
+
+concept_wood => nrel_main_idtf:
+[древесина] (* <- lang_ru;; *);
+[wood] (* <- lang_en;; *);;
+concept_wood <- concept_possible_material;;
+
+concept_plastic => nrel_main_idtf:
+[пластик] (* <- lang_ru;; *);
+[plastic] (* <- lang_en;; *);;
+concept_plastic <- concept_possible_material;;
+
+concept_silicone => nrel_main_idtf:
+[силикон] (* <- lang_ru;; *);
+[silicone] (* <- lang_en;; *);;
+concept_silicone <- concept_possible_material;;
+
+concept_stone => nrel_main_idtf:
+[камень] (* <- lang_ru;; *);
+[stone] (* <- lang_en;; *);;
+concept_stone <- concept_possible_material;;
+

@@ -1,0 +1,40 @@
+concept_chocolate=>nrel_idtf:[chocolate] (* <- lang_en;; *);;
+concept_chocolate=>nrel_main_idtf:[шоколад] (* <- lang_ru;; *);;
+concept_chocolate<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(шоколад)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[вид кондитерских продуктов, изготовляемых с использованием плодов какао](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_pastry;;->concept_fetus;;
+    *);;
+*);;	
+concept_chocolate->rrel_example:concept_milka_chocolate;;
+concept_chocolate<-rrel_key_sc_element:...
+(*
+	<-illustration;;<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example: "file://pictures/chocolate.png"
+			(*
+				=>nrel_format:format_png;;
+			*);;
+		*);;
+	*);;
+concept_chocolate<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_chocolate;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.( шоколад ))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Ходят легенды, что горький шоколад полезен для работы мозга](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_milk_chocolate<-...
+(*
+	->concept_bitter_chocolate;;
+	=>nrel_main_idtf:[Разбиение по признаку сладости](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_chocolate;;
+*);;

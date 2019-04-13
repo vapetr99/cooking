@@ -1,0 +1,27 @@
+concept_bacon => nrel_main_idtf:
+	[бекон](* <- lang_ru;; *);
+	[bacon](* <- lang_en;; *);;
+
+concept_bacon<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(бекон)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Бекон - засоленный мясной продукт, полученный в результате специфической откормки и содержания свиней. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_bacon <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_bacon.jpg";;
+		*);;
+	*);;
+

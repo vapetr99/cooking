@@ -1,0 +1,23 @@
+concept_dinner=>nrel_idtf:[dinner] (* <- lang_en;; *);;
+concept_dinner=>nrel_main_idtf:[ужин] (* <- lang_ru;; *);;
+concept_dinner<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(ужин)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Последний прием пищи в течение дня](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_food;;
+    *);;
+*);;	
+concept_dinner<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_food;concept_dinner;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(ужин))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Ужин обычно происходит в вечернее время суток](* <- lang_ru;; *);;
+	*);;
+*);;

@@ -1,0 +1,62 @@
+concept_groat=>nrel_idtf:[groat] (* <- lang_en;; *);;
+concept_groat=>nrel_main_idtf:[крупа] (* <- lang_ru;; *);;
+
+concept_groat<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(крупа)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Крупа - пищевой продукт, состоящий из цельных или дроблёных зёрен различных культур.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;concept_groat;;
+	*);;
+
+*);;
+
+concept_groat<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//groat.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_groat<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_groat;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, крупа)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в крупе на 100 г продукта: 0,6 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_groat<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_groat;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, крупа)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в крупе на 100 г продукта: 3,4 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_groat<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_groat;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, крупа)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в крупе на 100 г продукта: 20 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_groat=>nrel_inclusion:concept_bread_groat;concept_beans_groat;concept_buckwheat;concept_amaranth;;

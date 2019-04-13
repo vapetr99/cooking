@@ -1,0 +1,58 @@
+concept_glassful <- concept_cutlery_item;;
+concept_glassful => nrel_main_idtf:
+	[стакан](* <- lang_ru;; *);
+	[glassful](* <- lang_en;; *);;
+
+concept_glassful<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(стакан)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Стакан - стеклянный цилиндрический сосуд без ручки, служащий для питья.](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_glassful <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_glassful.jpg";;
+		*);;
+	*);;
+
+concept_glassful 
+	<=nrel_possible_material:...
+	(*
+		->concept_ceramics;;
+	*);;
+concept_glassful 
+	<=nrel_possible_material:...
+	(*
+		->concept_stone;;
+	*);;
+concept_glassful 
+	<=nrel_possible_material:...
+	(*
+		->concept_wood;;
+	*);;
+concept_glassful 
+	<=nrel_possible_material:...
+	(*
+		->concept_glass;;
+	*);;
+concept_glassful
+	<=nrel_possible_material:...
+	(*
+		->concept_metal;;
+	*);;
+concept_glassful 
+	<=nrel_possible_material:...
+	(*
+		->concept_plastic;;
+	*);;

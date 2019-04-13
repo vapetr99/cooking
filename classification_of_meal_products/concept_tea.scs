@@ -1,0 +1,71 @@
+concept_tea=>nrel_idtf:[tea] (* <- lang_en;; *);;
+concept_tea=>nrel_main_idtf:[чай] (* <- lang_ru;; *);;
+
+concept_tea<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(чай)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Чай - напиток, получаемый варкой, завариванием и/или настаиванием листа чайного куста, который предварительно подготавливается специальным образом.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;;
+		->concept_drink;;
+	*);;
+
+*);;
+
+concept_tea->rrel_example:concept_oolong_tea;;
+
+concept_tea<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//tea.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_tea<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_tea;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, чай)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в чае на 100 г продукта: 0 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_tea<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_tea;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, чай)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в чае на 100 г продукта: 0.1 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_tea<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_tea;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, чай)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в чае на 100 г продукта: 0.2 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_china_tea<-...
+	(*
+		->concept_assam_tea;;
+		->concept_cambodian_tea;;
+		=>nrel_main_idtf:[Разбиение по признаку происхождение чайного растения](* <- lang_ru;; *);;
+		=>nrel_subdividing:concept_tea;;
+	*);;
+
+concept_tea=>nrel_inclusion:concept_black_tea;concept_green_tea;;

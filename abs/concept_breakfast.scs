@@ -1,0 +1,23 @@
+concept_breakfast=>nrel_idtf:[breakfast] (* <- lang_en;; *);;
+concept_breakfast=>nrel_main_idtf:[завтрак] (* <- lang_ru;; *);;
+concept_breakfast<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(завтрак)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Первый дневной приём пищи, как правило, в период от рассвета до полдника в полдень](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_food;;
+    *);;
+*);;	
+concept_breakfast<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_food;concept_breakfast;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(завтрак, пища))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Завтрак - первый прием пищи](* <- lang_ru;; *);;
+	*);;
+*);;

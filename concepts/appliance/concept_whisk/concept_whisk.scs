@@ -1,0 +1,56 @@
+concept_whisk <- concept_cutlery_item;;
+concept_whisk => nrel_main_idtf:
+	[венчик](* <- lang_ru;; *);
+	[whisk](* <- lang_en;; *);;
+
+concept_whisk<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(венчик)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Венчик - ручное приспособление для сбивания крема, мусса и т. п. в виде металлической спирали, насаженной на ручку.](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_whisk <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_whisk.jpg";;
+		*);;
+	*);;
+
+concept_whisk
+	<=nrel_possible_material:...
+	(*
+		->concept_plastic;;
+	*);;
+concept_whisk 
+	<=nrel_possible_material:...
+	(*
+		->concept_metal;;
+	*);;
+concept_whisk
+	<=nrel_possible_material:...
+	(*
+		->concept_metal;;
+		->concept_plastic;;
+	*);;
+concept_whisk
+	<=nrel_possible_material:...
+	(*
+		->concept_metal;;
+		->concept_wood;;
+	*);;
+concept_whisk
+	<=nrel_possible_material:...
+	(*
+		->concept_silicone;;
+		->concept_plastic;;
+	*);;

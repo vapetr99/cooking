@@ -1,0 +1,41 @@
+concept_dough=>nrel_idtf:[dough] (* <- lang_en;; *);;
+concept_dough=>nrel_main_idtf:[тесто] (* <- lang_ru;; *);;
+concept_dough<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(тесто)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Вязкое вещество, замешанное из муки и воды или молока, полуфабрикат для изготовления хлеба и других мучных изделий ](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_bakery;;->concept_milk;;
+    *);;
+*);;	
+concept_dough->rrel_example:concept_puff_pastry;;
+concept_dough<-rrel_key_sc_element:...
+(*
+	<-illustration;;<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example: "file://pictures/dough.jpg"
+			(*
+				=>nrel_format:format_jpg;;
+			*);;
+		*);;
+	*);;
+concept_dough<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_bakery;concept_dough;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.( выпечка, тесто ))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Тесто используется для абсолютно для всех видов выпечки](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_yeast_dough<-...
+(*
+	->concept_not_yeast_dough;;
+	=>nrel_main_idtf:[Разбиение по признаку способа разрыхления](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_dough;;
+*);;
+concept_dough=>nrel_inclusion:concept_food;concept_cake;concept_pie;concept_strudel;concept_sweets;concept_tiramisu;;

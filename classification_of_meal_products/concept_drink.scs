@@ -1,0 +1,59 @@
+concept_drink=>nrel_idtf:[drink] (* <- lang_en;; *);;
+concept_drink=>nrel_idtf:[множество напитков] (* <- lang_ru;; *);;
+concept_drink=>nrel_main_idtf:[напиток] (* <- lang_ru;; *);;
+
+concept_drink<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(напиток)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Напиток - жидкость, специально приготовленная из различных ингредиентов, предназначенная для питья.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->nrel_ingredient;;
+		->concept_liquid;;
+	*);;
+
+*);;
+
+concept_drink->rrel_example:concept_juice_my_family;;
+
+concept_drink<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//drink.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_drink<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_ingredient;nrel_kkal;concept_drink;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(пищевая ценность*, напиток, ингредиенты*)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Пищевая ценность напитка определяется ингредиентами, входящими в состав этого напитка](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_alcohol_drink<-...
+	(*
+		->concept_non_alcohol_drink;;
+		=>nrel_main_idtf:[Разбиение по признаку наличия алкоголя](* <- lang_ru;; *);;
+		=>nrel_subdividing:concept_drink;;
+	*);;
+
+concept_carbonated_drink<-...
+	(*
+		->concept_not_carbonated_drink;;
+		=>nrel_main_idtf:[Разбиение по признаку наличия газа](* <- lang_ru;; *);;
+		=>nrel_subdividing:concept_drink;;
+	*);;
+
+concept_drink<=nrel_inclusion:concept_liquid;;
+concept_drink=>nrel_inclusion:concept_juice;concept_kvass;concept_compote;concept_tea;concept_coffee;;

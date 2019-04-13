@@ -1,0 +1,23 @@
+concept_lunch=>nrel_idtf:[lunch] (* <- lang_en;; *);;
+concept_lunch=>nrel_main_idtf:[обед] (* <- lang_ru;; *);;
+concept_lunch<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(обед)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Приём пищи, проводимый в середине дня](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_food;;
+    *);;
+*);;	
+concept_lunch<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_food;concept_lunch;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(обед, калорийность, пища))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Обед - наиболее калорийный прием пищи](* <- lang_ru;; *);;
+	*);;
+*);;

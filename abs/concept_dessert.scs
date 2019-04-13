@@ -1,0 +1,48 @@
+concept_dessert=>nrel_idtf:[dessert] (* <- lang_en;; *);;
+concept_dessert=>nrel_idtf:[множество десертов] (* <- lang_ru;; *);;
+concept_dessert=>nrel_main_idtf:[десерт] (* <- lang_ru;; *);;
+concept_dessert<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(десерт)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Завершающее блюдо стола, предназначенное для получения приятных вкусовых ощущений в конце обеда или ужина.](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_dish;;->concept_dinner;;
+    *);;
+*);;	
+concept_dessert->rrel_example:concept_potato_cake;;
+concept_dessert<-rrel_key_sc_element:...
+(*
+	<-illustration;;<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example: "file://pictures/dessert.jpg"
+			(*
+				=>nrel_format:format_jpg;;
+			*);;
+		*);;
+	*);;
+concept_dessert<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_ingredient;concept_kkal;concept_dessert;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.( энергетическая ценность*, десерт, ингредиенты*))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Энергетическая ценность десерта определяется ингредиентами, входящими в состав этого десерта](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_cold_desserts<-...
+(*
+	->concept_hot_desserts;;
+	=>nrel_main_idtf:[Разбиение по признаку температуры](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_dessert;;
+*);;
+concept_sweet_desserts<-...
+(*
+	->concept_not_sweet_desserts;;
+	=>nrel_main_idtf:[Разбиение по признаку сладости](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_dessert;;
+*);;
+concept_dessert=>nrel_inclusion:concept_food;concept_cake;concept_pie;concept_strudel;concept_sweets;concept_tiramisu;;

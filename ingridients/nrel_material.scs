@@ -1,0 +1,26 @@
+sc_node_norole_relation -> nrel_material;;
+nrel_material=>nrel_main_idtf:[материал*] (* <- lang_ru;; *);;
+nrel_material=>nrel_main_idtf:[material*] (* <- lang_en;; *);;
+nrel_material=>nrel_idtf:[материал изделия*] (* <- lang_ru;; *);;
+nrel_material<-quasybinary_relation;;
+parameter->arity;;
+arity->quasybinary_relation;;
+nrel_material<-oriented_relation;;
+nrel_material<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(материал*)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example:[Вещество или смесь веществ, из которых изготавливается предмет ](* <- lang_ru;; *);;
+	*);;
+*);;
+nrel_material<-rrel_key_sc_element:...
+(*
+	<-statement;;
+	=>nrel_idtf:[Утв.(материал*, срок службы*)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Материал изделия определяет его срок службы](* <- lang_ru;; *);;
+	*);;
+*);;

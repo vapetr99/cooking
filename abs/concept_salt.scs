@@ -1,0 +1,35 @@
+concept_salt=>nrel_idtf:[salt] (* <- lang_en;; *);;
+concept_salt=>nrel_idtf:[поваренная соль] (* <- lang_ru;; *);;
+concept_salt=>nrel_idtf:[пищевая соль] (* <- lang_ru;; *);;
+concept_salt=>nrel_main_idtf:[соль] (* <- lang_ru;; *);;
+concept_salt<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(соль)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[ пищевой продукт, в измельчённом виде представляет собой бесцветные кристаллы.](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_foodstuffs;;
+    *);;
+*);;	
+concept_salt<-rrel_key_sc_element:...
+(*
+	<-illustration;;<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example: "file://pictures/salt.jpg"
+			(*
+				=>nrel_format:format_jpg;;
+			*);;
+		*);;
+	*);;
+concept_salt<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_meal;concept_salt;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.( прием пищи, соль))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[смертельная доза соли для человека составляем 250г за один прием](* <- lang_ru;; *);;
+	*);;
+*);;

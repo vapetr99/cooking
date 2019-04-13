@@ -1,0 +1,41 @@
+concept_fetus=>nrel_idtf:[fetus] (* <- lang_en;; *);;
+concept_fetus=>nrel_main_idtf:[плод] (* <- lang_ru;; *);;
+concept_fetus<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(плод)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[сочная съедобная часть некоторых растений](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_plant;;
+    *);;
+*);;	
+concept_fetus->rrel_example:concept_apple;;
+concept_fetus<-rrel_key_sc_element:...
+(*
+	<-illustration;;<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example: "file://pictures/fetus.jpg"
+			(*
+				=>nrel_format:format_jpg;;
+			*);;
+		*);;
+	*);;
+concept_fetus<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_fetus;concept_plant;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.( шоколад ))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Некоторые растения имеют ядовитые плоды](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_sweet_fetus<-...
+(*
+	->concept_bitter_fetus;;
+	->concept_sour_fetus;;
+	=>nrel_main_idtf:[Разбиение по признаку сладости](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_fetus;;
+*);;

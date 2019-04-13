@@ -1,0 +1,64 @@
+concept_fruit=>nrel_idtf:[fruit] (* <- lang_en;; *);;
+concept_fruit=>nrel_main_idtf:[фрукт] (* <- lang_ru;; *);;
+
+concept_fruit<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(фрукт)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Фрукт - съедобный плод дерева или кустарника.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->nrel_fetus;concept_fruit;;
+	*);;
+
+*);;
+
+concept_fruit->rrel_example:concept_banana;;
+
+concept_fruit<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//fruit.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_fruit<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_fruit;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, фрукт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров во фруктах на 100 г продукта: 15 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_fruit<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_fruit;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, фрукт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков во фруктах на 100 г продукта: 2 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_fruit<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_fruit;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, фрукт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов во фруктах на 100 г продукта: 9 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_fruit=>nrel_inclusion:concept_drupaceous_fruit;concept_citrus_fruit;concept_rosaceous_fruit;;

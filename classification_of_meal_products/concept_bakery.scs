@@ -1,0 +1,65 @@
+concept_bakery=>nrel_idtf:[bakery] (* <- lang_en;; *);;
+concept_bakery=>nrel_idtf:[выпечка] (* <- lang_ru;; *);;
+concept_bakery=>nrel_main_idtf:[хлебопекарное изделие] (* <- lang_ru;; *);;
+
+concept_bakery<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(выпечка)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Хлебопекарное изделие - общее название для хлебобулочных изделий и кондитерских изделий, изготавливаемых методом выпекания.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->nrel_baking;concept_bakery;;
+	*);;
+
+*);;
+
+concept_bakery->rrel_example:concept_cookie_slodych;;
+
+concept_bakery<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//bakery.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_bakery<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_bakery;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, выпечка)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в выпечке на 100 г продукта: 38 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_bakery<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_bakery;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, выпечка)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в выпечке на 100 г продукта: 7 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_bakery<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_bakery;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, выпечка)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в выпечке на 100 г продукта: 45 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_bakery=>nrel_inclusion:concept_cookie;concept_cake;concept_pie;;

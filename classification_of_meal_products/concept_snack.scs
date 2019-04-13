@@ -1,0 +1,70 @@
+concept_snack=>nrel_idtf:[snack] (* <- lang_en;; *);;
+concept_snack=>nrel_idtf:[снеки] (* <- lang_ru;; *);;
+concept_snack=>nrel_main_idtf:[снэки] (* <- lang_ru;; *);;
+
+concept_snack<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(снэки)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Снэки -  название лёгких блюд, предназначенных утоления голода между основными приёмами пищи.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;;
+	*);;
+
+*);;
+
+concept_snack->rrel_example:concept_chocolate_bar;;
+
+concept_snack<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//snack.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_snack<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_snack;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, снэки)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в снэках на 100 г продукта: 0 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_snack<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_snack;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, снэки)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в снэках на 100 г продукта: 0.3 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_snack<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_snack;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, снэки)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в снэках на 100 г продукта: 22.9 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_sweet_snack<-...
+	(*
+		->concept_non_sweet_snack;;
+		=>nrel_main_idtf:[Разбиение по признаку сладости](* <- lang_ru;; *);;
+		=>nrel_subdividing:concept_snack;;
+	*);;
+
+concept_snack=>nrel_inclusion:concept_chips;concept_crackers;concept_dried_squid;;

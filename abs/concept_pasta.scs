@@ -1,0 +1,41 @@
+concept_pasta=>nrel_idtf:[pasta] (* <- lang_en;; *);;
+concept_pasta=>nrel_main_idtf:[макароны] (* <- lang_ru;; *);;
+concept_pasta=>nrel_main_idtf:[макаронные изделия] (* <- lang_ru;; *);;
+concept_pasta<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(макароны)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[пищевой продукт, изделие из пшеничной муки в виде длинных трубочек](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_foodstuffs;;
+    *);;
+*);;	
+concept_pasta->rrel_example:concept_spagetti;;
+concept_pasta<-rrel_key_sc_element:...
+(*
+	<-illustration;;<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example: "file://pictures/pasta.jpg"
+			(*
+				=>nrel_format:format_jpg;;
+			*);;
+		*);;
+	*);;
+concept_pasta<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_pasta;concept_cooking_time;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.( шаума ))](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[В среднем время приготовления макарон составляет 8 минут](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_pasta<-...
+(*
+	->concept_black_pasta;;
+	=>nrel_main_idtf:[Разбиение по признаку цвета](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_pasta;;
+*);;
