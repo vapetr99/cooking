@@ -1,0 +1,29 @@
+concept_breakfast=>nrel_idtf:[breakfast] (* <- lang_en;; *);;
+concept_breakfast=>nrel_main_idtf:[завтрак] (* <- lang_ru;; *);;
+
+concept_breakfast<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(завтрак)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Завтрак - утреняя еда до обеда.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_lunch;concept_breakfast;;
+	*);;
+
+*);;
+
+concept_breakfast<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_milk_dish;concept_croup_dish;concept_drink;concept_bakery;concept_breakfast;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(молочное блюдо, блюдо из крупы, напиток, выпечка, завтрак)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Обычно на завтрак подают молочные блюда, блюда из крупы, напитки, выпечку](* <- lang_ru;; *);;
+	*);;
+*);;

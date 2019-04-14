@@ -1,0 +1,29 @@
+concept_first_dish=>nrel_idtf:[first dish] (* <- lang_en;; *);;
+concept_first_dish=>nrel_main_idtf:[первое блюдо] (* <- lang_ru;; *);;
+
+concept_first_dish<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(первое блюдо)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Первое блюдо - блюдо, которое подается самым первым при приеме пищи.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_first_dish;;
+	*);;
+
+*);;
+
+concept_first_dish<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_soup;concept_first_dish;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(суп, первое блюдо)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Самым распространненным первым блюдом является суп](* <- lang_ru;; *);;
+	*);;
+*);;

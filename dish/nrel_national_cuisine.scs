@@ -1,0 +1,54 @@
+nrel_national_cuisine=>nrel_idtf:[national cuisine*] (* <- lang_en;; *);;
+nrel_national_cuisine=>nrel_main_idtf:[национальная кухня*] (* <- lang_ru;; *);;
+
+nrel_national_cuisine<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(национальная кухня*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+		->[Национальная кухня - отношение, показывающее принадлежность кухни к месту происхождения.](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->concept_country;;
+		->concept_cuisine;;
+	*);;
+*);;
+
+nrel_national_cuisine=>nrel_first_domain:concept_country;;
+nrel_national_cuisine=>nrel_second_domain:concept_cuisine;;
+
+concept_country<-...
+(*
+	->concept_cuisine;;
+	=>nrel_combination:...
+	(*
+		<=nrel_definitional_domain:nrel_national_cuisine;;
+	*);;
+*);;
+
+nrel_national_cuisine<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_national_cuisine<-oriented_relation;;
+antisymmetric_relation->nrel_national_cuisine;;
+antitransitive_relation->nrel_national_cuisine;;
+antireflexive_relation->nrel_national_cuisine;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+nrel_national_cuisine<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_national_dish;nrel_national_cuisine;;
+	<-statement;;
+	=>nrel_idtf:[Утв.(национальная блюдо*, национальная кухня*)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Совокупность национальных блюд образуют национальную кухню.](* <- lang_ru;; *);;
+	*);;
+*);;

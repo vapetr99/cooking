@@ -1,0 +1,29 @@
+concept_second_dish=>nrel_idtf:[second dish] (* <- lang_en;; *);;
+concept_second_dish=>nrel_main_idtf:[второе блюдо] (* <- lang_ru;; *);;
+
+concept_second_dish<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(второе блюдо)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Второе блюдо - блюдо, которое подается после первого блюда.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_first_dish;concept_second_dish;;
+	*);;
+
+*);;
+
+concept_second_dish<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_main_dish;concept_salad;concept_snack;concept_second_dish;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(основное блюдо, салат, закуска, второе блюдо)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[В качестве второго блюда можно подать основное блюдо, салат или закуску](* <- lang_ru;; *);;
+	*);;
+*);;

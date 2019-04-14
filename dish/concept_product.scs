@@ -1,0 +1,31 @@
+concept_product=>nrel_idtf:[product] (* <- lang_en;; *);;
+concept_product=>nrel_main_idtf:[продукт] (* <- lang_ru;; *);;
+
+concept_product<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(продукт)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Продукт - однородная масса переработанного исходного сырья, использующаяся для приготовления пищи в качетсве ингредиента.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->nrel_ingredient;concept_product;;
+	*);;
+
+*);;
+
+concept_product<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_dish;concept_product;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(блюдо, продукт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Продукт является основной для создания любого блюда](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_product=>nrel_inclusion:concept_meat_product;concept_egg_product;concept_fish_product;concept_milk_product;concept_semi_finished_product;concept_fruit_product;;

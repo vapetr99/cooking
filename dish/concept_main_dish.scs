@@ -1,0 +1,29 @@
+concept_main_dish dish=>nrel_idtf:[main dish] (* <- lang_en;; *);;
+concept_main_dish dish=>nrel_main_idtf:[основное блюдо] (* <- lang_ru;; *);;
+
+concept_main_dish dish<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(основное блюдо)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Основное блюдо - блюдо, которое занимает главную роль при приеме пищи.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_main_dish;concept_dish;;
+	*);;
+
+*);;
+
+concept_main_dish dish<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_lunch;concept_main_dish;concept_second_dish;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(обед, второе блюдо, основное блюдо)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Считается, что основным блюдом на обед является второе блюдо](* <- lang_ru;; *);;
+	*);;
+*);;

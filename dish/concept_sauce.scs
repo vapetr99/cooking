@@ -1,0 +1,49 @@
+concept_sauce=>nrel_idtf:[sauce] (* <- lang_en;; *);;
+concept_sauce=>nrel_main_idtf:[соус] (* <- lang_ru;; *);;
+
+concept_sauce<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(соус)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Соус - жидкая приправа к основному блюду и/или гарниру.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_liquid;concept_main_dish;concept_garnish;concept_sauce;;
+	*);;
+
+*);;
+
+concept_sauce<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_sauce;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, соус)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в соусе на 100 г продукта: 1.5 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_sauce<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_sauce;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, соус)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в соусе на 100 г продукта: 4.5 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_sauce<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_sauce;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, соус)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в соусе на 100 г продукта: 13 г](* <- lang_ru;; *);;
+	*);;
+*);;

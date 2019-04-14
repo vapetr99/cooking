@@ -1,0 +1,29 @@
+concept_cold_dish=>nrel_idtf:[cold dish] (* <- lang_en;; *);;
+concept_cold_dish=>nrel_main_idtf:[холодное блюдо] (* <- lang_ru;; *);;
+
+concept_cold_dish<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(холодное блюдо)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Холодное блюдо - блюдо, подаваемое в холодном состоянии.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_cold_dish;;
+	*);;
+
+*);;
+
+concept_cold_dish<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_salad;concept_cold_dish;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(салат, холодное блюдо)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Салат почти всегда является холодным блюдом](* <- lang_ru;; *);;
+	*);;
+*);;

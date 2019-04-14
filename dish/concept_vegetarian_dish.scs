@@ -1,0 +1,29 @@
+concept_vegetarian_dish=>nrel_idtf:[vegetarian dish] (* <- lang_en;; *);;
+concept_vegetarian_dish=>nrel_main_idtf:[вегетарианское блюдо] (* <- lang_ru;; *);;
+
+concept_vegetarian_dish<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(вегетарианское блюдо)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Вегетарианское блюдо - блюдо, в котором нет мяса и других продуктов питания животного происхождения.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_vegetarian_dish;concept_animal_product;concept_meat_product;;
+	*);;
+
+*);;
+
+concept_vegetarian_dish<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_ingredient;concept_vegetarian_dish;concept_vegetable;concept_fruit;concept_beans;concept_groat;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(ингредиент*, овощи, фрукты, крупа, бобы, вегетарианское блюдо)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[В качестве ингредиентов в вегетарианских блюдах используются овощи, фрукты, крупа, бобы](* <- lang_ru;; *);;
+	*);;
+*);;

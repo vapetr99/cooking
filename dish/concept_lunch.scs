@@ -1,0 +1,29 @@
+concept_lunch=>nrel_idtf:[lunch] (* <- lang_en;; *);;
+concept_lunch=>nrel_main_idtf:[обед] (* <- lang_ru;; *);;
+
+concept_lunch<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(обед)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Обед - прием пищи между завтраком и ужином.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_breakfast;concept_lunch;concept_dinner;;
+	*);;
+
+*);;
+
+concept_lunch<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_main_dish;concept_drink;concept_soup;concept_lunch;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(суп, основное блюдо, напиток, обед)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Чаще всего обед состоит из супа, основного блюда и напитка](* <- lang_ru;; *);;
+	*);;
+*);;

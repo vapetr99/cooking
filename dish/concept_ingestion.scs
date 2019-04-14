@@ -1,0 +1,31 @@
+concept_ingestion=>nrel_idtf:[ingestion] (* <- lang_en;; *);;
+concept_ingestion=>nrel_main_idtf:[прием пищи] (* <- lang_ru;; *);;
+
+concept_ingestion<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(прием пищи)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Прием пищи - процесс употребления блюда.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_ingestion;;
+	*);;
+
+*);;
+
+concept_ingestion<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_main_dish;concept_drink;concept_soup;concept_ingestion;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(суп, основное блюдо, напиток, прием пищи)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Чаще всего прием пищи состоит из супа, основного блюда и напитка](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_ingestion=>nrel_inclusion:concept_breakfast;concept_dinner;concept_lunch;concept_afternoon_tea;;
