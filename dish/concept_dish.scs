@@ -35,4 +35,4 @@ concept_cold_dish<-...
 		=>nrel_subdividing:concept_dish;;
 	*);;
 
-concept_dish=>nrel_inclusion:concept_meat_dish;concept_vegetable_dish;concept_fish_dish;concept_milk_dish;concept_croup_dish;concept_fruit_dish;;
+concept_dish=>nrel_inclusion:concept_meat_dish;concept_vegetable_dish;concept_fish_dish;concept_milk_dish;concept_croup_dish;concept_fruit_dish;concept_bakery_dish;;
