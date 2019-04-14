@@ -26,10 +26,6 @@ sc_node_not_relation->concept_carbonated_drink;;
 concept_carbonated_drink=>nrel_main_idtf:
 [газированный напиток](* <-lang_ru;; *);;
 
-sc_node_not_relation->concept_food;;
-concept_food=>nrel_main_idtf:
-[продукт питания](* <-lang_ru;; *);;
-
 sc_node_not_relation->concept_juice;;
 concept_juice=>nrel_main_idtf:
 [сок](* <-lang_ru;; *);;

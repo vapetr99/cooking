@@ -1,7 +1,7 @@
-concept_bakery dish_dish=>nrel_idtf:[bakery dish] (* <- lang_en;; *);;
-concept_bakery dish_dish=>nrel_main_idtf:[блюдо из выпечки] (* <- lang_ru;; *);;
+concept_bakery_dish=>nrel_idtf:[bakery dish] (* <- lang_en;; *);;
+concept_bakery_dish=>nrel_main_idtf:[блюдо из выпечки] (* <- lang_ru;; *);;
 
-concept_bakery dish_dish<-rrel_key_sc_element:...
+concept_bakery_dish<-rrel_key_sc_element:...
 	(*
 		<-definition;;
 		=>nrel_main_idtf:[Опр.(блюдо из выпечки)] (* <- lang_ru;; *);;
@@ -17,7 +17,7 @@ concept_bakery dish_dish<-rrel_key_sc_element:...
 
 *);;
 
-concept_bakery dish_dish<-rrel_key_sc_element:...
+concept_bakery_dish<-rrel_key_sc_element:...
 (*
 	->rrel_key_sc_element:nrel_bakery;concept_bakery_dish;;
 	<-statement;;

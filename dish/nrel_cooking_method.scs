@@ -1,5 +1,5 @@
 nrel_cooking_method=>nrel_idtf:[cooking method*] (* <- lang_en;; *);;
-nrel_cooking_method=>nrel_main_idtf:[метод приготовления*] (* <- lang_ru;; *);;
+nrel_cooking_method=>nrel_main_idtf:[метод приготовления блюда*] (* <- lang_ru;; *);;
 
 nrel_cooking_method<-rrel_key_sc_element:...
 (*
@@ -10,16 +10,16 @@ nrel_cooking_method<-rrel_key_sc_element:...
 	<=nrel_using_constants:...
 	(*
 	    ->concept_dish;;
-	    ->concept_;;
+	    ->concept_cooking_method;;
 	*);;
 *);;	
 
 nrel_cooking_method=>nrel_first_domain:concept_dish;;
-nrel_cooking_method=>nrel_second_domain:concept_;;
+nrel_cooking_method=>nrel_second_domain:concept_cooking_method;;
 
 concept_dish<-...
 (*
-	->concept_;;
+	->concept_cooking_method;;
 	=>nrel_combination:...
 	(*
 		<=nrel_definitional_domain:nrel_cooking_method;;

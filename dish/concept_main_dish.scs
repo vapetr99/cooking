@@ -1,7 +1,7 @@
-concept_main_dish dish=>nrel_idtf:[main dish] (* <- lang_en;; *);;
-concept_main_dish dish=>nrel_main_idtf:[основное блюдо] (* <- lang_ru;; *);;
+concept_main_dish=>nrel_idtf:[main dish] (* <- lang_en;; *);;
+concept_main_dish=>nrel_main_idtf:[основное блюдо] (* <- lang_ru;; *);;
 
-concept_main_dish dish<-rrel_key_sc_element:...
+concept_main_dish<-rrel_key_sc_element:...
 	(*
 		<-definition;;
 		=>nrel_main_idtf:[Опр.(основное блюдо)] (* <- lang_ru;; *);;
@@ -17,13 +17,13 @@ concept_main_dish dish<-rrel_key_sc_element:...
 
 *);;
 
-concept_main_dish dish<-rrel_key_sc_element:...
+concept_main_dish<-rrel_key_sc_element:...
 (*
-	->rrel_key_sc_element:concept_lunch;concept_main_dish;concept_second_dish;;
+	->rrel_key_sc_element:concept_main_dish;concept_ingestion;;
 	<-statement;;
-	=>nrel_main_idtf:[Утв.(обед, второе блюдо, основное блюдо)](* <- lang_ru;; *);;
+	=>nrel_main_idtf:[Утв.(прием пищи, основное блюдо)](* <- lang_ru;; *);;
 	<=nrel_sc_text_translation:...
 	(*
-		->rrel_example:[Считается, что основным блюдом на обед является второе блюдо](* <- lang_ru;; *);;
+		->rrel_example:[Основное блюдо зависит от момента приема пищи](* <- lang_ru;; *);;
 	*);;
 *);;

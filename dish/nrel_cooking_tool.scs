@@ -10,16 +10,16 @@ nrel_cooking_tool<-rrel_key_sc_element:...
 	<=nrel_using_constants:...
 	(*
 	    ->concept_dish;;
-	    ->concept_;;
+	    ->concept_coocking_equipment;;
 	*);;
 *);;	
 
 nrel_cooking_tool=>nrel_first_domain:concept_dish;;
-nrel_cooking_tool=>nrel_second_domain:concept_;;
+nrel_cooking_tool=>nrel_second_domain:concept_coocking_equipment;;
 
 concept_dish<-...
 (*
-	->concept_;;
+	->concept_coocking_equipment;;
 	=>nrel_combination:...
 	(*
 		<=nrel_definitional_domain:nrel_cooking_tool;;

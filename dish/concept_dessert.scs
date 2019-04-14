@@ -12,7 +12,7 @@ concept_dessert<-rrel_key_sc_element:...
 
 	<=nrel_using_constants:...
 	(*
-		->concept_dish;concept_lunch;concept_gdinner;concept_dessert;;
+		->concept_dish;concept_lunch;concept_dinner;concept_dessert;;
 	*);;
 
 *);;

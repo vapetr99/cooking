@@ -19,11 +19,11 @@ concept_croup_dish<-rrel_key_sc_element:...
 
 concept_croup_dish<-rrel_key_sc_element:...
 (*
-	->rrel_key_sc_element:concept_breakfast;concept_croup_dish;;
+	->rrel_key_sc_element:nrel_cooking_time;concept_croup_dish;;
 	<-statement;;
-	=>nrel_main_idtf:[Утв.(завтрак, блюдо из крупы)](* <- lang_ru;; *);;
+	=>nrel_main_idtf:[Утв.(время приготовления, блюдо из крупы)](* <- lang_ru;; *);;
 	<=nrel_sc_text_translation:...
 	(*
-		->rrel_example:[Чаще всего блюдо из крупы едят на завтрак](* <- lang_ru;; *);;
+		->rrel_example:[Блюдо из крупы быстро готовится](* <- lang_ru;; *);;
 	*);;
 *);;

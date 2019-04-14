@@ -19,12 +19,12 @@ concept_ingestion<-rrel_key_sc_element:...
 
 concept_ingestion<-rrel_key_sc_element:...
 (*
-	->rrel_key_sc_element:concept_main_dish;concept_drink;concept_soup;concept_ingestion;;
+	->rrel_key_sc_element:concept_dish;concept_ingestion;;
 	<-statement;;
-	=>nrel_main_idtf:[Утв.(суп, основное блюдо, напиток, прием пищи)](* <- lang_ru;; *);;
+	=>nrel_main_idtf:[Утв.(блюдо, прием пищи)](* <- lang_ru;; *);;
 	<=nrel_sc_text_translation:...
 	(*
-		->rrel_example:[Чаще всего прием пищи состоит из супа, основного блюда и напитка](* <- lang_ru;; *);;
+		->rrel_example:[Блюда во время приема пищи зависят от времени приема пищи](* <- lang_ru;; *);;
 	*);;
 *);;
 

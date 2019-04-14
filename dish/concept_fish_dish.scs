@@ -19,11 +19,11 @@ concept_fish_dish<-rrel_key_sc_element:...
 
 concept_fish_dish<-rrel_key_sc_element:...
 (*
-	->rrel_key_sc_element:concept_dinner;concept_lunch;concept_fish_dish;;
+	->rrel_key_sc_element:nrel_national_dish;concept_fish_dish;;
 	<-statement;;
-	=>nrel_main_idtf:[Утв.(обед, ужин, блюдо из рыбы)](* <- lang_ru;; *);;
+	=>nrel_main_idtf:[Утв.(национальное блюдо*, блюдо из рыбы)](* <- lang_ru;; *);;
 	<=nrel_sc_text_translation:...
 	(*
-		->rrel_example:[Чаще всего блюдо из рыбы едят на обед или ужин](* <- lang_ru;; *);;
+		->rrel_example:[Рыбные являются национальными блюдами в прибрежных странах](* <- lang_ru;; *);;
 	*);;
 *);;
