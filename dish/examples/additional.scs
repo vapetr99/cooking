@@ -1,0 +1,47 @@
+sc_node_not_relation->concept_country;;
+concept_country=>nrel_main_idtf:
+[страна](* <-lang_ru;; *);;
+
+sc_node_not_relation->Ukraine;;
+Ukraine=>nrel_main_idtf:
+[Украина](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_borscht;;
+concept_borscht=>nrel_main_idtf:
+[борщ](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_holiday;;
+concept_holiday=>nrel_main_idtf:
+[праздник](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_easter;;
+concept_easter=>nrel_main_idtf:
+[Пасха](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_slavic_cuisine;;
+concept_slavic_cuisine=>nrel_main_idtf:
+[славянская кухня](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_aggregation_state;;
+concept_aggregation_state=>nrel_main_idtf:
+[агрегатное состояние](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_easter_cake;;
+concept_easter_cake=>nrel_main_idtf:
+[кулич](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_solid;;
+concept_solid=>nrel_main_idtf:
+[блюдо с постоянной формой](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_baking_flour;;
+concept_baking_flour=>nrel_main_idtf:
+[мука](* <-lang_ru;; *);;
+
+sc_node_role_relation->rrel_value_C;;
+rrel_value_C=>nrel_main_idtf:
+[C'](* <-lang_ru;; *);;
+
+sc_node_role_relation->rrel_value_min;;
+rrel_value_min=>nrel_main_idtf:
+[минута'](* <-lang_ru;; *);;

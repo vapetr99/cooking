@@ -5,21 +5,21 @@ nrel_consistency<-rrel_key_sc_element:...
 (*
 	<-definition;;=>nrel_main_idtf:[Опр.(консистенция*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
 	(*
-        ->[Консистенция - степень густоты, плотность блюда.](* <- lang_ru;; *);;
+        ->[Консистенция - агрегатное состояние блюда.](* <- lang_ru;; *);;
 	*);;
 	<=nrel_using_constants:...
 	(*
 	    ->concept_dish;;
-	    ->concept_value;;
+	    ->concept_aggregation_state;;
 	*);;
 *);;	
 
 nrel_consistency=>nrel_first_domain:concept_dish;;
-nrel_consistency=>nrel_second_domain:concept_value;;
+nrel_consistency=>nrel_second_domain:concept_aggregation_state;;
 
 concept_dish<-...
 (*
-	->concept_value;;
+	->concept_aggregation_state;;
 	=>nrel_combination:...
 	(*
 		<=nrel_definitional_domain:nrel_consistency;;
