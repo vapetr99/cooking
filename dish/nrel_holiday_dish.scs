@@ -14,8 +14,8 @@ nrel_holiday_dish<-rrel_key_sc_element:...
 	*);;
 *);;
 
-nrel_holiday_dish=>nrel_first_domain:concept_holiday;;
-nrel_holiday_dish=>nrel_second_domain:concept_dish;;
+nrel_holiday_dish=>nrel_first_domain:concept_dish;;
+nrel_holiday_dish=>nrel_second_domain:concept_holiday;;
 
 concept_holiday<-...
 (*
