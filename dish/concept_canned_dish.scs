@@ -1,0 +1,29 @@
+concept_canned_dish=>nrel_idtf:[canned dish] (* <- lang_en;; *);;
+concept_canned_dish=>nrel_main_idtf:[блюдо из консервов] (* <- lang_ru;; *);;
+
+concept_canned_dish<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(блюдо из консервов)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Блюдо из консервов - блюдо, основным ингредиентом которого является консервный продукт.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_canned_dish;concept_dish;nrel_main_ingredient;concept_canned_food;;
+	*);;
+
+*);;
+
+concept_canned_dish<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_cooking_time;concept_canned_dish;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(время приготовления*, блюдо из консервов)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Блюдо из консервов обычно имеют малое время приготовление](* <- lang_ru;; *);;
+	*);;
+*);;

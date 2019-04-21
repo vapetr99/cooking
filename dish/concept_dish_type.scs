@@ -1,0 +1,31 @@
+concept_dish_type=>nrel_idtf:[dish type] (* <- lang_en;; *);;
+concept_dish_type=>nrel_main_idtf:[тип блюда] (* <- lang_ru;; *);;
+
+concept_dish_type<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(тип блюда)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Тип блюда - разновидность блюд, которые схожы между собой по тем или иным свойствам и характеристикам.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_dish;concept_dish_type;;
+	*);;
+
+*);;
+
+concept_dish_type<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_ingredient;concept_dish_type;concept_dish;nrel_composition;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(ингедиент*, тип блюда, блюдо, состав*)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Основным признаком, по которому блюдо можно отнести к тому или иному типу, является состав](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_dish_type=>nrel_inclusion:concept_snack;concept_salad;concept_soup;concept_sauce;concept_dessert;concept_bakery;concept_canned_dish;concept_main_dish;concept_dietary_dish;concept_vegetarian_dish;;

@@ -1,0 +1,54 @@
+nrel_ingredient=>nrel_idtf:[ingredient*] (* <- lang_en;; *);;
+nrel_ingredient=>nrel_main_idtf:[ингредиент*] (* <- lang_ru;; *);;
+
+nrel_ingredient<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(ингредиент*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+		->[Ингредиент - продукт, который является составляющей частью блюда.](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->concept_product;;
+		->concept_dish;;
+	*);;
+*);;
+
+nrel_ingredient=>nrel_first_domain:concept_product;;
+nrel_ingredient=>nrel_second_domain:concept_dish;;
+
+concept_product<-...
+(*
+	->concept_dish;;
+	=>nrel_combination:...
+	(*
+		<=nrel_definitional_domain:nrel_ingredient;;
+	*);;
+*);;
+
+nrel_ingredient<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_ingredient<-oriented_relation;;
+antisymmetric_relation->nrel_ingredient;;
+antitransitive_relation->nrel_ingredient;;
+antireflexive_relation->nrel_ingredient;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+nrel_ingredient<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_dish;nrel_ingredient;;
+	<-statement;;
+	=>nrel_idtf:[Утв.(ингредиент*, блюдо)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[В состав блюда обычно входит множество ингредиентов.](* <- lang_ru;; *);;
+	*);;
+*);;

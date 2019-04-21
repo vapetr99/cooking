@@ -1,0 +1,29 @@
+concept_fish_dish=>nrel_idtf:[fish dish] (* <- lang_en;; *);;
+concept_fish_dish=>nrel_main_idtf:[блюдо из рыбы] (* <- lang_ru;; *);;
+
+concept_fish_dish<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(блюдо из рыбы)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Блюдо из рыбы - блюдо, основным ингредиентом которого является рыба.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_fish_dish;nrel_main_ingredient;concept_fish_product;;
+	*);;
+
+*);;
+
+concept_fish_dish<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_national_dish;concept_fish_dish;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(национальное блюдо*, блюдо из рыбы)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Рыбные являются национальными блюдами в прибрежных странах](* <- lang_ru;; *);;
+	*);;
+*);;

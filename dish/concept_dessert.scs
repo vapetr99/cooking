@@ -1,0 +1,49 @@
+concept_dessert=>nrel_idtf:[dessert] (* <- lang_en;; *);;
+concept_dessert=>nrel_main_idtf:[десерт] (* <- lang_ru;; *);;
+
+concept_dessert<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(десерт)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Десерт - завершающее блюдо стола, подаваемое в конце обеда или ужина](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_dish;concept_lunch;concept_dinner;concept_dessert;;
+	*);;
+
+*);;
+
+concept_dessert<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_dessert;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, десерт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в десерте на 100 г продукта: 10 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_dessert<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_dessert;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, десерт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в десерте на 100 г продукта: 1.8 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_dessert<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_dessert;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, десерт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в десерте на 100 г продукта: 17.8 г](* <- lang_ru;; *);;
+	*);;
+*);;

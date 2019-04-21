@@ -1,0 +1,40 @@
+concept_afternoon_tea=>nrel_idtf:[afternoon tea] (* <- lang_en;; *);;
+concept_afternoon_tea=>nrel_main_idtf:[полдник] (* <- lang_ru;; *);;
+
+concept_afternoon_tea<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(полдник)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Полдник - легкая еда между обедом и ужином.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_lunch;concept_afternoon_tea;concept_dinner;;
+	*);;
+
+*);;
+
+concept_afternoon_tea<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_fruit_dish;concept_drink;concept_bakery;concept_afternoon_tea;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(блюдо из фруктов, напиток, выпечка, полдник)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Обычно на полдник подают напиток, блюдо из фруктов или выпечку](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_afternoon_tea<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_natioanal_dish;concept_tea;concept_afternoon_tea;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(национальное блюдо*, полдник, чай)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Нацональным блюдом на полдник в Англии является чай](* <- lang_ru;; *);;
+	*);;
+*);;

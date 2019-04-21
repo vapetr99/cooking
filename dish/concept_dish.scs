@@ -1,0 +1,38 @@
+concept_dish=>nrel_idtf:[dish] (* <- lang_en;; *);;
+concept_dish=>nrel_main_idtf:[блюдо] (* <- lang_ru;; *);;
+
+concept_dish<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(блюдо)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Блюдо - комбинация доведённых до готовности ингредиентов, которая кулинарно оформлена в виде порции и готова к употреблению.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->nrel_ingredient;concept_dish;;
+	*);;
+
+*);;
+
+concept_dish<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_national_dish;concept_dish;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(национальное блюдо*, блюдо)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[У каждой страны есть свое национальное блюдо](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_cold_dish<-...
+	(*
+		->concept_hot_dish;;
+		=>nrel_main_idtf:[Разбиение по признаку температуры приема блюда](* <- lang_ru;; *);;
+		=>nrel_subdividing:concept_dish;;
+	*);;
+
+concept_dish=>nrel_inclusion:concept_meat_dish;concept_vegetable_dish;concept_fish_dish;concept_milk_dish;concept_croup_dish;concept_fruit_dish;concept_bakery_dish;;

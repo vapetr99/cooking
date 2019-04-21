@@ -1,0 +1,29 @@
+concept_croup_dish=>nrel_idtf:[croup dish] (* <- lang_en;; *);;
+concept_croup_dish=>nrel_main_idtf:[блюдо из крупы] (* <- lang_ru;; *);;
+
+concept_croup_dish<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(блюдо из крупы)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Блюдо из крупы - блюдо, основным ингредиентом которого является крупа.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_croup_dish;nrel_main_ingredient;concept_groat;;
+	*);;
+
+*);;
+
+concept_croup_dish<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_cooking_time;concept_croup_dish;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(время приготовления, блюдо из крупы)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Блюдо из крупы быстро готовится](* <- lang_ru;; *);;
+	*);;
+*);;

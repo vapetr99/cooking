@@ -1,0 +1,29 @@
+concept_cuisine=>nrel_idtf:[cuisine] (* <- lang_en;; *);;
+concept_cuisine=>nrel_main_idtf:[кухня] (* <- lang_ru;; *);;
+
+concept_cuisine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(кухня)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Кухня - подбор блюд, обусловленной определёнными кулинарными условиями.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_dish;concept_cuisine;;
+	*);;
+
+*);;
+
+concept_cuisine<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_national_cuisine;nrel_national_dish;concept_cuisine;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(национальная кухня*, национальное блюдо*, кухня)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Национальная кухня состот из множества национальных блюд](* <- lang_ru;; *);;
+	*);;
+*);;

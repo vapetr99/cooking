@@ -1,0 +1,29 @@
+concept_bakery_dish=>nrel_idtf:[bakery dish] (* <- lang_en;; *);;
+concept_bakery_dish=>nrel_main_idtf:[блюдо из выпечки] (* <- lang_ru;; *);;
+
+concept_bakery_dish<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(блюдо из выпечки)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Блюдо из выпечки - блюдо, ингредиентами которого является выпечка.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->nrel_ingredient;concept_dish;;
+	*);;
+
+*);;
+
+concept_bakery_dish<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_bakery;concept_bakery_dish;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(выпекание*, блюдо из выпечки)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Способом приготовления блюд из выпечки является выпекание](* <- lang_ru;; *);;
+	*);;
+*);;

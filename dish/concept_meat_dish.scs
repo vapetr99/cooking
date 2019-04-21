@@ -1,0 +1,29 @@
+concept_meat_dish=>nrel_idtf:[meat dish] (* <- lang_en;; *);;
+concept_meat_dish=>nrel_main_idtf:[блюдо из мяса] (* <- lang_ru;; *);;
+
+concept_meat_dish<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(блюдо из мяса)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Блюдо из мяса - блюдо, основным ингредиентом которого является мясо.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_meat_dish;nrel_main_ingredient;concept_meat_product;;
+	*);;
+
+*);;
+
+concept_meat_dish<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_vegetarian_dish;concept_meat_dish;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(вегетарианское блюдо, блюдо из мяса)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Противоположностью мясного блюда является вегетарианское блюдо](* <- lang_ru;; *);;
+	*);;
+*);;

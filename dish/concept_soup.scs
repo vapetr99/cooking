@@ -1,0 +1,49 @@
+concept_soup=>nrel_idtf:[soup] (* <- lang_en;; *);;
+concept_soup=>nrel_main_idtf:[суп] (* <- lang_ru;; *);;
+
+concept_soup<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(суп)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Суп - блюдо, в котором содержится не менее 50% жидкости](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_liquid;concept_dish;concept_soup;;
+	*);;
+
+*);;
+
+concept_soup<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_soup;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, суп)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в супе на 100 г продукта: 3.3 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_soup<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_soup;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, суп)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в супе на 100 г продукта: 4.5 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_soup<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_soup;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, суп)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в супе на 100 г продукта: 3.1 г](* <- lang_ru;; *);;
+	*);;
+*);;

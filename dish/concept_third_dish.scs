@@ -1,0 +1,29 @@
+concept_third_dish=>nrel_idtf:[third dish] (* <- lang_en;; *);;
+concept_third_dish=>nrel_main_idtf:[третье блюдо] (* <- lang_ru;; *);;
+
+concept_third_dish<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(третье блюдо)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Третье блюдо - блюдо, которое подается после первого и второго блюд.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_second_dish;concept_third_dish;concept_first_dish;;
+	*);;
+
+*);;
+
+concept_third_dish<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_dessert;concept_bakery;concept_drink;concept_third_dish;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(десерт, выпечка, напиток, третье блюдо)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[В качестве третьего блюда можно подать десерт, выпечку или напиток](* <- lang_ru;; *);;
+	*);;
+*);;

@@ -1,0 +1,29 @@
+concept_dietary_dish=>nrel_idtf:[dietary dish] (* <- lang_en;; *);;
+concept_dietary_dish=>nrel_main_idtf:[диетическое блюдо] (* <- lang_ru;; *);;
+
+concept_dietary_dish<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(диетическое блюдо)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[диетическое блюдо - блюдо, в котором нет мяса и других продуктов питания животного происхождения.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_dietary_dish;concept_animal_product;concept_meat_product;;
+	*);;
+
+*);;
+
+concept_dietary_dish<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_ingredient;concept_dietary_dish;concept_vegetable;concept_fruit;concept_beans;concept_groat;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(ингредиент*, овощи, фрукты, крупа, бобы, диетическое блюдо)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[В качестве ингредиентов в диетических блюдах используются овощи, фрукты, крупа, бобы](* <- lang_ru;; *);;
+	*);;
+*);;

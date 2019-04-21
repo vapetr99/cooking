@@ -1,0 +1,29 @@
+concept_dinner=>nrel_idtf:[dinner] (* <- lang_en;; *);;
+concept_dinner=>nrel_main_idtf:[ужин] (* <- lang_ru;; *);;
+
+concept_dinner<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(ужин)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Ужин - прием пищи после обеда или полдника](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_lunch;concept_afternoon_tea;concept_dinner;;
+	*);;
+
+*);;
+
+concept_dinner<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_fish_dish;concept_meat_dish;concept_dinner;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(блюдо из мяса, блюдо из рыбы, ужин)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Основным блюдом на ужин является блюдо из мяса или блюдо из рыбы](* <- lang_ru;; *);;
+	*);;
+*);;

@@ -1,0 +1,48 @@
+concept_snack=>nrel_idtf:[snack] (* <- lang_en;; *);;
+concept_snack=>nrel_idtf:[снеки] (* <- lang_ru;; *);;
+concept_snack=>nrel_main_idtf:[закуска] (* <- lang_ru;; *);;
+
+concept_snack<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(закуска)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Закуска -  название лёгких блюд, предназначенных утоления голода между основными приёмами пищи.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;;
+	*);;
+
+*);;
+
+concept_snack<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_snack;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, закуска)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в закуске на 100 г продукта: 0 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_snack<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_snack;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, закуска)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в закуске на 100 г продукта: 0.3 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_snack<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_snack;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, закуска)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в закуске на 100 г продукта: 22.9 г](* <- lang_ru;; *);;
+	*);;
+*);;

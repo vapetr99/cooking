@@ -1,0 +1,29 @@
+concept_hot_dish=>nrel_idtf:[hot dish] (* <- lang_en;; *);;
+concept_hot_dish=>nrel_main_idtf:[горячее блюдо] (* <- lang_ru;; *);;
+
+concept_hot_dish<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(горячее блюдо)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Горячее блюдо - блюдо, подаваемое в горячем состоянии.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_hot_dish;;
+	*);;
+
+*);;
+
+concept_hot_dish<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_flow_temperature;concept_hot_dish;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(температура подачи*, горячее блюдо)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Чтобы блюдо считалось горячим, его температура подачи должна быть не ниже 65 градусов по цельсию](* <- lang_ru;; *);;
+	*);;
+*);;
