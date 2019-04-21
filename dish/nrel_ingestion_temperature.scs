@@ -14,8 +14,8 @@ nrel_ingestion_temperature<-rrel_key_sc_element:...
 	*);;
 *);;	
 
-nrel_ingestion_temperature=>nrel_first_domain:concept_value;;
-nrel_ingestion_temperature=>nrel_second_domain:concept_dish;;
+nrel_ingestion_temperature=>nrel_first_domain:concept_dish;;
+nrel_ingestion_temperature=>nrel_second_domain:concept_value;;
 
 concept_value<-...
 (*

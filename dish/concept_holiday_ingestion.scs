@@ -1,0 +1,29 @@
+concept_holiday_ingestion=>nrel_idtf:[holiday ingestion] (* <- lang_en;; *);;
+concept_holiday_ingestion=>nrel_main_idtf:[праздничный прием пищи] (* <- lang_ru;; *);;
+
+concept_holiday_ingestion<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(праздничный прием пищи)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Праздничный прием пищи - прием пищи, связанный с каким-то праздником](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_holiday;concept_holiday_ingestion;;
+	*);;
+
+*);;
+
+concept_holiday_ingestion<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_holidays_dish;concept_holiday_ingestion;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(праздничное блюдо*, праздничный прием пищи)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[На праздничный прием пищи подается праздничное блюдо](* <- lang_ru;; *);;
+	*);;
+*);;

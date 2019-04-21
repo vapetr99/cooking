@@ -28,4 +28,4 @@ concept_ingestion<-rrel_key_sc_element:...
 	*);;
 *);;
 
-concept_ingestion=>nrel_inclusion:concept_breakfast;concept_dinner;concept_lunch;concept_afternoon_tea;;
+concept_ingestion=>nrel_inclusion:concept_breakfast;concept_dinner;concept_lunch;concept_afternoon_tea;concept_holiday_ingestion;;
