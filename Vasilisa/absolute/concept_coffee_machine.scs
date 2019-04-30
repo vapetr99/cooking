@@ -1,0 +1,40 @@
+concept_coffee_machine=>nrel_idtf:[coffee machine] (* <- lang_en;; *);;
+concept_coffee_machine=>nrel_main_idtf:[кофемашина] (* <- lang_ru;; *);;
+
+concept_coffee_machine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(кофемашина)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Кофемашина - прибор для приготовления кофе.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_coffee;concept_coffee_machine;;
+	*);;
+
+*);;
+
+concept_cut_items<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//coffee.jpeg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_coffee_machine<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_milk_product;concept_coffee_machine;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(молочный продукт, кофемашина)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[В кофемашине можно использовать также и молоко](* <- lang_ru;; *);;
+	*);;
+*);;

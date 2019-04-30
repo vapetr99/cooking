@@ -1,0 +1,40 @@
+concept_spice_container=>nrel_idtf:[spice container] (* <- lang_en;; *);;
+concept_spice_container=>nrel_main_idtf:[тара для специй] (* <- lang_ru;; *);;
+
+concept_spice_container<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(тара для специй)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Емкость, предназначенная для хранения специй](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_spice;;
+	*);;
+
+*);;
+
+concept_spice_container<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//spicecont.jpeg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_spice_container<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_spice_container;concept_spice;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.()](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[В одном контейнере хранится один вид специй](* <- lang_ru;; *);;
+	*);;
+*);;

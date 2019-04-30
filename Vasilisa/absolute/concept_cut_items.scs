@@ -1,0 +1,40 @@
+concept_cut_items=>nrel_idtf:[cut items] (* <- lang_en;; *);;
+concept_cut_items=>nrel_main_idtf:[режущие предметы] (* <- lang_ru;; *);;
+
+concept_cut_items<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(посуда)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Предметы, предназначенные для нарезания продуктов питания и пищи](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_product;concept_food;concept_cut_items;;
+	*);;
+
+*);;
+
+concept_cut_items<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//cut.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_cut_items<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_cut_items;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(режущие предметы)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Режущие предметы нужно точить с некоторой переодичностью](* <- lang_ru;; *);;
+	*);;
+*);;

@@ -1,0 +1,42 @@
+concept_slice_equipment=>nrel_idtf:[slice equipment] (* <- lang_en;; *);;
+concept_slice_equipment=>nrel_main_idtf:[устройства для нарезки] (* <- lang_ru;; *);;
+
+concept_slice_equipment<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(устройства для нарезки)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[кухонное оборудование для нарезки продуктов питания](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_product;concept_equipment;;
+	*);;
+
+*);;
+
+concept_slice_equipment<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//slicers.jpeg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_slice_equipment<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_slice_equipment;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(устройства для нарезки)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[нужно соблюдать осторожность при работе с данными устройствами](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_slice_equipment<=nrel_inclusion:concept_slicer;;

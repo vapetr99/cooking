@@ -1,0 +1,29 @@
+concept_chemical_treatment=>nrel_idtf:[chemical treatment] (* <- lang_en;; *);;
+concept_chemical_treatment=>nrel_main_idtf:[химическая обработка] (* <- lang_ru;; *);;
+
+concept_chemical_treatment<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(химическая обработка)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[обработка пищи с помошью естесственных химических процессов](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;;
+	*);;
+
+*);;
+concept_chemical_treatment=>nrel_inclusion:nrel_conservation;nrel_salting;;
+concept_chemical_treatment<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_chemical_treatment;concept_product;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(химическая обработка, продукт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[химическая обработка наиболее часто применяется для консервирования продуктов](* <- lang_ru;; *);;
+	*);;
+*);;

@@ -1,0 +1,52 @@
+nrel_farsching=>nrel_idtf:[farsching*] (* <- lang_en;; *);;
+nrel_farsching=>nrel_system_identifier:[nrel_farsching] (* <- lang_en;; *);;
+nrel_farsching=>nrel_main_idtf:[фарширование*] (* <- lang_ru;; *);;
+nrel_farsching<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(фарширование*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[наполнение различных продуктов другими продуктами](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+	    ->concept_product;;
+	*);;
+*);;	
+nrel_farsching=>nrel_first_domain:concept_product;;
+nrel_farsching=>nrel_second_domain:concept_dish;;
+concept_value<-...
+(*
+	->concept_food;;
+	=>nrel_combination:...
+	(*
+		<=nrel_definitional_domain:nrel_farsching;;
+	*);;
+*);;
+nrel_farsching<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_farsching<-oriented_relation;;
+antisymmetric_relation->nrel_farsching;;
+antitransitive_relation->nrel_farsching;;
+antireflexive_relation->nrel_farsching;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+nrel_farsching<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_farsching;concept_vegetable;concept_dish;concept_meat_farsch;;
+	<-statement;;
+	=>nrel_idtf:[Утв.(овощ, фрукт, мясной фарш, блюдо, говядина, свинина, жарка*)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[В качестве фаршированной начинки чаще всего может выступать смесь 
+		различных свежих или маринованных овощей и фруктов, 
+		но в некоторых случаях начинкой может быть и мясной фарш из 
+		говядины или свинины, и даже полноценное блюдо](* <- lang_ru;; *);;
+	*);;
+*);;

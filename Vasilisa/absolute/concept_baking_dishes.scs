@@ -1,0 +1,50 @@
+concept_baking_dishes=>nrel_idtf:[dishes for baking] (* <- lang_en;; *);;
+concept_baking_dishes=>nrel_main_idtf:[посуда для запекания] (* <- lang_ru;; *);;
+
+concept_baking_dishes<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(посуда для запекания)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Посуда, использующаяся для запекания блюд](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_dish;concept_baking_dishes;;
+	*);;
+
+*);;
+
+concept_baking_dishes<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//baking.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_baking_dishes<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_baking_dishes;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(посуда для запекания)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Посуда для запекания должна быть жаростойкой](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_baking_dishes=>nrel_inclusion:concept_form;
+
+concept_metall_baking<-...
+(*
+	->concept_plastik_baking;;
+	->concept_rubber_baking;;
+	=>nrel_main_idtf:[Разбиение по признаку материала](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_baking_dishes;;
+*);;

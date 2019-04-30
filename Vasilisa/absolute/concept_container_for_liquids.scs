@@ -1,0 +1,40 @@
+concept_container_for_liquids=>nrel_idtf:[container for liquids] (* <- lang_en;; *);;
+concept_container_for_liquids=>nrel_main_idtf:[тара для жидкостей] (* <- lang_ru;; *);;
+
+concept_container_for_liquids<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(тара для жидкостей)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Емкость, предназначенная для хранения жидкостей](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_liquid;;
+	*);;
+
+*);;
+
+concept_container_for_liquids<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//liquidcont.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_container_for_liquids<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_container_for_liquids;concept_spice;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.()](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[???](* <- lang_ru;; *);;
+	*);;
+*);;

@@ -1,0 +1,40 @@
+concept_dishes_for_coocking=>nrel_idtf:[dishes for coocking] (* <- lang_en;; *);;
+concept_dishes_for_coocking=>nrel_main_idtf:[посуда для готовки] (* <- lang_ru;; *);;
+
+concept_dishes_for_coocking<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(посуда для готовки)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Посуда, использующаяся для приготовления пищи](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;concept_dishes_for_coocking;;
+	*);;
+
+*);;
+
+concept_dishes_for_coocking<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//dishesfocock.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_dishes_for_coocking<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_chainik;concept_water;nrel_boiling;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(посуда для приготовления пищи, вода, кипячение*)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Для кипячения воды обычно используют чайник](* <- lang_ru;; *);;
+	*);;
+*);;

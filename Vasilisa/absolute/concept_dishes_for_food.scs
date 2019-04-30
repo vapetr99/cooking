@@ -1,0 +1,40 @@
+concept_dishes_for_food=>nrel_idtf:[dishes for food] (* <- lang_en;; *);;
+concept_dishes_for_food=>nrel_main_idtf:[посуда для пищи] (* <- lang_ru;; *);;
+
+concept_dishes_for_food<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(посуда для пищи)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Посуда, использующаяся для приема пищи](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;concept_dishes_for_food;;
+	*);;
+
+*);;
+
+concept_dishes_for_food<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//dishesfofod.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_dishes_for_food<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_dishes_for_food;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(посуда для приема пищи)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Для жидкой и твердой пищи используется разная посуда](* <- lang_ru;; *);;
+	*);;
+*);;

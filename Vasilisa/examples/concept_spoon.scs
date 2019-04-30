@@ -1,0 +1,40 @@
+concept_spoon=>nrel_idtf:[spoon] (* <- lang_en;; *);;
+concept_spoon=>nrel_main_idtf:[ложка] (* <- lang_ru;; *);;
+
+concept_spoon<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(ложка)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Приспособление для употребления жидкой пищи](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;concept_equipment_for_eating;;
+	*);;
+
+*);;
+
+concept_spoon<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//spoon.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_spoon<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_porrage;concept_spoon;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(ложка, суп)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Ложкой удобно есть кашу.](* <- lang_ru;; *);;
+	*);;
+*);;

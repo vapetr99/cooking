@@ -1,0 +1,40 @@
+concept_conveer=>nrel_idtf:[conveer] (* <- lang_en;; *);;
+concept_conveer=>nrel_main_idtf:[конвейерная лента] (* <- lang_ru;; *);;
+
+concept_conveer<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(конвейерная лента)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Устройство для перемещения большого количества блюд или продуктов](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_dish;concept_product;;
+	*);;
+
+*);;
+
+concept_conveer<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//conveer.jpeg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_conveer<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_conveer;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.()](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[конвейерная лента обычно используется в столовых](* <- lang_ru;; *);;
+	*);;
+*);;

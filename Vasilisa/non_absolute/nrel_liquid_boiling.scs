@@ -1,0 +1,49 @@
+nrel_liquid_boiling=>nrel_idtf:[liquid boiling*] (* <- lang_en;; *);;
+nrel_liquid_boiling=>nrel_system_identifier:[nrel_liquid_boiling] (* <- lang_en;; *);;
+nrel_liquid_boiling=>nrel_main_idtf:[кипячение*] (* <- lang_ru;; *);;
+nrel_liquid_boiling<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(кипячение*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Процесс доведения жидкости до состояния кипения](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+	    ->concept_liquid;;
+	*);;
+*);;	
+nrel_liquid_boiling=>nrel_first_domain:concept_liquid;;
+nrel_liquid_boiling=>nrel_second_domain:concept_result;;
+concept_value<-...
+(*
+	->concept_food;;
+	=>nrel_combination:...
+	(*
+		<=nrel_definitional_domain:nrel_liquid_boiling;;
+	*);;
+*);;
+nrel_liquid_boiling<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_liquid_boiling<-oriented_relation;;
+antisymmetric_relation->nrel_liquid_boiling;;
+antitransitive_relation->nrel_liquid_boiling;;
+antireflexive_relation->nrel_liquid_boiling;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+nrel_liquid_boiling<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_liquid;;
+	<-statement;;
+	=>nrel_idtf:[Утв.(жидкость)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[У разных жидкостей разная температура кипения](* <- lang_ru;; *);;
+	*);;
+*);;

@@ -1,0 +1,51 @@
+nrel_quenching=>nrel_idtf:[quenching*] (* <- lang_en;; *);;
+nrel_quenching=>nrel_system_identifier:[nrel_quenching] (* <- lang_en;; *);;
+nrel_quenching=>nrel_main_idtf:[тушение*] (* <- lang_ru;; *);;
+nrel_quenching<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(тушение*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Тушение — процесс готовки посредством нагревания 
+        продуктов в малом количестве жидкости, среднее между варкой и жаркой](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+	    ->concept_liquid;concept_product;nrel_frying;nrel_boiling;;
+	*);;
+*);;	
+nrel_quenching=>nrel_first_domain:concept_product;;
+nrel_quenching=>nrel_second_domain:concept_result;;
+concept_value<-...
+(*
+	->concept_food;;
+	=>nrel_combination:...
+	(*
+		<=nrel_definitional_domain:nrel_quenching;;
+	*);;
+*);;
+nrel_quenching<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_quenching<-oriented_relation;;
+antisymmetric_relation->nrel_quenching;;
+antitransitive_relation->nrel_quenching;;
+antireflexive_relation->nrel_quenching;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+nrel_quenching<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_quenching;concept_liquid;;
+	<-statement;;
+	=>nrel_idtf:[Утв.(жидкость, жарка*)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Как правило, тушат мясо и рыбу вместе с различными овощами и пряностями, 
+		чем разнообразнее состав, тем богаче вкус и аромат готового блюда.](* <- lang_ru;; *);;
+	*);;
+*);;

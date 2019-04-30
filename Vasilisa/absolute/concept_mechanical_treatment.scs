@@ -1,0 +1,30 @@
+concept_mechanical_treatment=>nrel_idtf:[mechanical treatment] (* <- lang_en;; *);;
+concept_mechanical_treatment=>nrel_main_idtf:[механическая обработка] (* <- lang_ru;; *);;
+
+concept_mechanical_treatment<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(механическая обработка)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[обработка, при которой продукты деформируются при помощи различных приспособлений](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_product;concept_equipment;;
+	*);;
+
+*);;
+concept_mechanical_treatment=>nrel_inclusion:nrel_farsching;nrel_cutting;;
+concept_mechanical_treatment<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_mechanical_treatment;concept_food;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(механическая обработка, пища)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[На сегодняшний день существует большое количество 
+		приемов приготовления пищи с помощью механической обработки](* <- lang_ru;; *);;
+	*);;
+*);;

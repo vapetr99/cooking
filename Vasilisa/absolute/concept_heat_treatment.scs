@@ -1,0 +1,29 @@
+concept_heat_treatment=>nrel_idtf:[heat treatment] (* <- lang_en;; *);;
+concept_heat_treatment=>nrel_main_idtf:[тепловая обработка] (* <- lang_ru;; *);;
+
+concept_heat_treatment<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(термическая обработка)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[обработка пищи как при высоких, так и при низких температурах](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;;
+	*);;
+
+*);;
+concept_heat_treatment=>nrel_inclusion:nrel_frying;nrel_liquid_boiling;;
+concept_heat_treatment<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_dishes;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(посуда)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[такого типо обработку необходимо проводить в специальной посуде](* <- lang_ru;; *);;
+	*);;
+*);;
