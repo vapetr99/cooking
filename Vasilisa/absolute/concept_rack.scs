@@ -1,0 +1,40 @@
+concept_rack=>nrel_idtf:[rack] (* <- lang_en;; *);;
+concept_rack=>nrel_main_idtf:[стеллаж] (* <- lang_ru;; *);;
+
+concept_rack<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(стеллаж)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[мебель, предназначенная для хранения кухонной утвари или продуктов](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_equipment;concept_product;;
+	*);;
+
+*);;
+
+concept_rack<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//rack.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_rack<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_microwave;concept_egg;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(тепловые устройства)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[стеллаж - важный элемент декора кухни](* <- lang_ru;; *);;
+	*);;
+*);;

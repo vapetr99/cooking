@@ -1,0 +1,49 @@
+nrel_heating=>nrel_idtf:[heating*] (* <- lang_en;; *);;
+nrel_heating=>nrel_system_identifier:[nrel_heating] (* <- lang_en;; *);;
+nrel_heating=>nrel_main_idtf:[нагрев*] (* <- lang_ru;; *);;
+nrel_heating<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(нагрев*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Процесс нагрева продуктов до нужной температуры](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+	    ->concept_product;;
+	*);;
+*);;	
+nrel_heating=>nrel_first_domain:concept_product;;
+nrel_heating=>nrel_second_domain:concept_result;;
+concept_value<-...
+(*
+	->concept_food;;
+	=>nrel_combination:...
+	(*
+		<=nrel_definitional_domain:nrel_heating;;
+	*);;
+*);;
+nrel_heating<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_heating<-oriented_relation;;
+antisymmetric_relation->nrel_heating;;
+antitransitive_relation->nrel_heating;;
+antireflexive_relation->nrel_heating;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+nrel_heating<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_heating;;
+	<-statement;;
+	=>nrel_idtf:[Утв.(нагрев*)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[процесс нагрева опасен и надлежит контролю](* <- lang_ru;; *);;
+	*);;
+*);;

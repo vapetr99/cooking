@@ -1,0 +1,51 @@
+nrel_smoking=>nrel_idtf:[smoking*] (* <- lang_en;; *);;
+nrel_smoking=>nrel_system_identifier:[nrel_smoking] (* <- lang_en;; *);;
+nrel_smoking=>nrel_main_idtf:[копчение*] (* <- lang_ru;; *);;
+nrel_smoking<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(копчение*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Копче́ние — вид тепловой обработки eды, придающий аромат и оказывающий консервирующее действие](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+	    ->concept_food;nrel_smoking;;
+	*);;
+*);;	
+nrel_smoking=>nrel_first_domain:concept_product;;
+nrel_smoking=>nrel_second_domain:concept_result;;
+concept_value<-...
+(*
+	->concept_food;;
+	=>nrel_combination:...
+	(*
+		<=nrel_definitional_domain:nrel_smoking;;
+	*);;
+*);;
+nrel_smoking<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_smoking<-oriented_relation;;
+antisymmetric_relation->nrel_smoking;;
+antitransitive_relation->nrel_smoking;;
+antireflexive_relation->nrel_smoking;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+nrel_smoking<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_smoking;;
+	<-statement;;
+	=>nrel_idtf:[Утв.(копчение*)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[К веществам, придающим копченым продуктам особый вкус и аромат, относятся 
+		фенолы и их производные, а также некоторые фракции альдегидов и 
+		смолистых веществ, муравьиная и уксусная кислоты.](* <- lang_ru;; *);;
+	*);;
+*);;

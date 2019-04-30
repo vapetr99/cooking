@@ -1,0 +1,48 @@
+concept_baking_form=>nrel_idtf:[baking form] (* <- lang_en;; *);;
+concept_baking_form=>nrel_main_idtf:[форма для запекания] (* <- lang_ru;; *);;
+
+concept_baking_form<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(форма для запекания)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[посуда, предназначенная для запекания продуктов питания](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_dishes;concept_equipment;concept_product;;
+	*);;
+
+*);;
+
+concept_baking_form<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//form.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_baking_form<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_baking_form;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(форма для запекания)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Существуют резиновые формы для запекания.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_metall_baking<-...
+(*
+	->concept_plastik_baking;;
+	->concept_rubber_baking;;
+	=>nrel_main_idtf:[Разбиение по признаку материала](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_baking_form;;
+*);;

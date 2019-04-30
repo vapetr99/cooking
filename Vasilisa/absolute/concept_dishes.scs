@@ -1,0 +1,50 @@
+concept_dishes=>nrel_idtf:[dishes] (* <- lang_en;; *);;
+concept_dishes=>nrel_main_idtf:[посуда] (* <- lang_ru;; *);;
+
+concept_dishes<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(посуда)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[обобщённое название кухонной утвари — сосудов и ёмкостей для хранения или приготовления еды, питья, а также столовых приборов для приёма пищи](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_drink;concept_food;concept_dishes;;
+	*);;
+
+*);;
+
+concept_dishes<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//dishes.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_dishes<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_material;concept_dishes;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(блюдо из мяса, блюдо из рыбы, ужин)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Существует множество материалов для изготовления посуды](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_cook_dishes<-...
+(*
+	->concept_eat_dishes;;
+	->concept_storage_dishes;;
+	=>nrel_main_idtf:[Разбиение по признаку предназначения](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_dishes;;
+*);;
+
+concept_dishes=>nrel_inclusion:concept_baking_dishes;concept_fri_dishes;concept_boil_dishes;;

@@ -1,0 +1,40 @@
+concept_dessert_items=>nrel_idtf:[dessert items] (* <- lang_en;; *);;
+concept_dessert_items=>nrel_main_idtf:[десертные приборы] (* <- lang_ru;; *);;
+
+concept_dessert_items<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(десертные приборы)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[столовые приборы для употребления и готовки дессертов](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_dessert;concept_cutlery;;
+	*);;
+
+*);;
+
+concept_dessert_items<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//dessitems.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_dessert_items<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_cakes;concept_lojka;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(дессертные приборы)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Торты удобно есть ложкой](* <- lang_ru;; *);;
+	*);;
+*);;

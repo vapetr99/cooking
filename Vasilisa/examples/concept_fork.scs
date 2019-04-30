@@ -1,0 +1,40 @@
+concept_fork=>nrel_idtf:[fork] (* <- lang_en;; *);;
+concept_fork=>nrel_main_idtf:[вилка] (* <- lang_ru;; *);;
+
+concept_fork<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(вилка)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Приспособление для нанизывания пищи для ее употребления](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;concept_equipment_for_eating;;
+	*);;
+
+*);;
+
+concept_fork<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//fork.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_fork<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_soup;concept_fork;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(вилка, суп)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Не рекомендуется есть суп вилкой](* <- lang_ru;; *);;
+	*);;
+*);;

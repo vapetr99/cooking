@@ -1,0 +1,40 @@
+concept_fri_dishes=>nrel_idtf:[dishes for baking] (* <- lang_en;; *);;
+concept_fri_dishes=>nrel_main_idtf:[посуда для жарки] (* <- lang_ru;; *);;
+
+concept_fri_dishes<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(посуда для жарки)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Посуда, использующаяся для жарки блюд](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_dish;concept_fri_dishes;;
+	*);;
+
+*);;
+
+concept_fri_dishes<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//fri.jpeg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_fri_dishes<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_food;concept_pan;concept_dishes;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(посуда для запекания)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Сковорода - типичная посуда для жарки пищи](* <- lang_ru;; *);;
+	*);;
+*);;

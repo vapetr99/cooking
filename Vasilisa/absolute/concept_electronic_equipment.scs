@@ -1,0 +1,40 @@
+concept_electronic_equipment=>nrel_idtf:[electronic equipment] (* <- lang_en;; *);;
+concept_electronic_equipment=>nrel_main_idtf:[электронные устройства] (* <- lang_ru;; *);;
+
+concept_electronic_equipment<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(электронные устройства)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[устройства, работающие от электрической сети](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_equipment;;
+	*);;
+
+*);;
+
+concept_electronic_equipment<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//electro.jpeg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_electronic_equipment<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_electronic_equipment;concept_liquid;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(электронные устройства)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[электронные устройства уязвимы к жидкостям](* <- lang_ru;; *);;
+	*);;
+*);;

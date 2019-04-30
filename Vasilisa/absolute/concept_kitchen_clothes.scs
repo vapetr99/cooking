@@ -1,0 +1,42 @@
+concept_kitchen_clothes=>nrel_idtf:[kitchen clothes] (* <- lang_en;; *);;
+concept_kitchen_clothes=>nrel_main_idtf:[кухонная одежда] (* <- lang_ru;; *);;
+
+concept_kitchen_clothes<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(кухонная одежда)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[одежда, приспособленная для упрощения работы на кухне](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_kitchen;;
+	*);;
+
+*);;
+
+concept_kitchen_clothes<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//clothes.jpeg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_kitchen_clothes<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_fartuk;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(фартук)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[фартук используют чтобы не испачкаться](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_kitchen_clothes<=nrel_inclusion:concept_fartuk;;
