@@ -1,0 +1,64 @@
+concept_vegetable=>nrel_idtf:[vegetable] (* <- lang_en;; *);;
+concept_vegetable=>nrel_main_idtf:[овощ] (* <- lang_ru;; *);;
+
+concept_vegetable<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(овощ)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Овощ - плод или клубень некоторых растений, а также всякая твёрдая растительная пища, за исключением фруктов, круп, грибов, орехов.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->nrel_fetus;concept_vegetable;concept_food;concept_fruit;concept_groat;concept_nut;concept_mushrooms;;
+	*);;
+
+*);;
+
+concept_vegetable->rrel_example:concept_potato;;
+
+concept_vegetable<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//vegetable.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_vegetable<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_vegetable;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, овощ)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в овощах на 100 г продукта: 0,2 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_vegetable<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_vegetable;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, овощ)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в овощах на 100 г продукта: 2,9 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_vegetable<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_vegetable;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, овощ)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в овощах на 100 г продукта: 13 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_vegetable=>nrel_inclusion:concept_nightshade_vegetable;concept_pumpkin_vegetable;concept_beans;concept_cruciferous_vegetable;;

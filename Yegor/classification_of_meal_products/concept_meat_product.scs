@@ -1,0 +1,65 @@
+concept_meat=>nrel_idtf:[meat product] (* <- lang_en;; *);;
+concept_meat=>nrel_idtf:[мясо] (* <- lang_ru;; *);;
+concept_meat=>nrel_main_idtf:[мясной продукт] (* <- lang_ru;; *);;
+
+concept_meat<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(мясной продукт)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Мясной продукт - пищевой продукт, вырабатываемый из мяса.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_meat;concept_food;;
+	*);;
+
+*);;
+
+concept_meat->rrel_example:concept_french_meat;;
+
+concept_meat<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//meat.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_meat<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_meat;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, мясной продукт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в мясных продуктах на 100 г продукта: 3,5 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_meat<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_meat;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, мясной продукт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в мясных продуктах на 100 г продукта: 26 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_meat<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_meat;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, мясной продукт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в мясных продуктах на 100 г продукта: 0 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_meat=>nrel_inclusion:concept_beef;concept_mutton;concept_pork;concept_wild_meat;;

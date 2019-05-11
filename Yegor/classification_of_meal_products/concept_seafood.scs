@@ -1,0 +1,64 @@
+concept_seafood=>nrel_idtf:[seafood] (* <- lang_en;; *);;
+concept_seafood=>nrel_main_idtf:[морепродукты] (* <- lang_ru;; *);;
+
+concept_seafood<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(морепродукты)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Морепродукты — всё съедобное, добытое из мирового океана.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_seafood;concept_food;;
+	*);;
+
+*);;
+
+concept_seafood->rrel_example:concept_squid;;
+
+concept_seafood<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//seafood.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_seafood<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_seafood;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, морепродукты)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в морепродуктах на 100 г продукта: 12 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_seafood<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_seafood;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, морепродукты)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в морепродуктах на 100 г продукта: 22 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_seafood<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_seafood;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, морепродукты)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в морепродуктах на 100 г продукта: 0 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_seafood=>nrel_inclusion:concept_seaweed;concept_shellfish;concept_crustaceans;;

@@ -1,4 +1,0 @@
-concept_processing_method => nrel_main_idtf:
-	[способ обработки](* <- lang_ru;; *);
-	[processing_method](* <- lang_en;; *);;
-concept_processing_method => nrel_idtf:	[способ обработки изделия](* <- lang_ru;; *);;
