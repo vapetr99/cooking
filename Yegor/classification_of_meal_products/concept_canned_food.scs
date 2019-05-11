@@ -1,0 +1,54 @@
+concept_canned_food=>nrel_idtf:[canned food] (* <- lang_en;; *);;
+concept_canned_food=>nrel_idtf:[консервы] (* <- lang_ru;; *);;
+concept_canned_food=>nrel_main_idtf:[консервированная еда] (* <- lang_ru;; *);;
+
+concept_canned_food<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(консервированная еда)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Консервы - пищевые продукты, которые были подвергнуты консервированию и/или упаковке с целью длительного хранения без порчи.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;concept_canned_food;;
+	*);;
+
+*);;
+
+concept_canned_food->rrel_example:concept_condensed_milk;;
+
+concept_canned_food<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//canned_food.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_canned_food<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;nrel_protein_content;nrel_carbohydrates_content;concept_canned_food;concept_food;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содеражние жиров*, содержание углеводов*, содержание белков*, консервы, продукт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содеражние жиров, содержание углеводов и содержание белков консерв определяется продуктами, входящими в состав этих консерв](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_canned_meat<-...
+	(*
+		->concept_canned_milk;;
+		->concept_canned_vegetables;;
+		->concept_canned_fruits;;
+		->concept_canned_fish;;
+		=>nrel_main_idtf:[Разбиение по признаку вид консерированных продуктов](* <- lang_ru;; *);;
+		=>nrel_subdividing:concept_canned_food;;
+	*);;
+

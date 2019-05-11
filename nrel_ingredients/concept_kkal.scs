@@ -1,8 +1,0 @@
-sc_node_not_relation -> concept_kkal;;
-
-concept_kkal => nrel_main_idtf:
-[калории] (* <- lang_ru;; *);
-[kkal] (* <- lang_en;; *);;
-
-
-

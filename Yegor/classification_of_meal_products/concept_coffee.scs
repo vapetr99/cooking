@@ -1,0 +1,70 @@
+concept_coffee=>nrel_idtf:[coffee] (* <- lang_en;; *);;
+concept_coffee=>nrel_main_idtf:[кофе] (* <- lang_ru;; *);;
+
+concept_coffee<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(кофе)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Кофе - напиток из жареных и перемолотых зёрен кофейного дерева.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;;
+		->concept_drink;;
+	*);;
+
+*);;
+
+concept_coffee->rrel_example:concept_espresso;;
+
+concept_coffee<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//coffee.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_coffee<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_coffee;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, кофе)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в кофе на 100 г продукта: 0 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_coffee<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_coffee;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, кофе)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в кофе на 100 г продукта: 0.1 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_coffee<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_coffee;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, кофе)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в кофе на 100 г продукта: 0 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_coffee_with_milk<-...
+	(*
+		->concept_coffee_without_milk;;
+		=>nrel_main_idtf:[Разбиение по признаку наличие молока в кофе](* <- lang_ru;; *);;
+		=>nrel_subdividing:concept_coffee;;
+	*);;
+
+concept_coffee=>nrel_inclusion:concept_espresso;concept_macchiato;concept_amerikano;concept_cappuccino;;

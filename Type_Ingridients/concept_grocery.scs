@@ -1,5 +1,0 @@
-sc_node_not_relation -> concept_grocery;;
-
-concept_grocery => nrel_main_idtf:
-[бакалея] (* <- lang_ru;; *);
-[grocery] (* <- lang_en;; *);;

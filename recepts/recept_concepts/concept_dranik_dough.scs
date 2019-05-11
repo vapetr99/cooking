@@ -1,4 +1,0 @@
-concept_dranik_dough => nrel_main_idtf:
-	[тесто для драников](* <- lang_ru;; *);
-	[dranik dough](* <- lang_en;; *);;
-

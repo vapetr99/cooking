@@ -1,0 +1,64 @@
+concept_milk_product=>nrel_idtf:[milk product] (* <- lang_en;; *);;
+concept_milk_product=>nrel_main_idtf:[молочный продукт] (* <- lang_ru;; *);;
+
+concept_milk_product<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(молочный продукт)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Молочный продукт - пищевой продукт, вырабатываемый из молока.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_milk;concept_milk_product;concept_food;;
+	*);;
+
+*);;
+
+concept_milk_product->rrel_example:concept_cheesecake;;
+
+concept_milk_product<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//milk_product.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_milk_product<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_milk_product;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, молочный продукт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в молочных продуктах на 100 г продукта: 2 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_milk_product<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_milk_product;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, молочный продукт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в молочных продуктах на 100 г продукта: 1,6 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_milk_product<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_milk_product;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, молочный продукт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в молочных продуктах на 100 г продукта: 5 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_milk_product=>nrel_inclusion:concept_milk;concept_dairy_product;concept_butter;concept_cheese;;

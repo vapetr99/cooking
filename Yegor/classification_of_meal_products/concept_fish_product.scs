@@ -1,0 +1,70 @@
+concept_fish_product=>nrel_idtf:[fish product] (* <- lang_en;; *);;
+concept_fish_product=>nrel_idtf:[продукты из рыбы] (* <- lang_ru;; *);;
+concept_fish_product=>nrel_main_idtf:[рыбный продукт] (* <- lang_ru;; *);;
+
+concept_fish_product<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(рыбный продукт)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Рыбный продукт - продукты переработки объектов рыболовного промысла.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;;
+	*);;
+
+*);;
+
+concept_fish_product->rrel_example:concept_fish_fillet;;
+
+concept_fish_product<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//fish_product.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_fish_product<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_fish_product;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, рыбный продукт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в рыбном продукте на 100 г продукта: 2 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_fish_product<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_fish_product;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, рыбный продукт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в рыбном продукте на 100 г продукта: 17.5 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_fish_product<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_fish_product;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, рыбный продукт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в рыбном продукте на 100 г продукта: 0 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_ocean_fish<-...
+	(*
+		->concept_river_fish;;
+		=>nrel_main_idtf:[Разбиение по признаку место обитания рыбы](* <- lang_ru;; *);;
+		=>nrel_subdividing:concept_fish_product;;
+	*);;
+
+concept_fish_product=>nrel_inclusion:concept_fish_fillet;concept_fish_pate;concept_caviar;;
