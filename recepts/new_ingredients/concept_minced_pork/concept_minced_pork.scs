@@ -1,0 +1,27 @@
+concept_minced_pork => nrel_main_idtf:
+	[свиной фарш](* <- lang_ru;; *);
+	[minced pork](* <- lang_en;; *);;
+
+concept_minced_pork<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(свиной фарш)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Свиной фарш - фарш из свинины. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_minced_pork <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_minced_pork.jpg";;
+		*);;
+	*);;
+

@@ -1,0 +1,8 @@
+sc_node_norole_relation -> nrel_stage_products;;
+nrel_stage_products=>nrel_main_idtf:[продукты этапа*] (* <- lang_ru;; *);;
+nrel_stage_products=>nrel_main_idtf:[nrel_stage_products*] (* <- lang_en;; *);;
+nrel_stage_products=>nrel_idtf:[входные продукты этапа*] (* <- lang_ru;; *);;
+nrel_stage_products<-quasybinary_relation;;
+parameter->arity;;
+arity->quasybinary_relation;;
+nrel_stage_products<-oriented_relation;;

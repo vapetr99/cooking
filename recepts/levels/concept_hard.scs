@@ -1,0 +1,19 @@
+concept_hard => nrel_main_idtf:
+	[трудно](* <- lang_ru;; *);
+	[hard](* <- lang_en;; *);;
+
+concept_hard <- concept_cooking_level;;
+
+
+concept_hard<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(трудно)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Трудно - высокий уровень трудности рецепта блюда.](*<-lang_ru;;*);;
+	*);;
+*);;

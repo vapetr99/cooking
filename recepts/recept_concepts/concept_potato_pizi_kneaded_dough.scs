@@ -1,0 +1,4 @@
+concept_potato_pizi_kneaded_dough => nrel_main_idtf:
+	[вымешанное тесто для картофельных пыз](* <- lang_ru;; *);
+	[potato pizi kneaded dough](* <- lang_en;; *);;
+

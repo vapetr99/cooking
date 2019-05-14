@@ -1,0 +1,29 @@
+concept_mazurka => nrel_main_idtf:
+	[мазурка](* <- lang_ru;; *);
+	[mazurka](* <- lang_en;; *);;
+
+concept_mazurka<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(мазурка)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Мазурка - невысокий пирог с орехами, сухофруктами и цукатами, а также торт с коржами того же состава. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_mazurka <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_mazurka.jpg";;
+		*);;
+	*);;
+
+concept_mazurka => nrel_national_dish: concept_belarus;;
+concept_mazurka <- concept_dish;;

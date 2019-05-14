@@ -1,0 +1,4 @@
+concept_potato_pizi_dough => nrel_main_idtf:
+	[тесто для картофельных пыз](* <- lang_ru;; *);
+	[potato pizi dough](* <- lang_en;; *);;
+

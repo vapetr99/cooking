@@ -1,0 +1,28 @@
+concept_water => nrel_main_idtf:
+	[вода](* <- lang_ru;; *);
+	[water](* <- lang_en;; *);;
+
+concept_water<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(вода)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Вода - прозрачная бесцветная жидкость, представляющая собой в чистом виде химическое соединение водорода и кислорода. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_water <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_water.jpg";;
+		*);;
+	*);;
+
+concept_water <- concept_drink;;

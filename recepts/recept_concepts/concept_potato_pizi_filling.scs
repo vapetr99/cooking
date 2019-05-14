@@ -1,0 +1,4 @@
+concept_potato_pizi_filling => nrel_main_idtf:
+	[начинка для картофельных пыз](* <- lang_ru;; *);
+	[potato pizi filling](* <- lang_en;; *);;
+

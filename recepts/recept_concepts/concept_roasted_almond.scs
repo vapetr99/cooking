@@ -1,0 +1,4 @@
+concept_roasted_almond => nrel_main_idtf:
+	[обжаренный миндаль](* <- lang_ru;; *);
+	[roasted almond](* <- lang_en;; *);;
+

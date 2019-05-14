@@ -1,0 +1,27 @@
+concept_dried_apricots => nrel_main_idtf:
+	[курага](* <- lang_ru;; *);
+	[dried apricots](* <- lang_en;; *);;
+
+concept_dried_apricots<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(курага)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Курага - высушенные половинки плодов абрикоса без косточки. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_dried_apricots <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_dried_apricots.jpg";;
+		*);;
+	*);;
+

@@ -1,0 +1,4 @@
+concept_roasted_potato_pizi => nrel_main_idtf:
+	[обжаренные картофельные пызы](* <- lang_ru;; *);
+	[roasted potato pizi](* <- lang_en;; *);;
+

@@ -1,0 +1,253 @@
+concept_vereshchaka_recept <- concept_recept;; concept_vereshchaka_recept <=nrel_context_of_action: [*
+	concept_vereshchaka <-concept_dish;;
+	concept_vereshchaka=>nrel_ingredients:
+		concept_white_sausages;
+		concept_beer;
+		concept_spice;
+		concept_flour;
+		concept_onion;
+		concept_water;
+		concept_bacon;
+		concept_vegetable_oil;;
+*];;
+
+concept_vereshchaka_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_hour: 1.5;;
+	*);;
+*);;
+concept_vereshchaka_recept <=nrel_cooking_level: concept_normal;;
+concept_vereshchaka_recept ->rrel_1: concept_vereshchaka;;
+concept_vereshchaka_recept <=nrel_stage_decomposition: concept_vereshchaka_recept_stages;;
+
+concept_vereshchaka_recept_stage1 <-rrel_1: concept_vereshchaka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_knife;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_onion;;
+						*);
+						=>nrel_processing_method: concept_purification;
+						=>nrel_final_product: concept_purified_onion;
+						=>nrel_sequencing: concept_vereshchaka_recept_stage2;;
+
+concept_vereshchaka_recept_stage2 <- concept_vereshchaka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_bowl;;
+							->concept_knife;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_purified_onion;;
+						*);
+						=>nrel_processing_method: concept_cutting;
+						=>nrel_final_product: concept_sliced_onion;
+						=>nrel_form: concept_small_cube;
+						=>nrel_sequencing: concept_vereshchaka_recept_stage3;;
+
+concept_vereshchaka_recept_stage3 <- concept_vereshchaka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_frying_pan;;
+							->concept_kitchen_stove;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_sliced_onion;;
+						*);
+						=>nrel_processing_method: concept_passering;
+						=>nrel_stage_time: ...
+						(*
+							<=nrel_value:...
+							(*
+								->rrel_minute: 7;;
+							*);;
+						*);
+						=>nrel_final_product: concept_browned_onion;
+						=>nrel_additional_component: concept_vegetable_oil;
+						=>nrel_sequencing: concept_vereshchaka_recept_stage4;;
+
+concept_vereshchaka_recept_stage4 <- concept_vereshchaka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_bowl;;
+							->concept_knife;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_bacon;;
+						*);
+						=>nrel_processing_method: concept_cutting;
+						=>nrel_form: concept_straw;
+						=>nrel_final_product: concept_sliced_bacon;
+						=>nrel_sequencing: concept_vereshchaka_recept_stage5;;
+
+concept_vereshchaka_recept_stage5 <- concept_vereshchaka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_frying_pan;;
+							->concept_kitchen_stove;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_browned_onion;;
+							->concept_sliced_bacon;;
+						*);
+						=>nrel_processing_method: concept_roasting;
+						=>nrel_additional_component: concept_vegetable_oil;
+						=>nrel_stage_time: ...
+						(*
+							<=nrel_value:...
+							(*
+								->rrel_minute: 10;;
+							*);;
+						*);
+						=>nrel_final_product: concept_roasted_bacon_and_onion;
+						=>nrel_sequencing: concept_vereshchaka_recept_stage6;;
+
+concept_vereshchaka_recept_stage6 <- concept_vereshchaka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_stock_pot;;
+							->concept_kitchen_stove;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_water;;
+							->concept_spice;;
+							->concept_beer;;
+							->concept_white_sausages;;
+						*);
+						=>nrel_processing_method: concept_boiling;
+						=>nrel_stage_time: ...
+						(*
+							<=nrel_value:...
+							(*
+								->rrel_minute: 16;;
+							*);;
+						*);
+						=>nrel_final_product: concept_vereshchaka_bouillon;
+						=>nrel_final_product: concept_boiled_white_sausages;
+						=>nrel_sequencing: concept_vereshchaka_recept_stage7;;
+
+concept_vereshchaka_recept_stage7 <- concept_vereshchaka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_bowl;;
+							->concept_knife;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_boiled_white_sausages;;
+						*);
+						=>nrel_processing_method: concept_cutting;
+						=>nrel_form: concept_medallion;
+						=>nrel_final_product: concept_sliced_white_sausages;
+						=>nrel_sequencing: concept_vereshchaka_recept_stage8;;
+
+concept_vereshchaka_recept_stage8 <- concept_vereshchaka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_stock_pot;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_sliced_white_sausages;;
+							->concept_vereshchaka_bouillon;;
+							->concept_roasted_bacon_and_onion;;
+						*);
+						=>nrel_processing_method: concept_mixing;
+						=>nrel_stage_time: ...
+						(*
+							<=nrel_value:...
+							(*
+								->rrel_minute: 2;;
+							*);;
+						*);
+						=>nrel_final_product: concept_vereshchaka_soup;
+						=>nrel_sequencing: concept_vereshchaka_recept_stage9;;
+
+concept_vereshchaka_recept_stage9 <- concept_vereshchaka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_frying_pan;;
+							->concept_kitchen_stove;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_flour;;
+						*);
+						=>nrel_processing_method: concept_passering;
+						=>nrel_stage_time: ...
+						(*
+							<=nrel_value:...
+							(*
+								->rrel_minute: 3;;
+							*);;
+						*);
+						=>nrel_final_product: concept_bowled_flour;
+						=>nrel_sequencing: concept_vereshchaka_recept_stage10;;
+
+
+concept_vereshchaka_recept_stage10 <- concept_vereshchaka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_stock_pot;;
+							->concept_kitchen_stove;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_bowled_flour;;
+							->concept_vereshchaka_soup;;
+						*);
+						=>nrel_processing_method: concept_languor;
+						=>nrel_stage_time: ...
+						(*
+							<=nrel_value:...
+							(*
+								->rrel_minute: 20;;
+							*);;
+						*);
+						=>nrel_final_product: concept_vereshchaka;;
+
+//this must be there
+concept_vereshchaka_recept => nrel_main_idtf:
+	[верещака.Рецепт](* <- lang_ru;; *);
+	[vereshchaka.recept](* <- lang_en;; *);;
+concept_vereshchaka_recept_stages =>nrel_main_idtf:
+	[верещака.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_vereshchaka_recept_stage1 =>nrel_main_idtf:
+	[верещака.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_vereshchaka_recept_stage2 =>nrel_main_idtf:
+	[верещака.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_vereshchaka_recept_stage3 =>nrel_main_idtf:
+	[верещака.Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_vereshchaka_recept_stage4 =>nrel_main_idtf:
+	[верещака.Рецепт.Этап 4](* <- lang_ru;; *);;
+concept_vereshchaka_recept_stage5 =>nrel_main_idtf:
+	[верещака.Рецепт.Этап 5](* <- lang_ru;; *);;
+concept_vereshchaka_recept_stage6 =>nrel_main_idtf:
+	[верещака.Рецепт.Этап 6](* <- lang_ru;; *);;
+concept_vereshchaka_recept_stage7 =>nrel_main_idtf:
+	[верещака.Рецепт.Этап 7](* <- lang_ru;; *);;
+concept_vereshchaka_recept_stage8 =>nrel_main_idtf:
+	[верещака.Рецепт.Этап 8](* <- lang_ru;; *);;
+concept_vereshchaka_recept_stage9 =>nrel_main_idtf:
+	[верещака.Рецепт.Этап 9](* <- lang_ru;; *);;
+concept_vereshchaka_recept_stage10 =>nrel_main_idtf:
+	[верещака.Рецепт.Этап 10](* <- lang_ru;; *);;

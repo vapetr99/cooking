@@ -1,0 +1,19 @@
+concept_easy => nrel_main_idtf:
+	[легко](* <- lang_ru;; *);
+	[easy](* <- lang_en;; *);;
+
+concept_easy <- concept_cooking_level;;
+
+
+concept_easy<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(легко)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Легко - низкий уровень трудности рецепта блюда.](*<-lang_ru;;*);;
+	*);;
+*);;

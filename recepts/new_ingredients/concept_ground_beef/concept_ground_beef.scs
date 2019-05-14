@@ -1,0 +1,27 @@
+concept_ground_beef => nrel_main_idtf:
+	[говяжий фарш](* <- lang_ru;; *);
+	[ground beef](* <- lang_en;; *);;
+
+concept_ground_beef<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(говяжий фарш)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Говяжий фарш - фарш из говядины. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_ground_beef <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_ground_beef.jpg";;
+		*);;
+	*);;
+

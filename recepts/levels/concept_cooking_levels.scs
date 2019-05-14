@@ -1,0 +1,18 @@
+concept_cooking_level => nrel_main_idtf:
+	[уровень приготовления](* <- lang_ru;; *);
+	[cooking level](* <- lang_en;; *);;
+
+
+concept_cooking_level<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(уровень приготовления)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Уровень приготовления - трудность приготовления блюда, зависящая от уровня владения кулинарным ремеслом.](*<-lang_ru;;*);;
+	*);;
+*);;
+

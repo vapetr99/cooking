@@ -1,0 +1,28 @@
+concept_white_sausages => nrel_main_idtf:
+	[белые колбаски](* <- lang_ru;; *);
+	[white sausages](* <- lang_en;; *);;
+
+concept_white_sausages<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(белые колбаски)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Белые колбаски - вид сосисок для варки. Обычно производятся из телятины, свиного сала и приправ в натуральной оболочке. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_white_sausages <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_white_sausages.jpg";;
+		*);;
+	*);;
+
+

@@ -1,0 +1,28 @@
+concept_filling_process=> nrel_main_idtf:
+	[начинка(процесс)](* <- lang_ru;; *);
+	[filling process](* <- lang_en;; *);;
+
+concept_filling<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(начинка(процесс))](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Начинка(процесс) - процесс наполнения теста или формы какой-то массой, также называемой начинкой. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_filling_process<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_filling.jpg";;
+		*);;
+	*);;
+
+concept_filling_process<- concept_processing_method;;

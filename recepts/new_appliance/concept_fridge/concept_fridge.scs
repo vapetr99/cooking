@@ -1,0 +1,42 @@
+concept_fridge <- concept_cutlery_item;;
+concept_fridge => nrel_main_idtf:
+	[холодильник](* <- lang_ru;; *);
+	[fridge](* <- lang_en;; *);;
+
+concept_fridge<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(холодильник)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Холодильник — шкаф с холодильным устройством, оюычно служит для хранения пищи.](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_fridge <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_fridge.jpg";;
+		*);;
+	*);;
+
+
+concept_fridge
+	<=nrel_possible_material:...
+	(*
+		->concept_plastic;;
+		->concept_metal;;
+	*);;
+concept_fridge
+	<=nrel_possible_material:...
+	(*
+		->concept_plastic;;
+		->concept_metal;;
+		->concept_wood;;
+	*);;

@@ -1,0 +1,4 @@
+concept_bowled_flour => nrel_main_idtf:
+	[пассерованная мука](* <- lang_ru;; *);
+	[bowled flour](* <- lang_en;; *);;
+

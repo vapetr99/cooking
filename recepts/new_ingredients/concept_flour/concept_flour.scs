@@ -1,0 +1,27 @@
+concept_flour => nrel_main_idtf:
+	[мука](* <- lang_ru;; *);
+	[flour](* <- lang_en;; *);;
+
+concept_flour<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(мука)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Мука - продукт питания, получаемый в результате перемалывания зёрен различных сельскохозяйственных культур, преимущественно злаковых. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_flour <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_flour.jpg";;
+		*);;
+	*);;
+

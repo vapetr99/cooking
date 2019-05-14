@@ -1,0 +1,29 @@
+concept_potato_pizi => nrel_main_idtf:
+	[картофельные пызы](* <- lang_ru;; *);
+	[potato pizi](* <- lang_en;; *);;
+
+concept_potato_pizi<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(картофельные пызы)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Картофельные пызы - разновидность зраз, национальное белорусское блюдо, сочетающее в себе картофельную оболочку и сочную мясную начинку.](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_potato_pizi <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_potato_pizi.jpg";;
+		*);;
+	*);;
+
+concept_potato_pizi => nrel_national_dish: concept_belarus;;
+concept_potato_pizi <- concept_dish;;

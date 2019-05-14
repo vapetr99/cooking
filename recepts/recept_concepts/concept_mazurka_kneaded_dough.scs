@@ -1,0 +1,4 @@
+concept_mazurka_kneaded_dough => nrel_main_idtf:
+	[вымешанное тесто для мазурки](* <- lang_ru;; *);
+	[mazurka kneaded dough](* <- lang_en;; *);;
+

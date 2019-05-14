@@ -1,0 +1,8 @@
+sc_node_norole_relation -> nrel_stage_decomposition;;
+nrel_stage_decomposition=>nrel_main_idtf:[декомпозиция на этапы*] (* <- lang_ru;; *);;
+nrel_stage_decomposition=>nrel_main_idtf:[stage decomposition*] (* <- lang_en;; *);;
+nrel_stage_decomposition=>nrel_idtf:[поэтапная декомпозиция*] (* <- lang_ru;; *);;
+nrel_stage_decomposition<-quasybinary_relation;;
+parameter->arity;;
+arity->quasybinary_relation;;
+nrel_stage_decomposition<-oriented_relation;;

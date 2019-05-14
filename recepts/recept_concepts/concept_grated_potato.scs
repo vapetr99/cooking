@@ -1,0 +1,4 @@
+concept_grated_potato => nrel_main_idtf:
+	[тертый картофель](* <- lang_ru;; *);
+	[grated potato](* <- lang_en;; *);;
+

@@ -1,0 +1,152 @@
+concept_draniki_recept <- concept_recept;;
+concept_draniki_recept <=nrel_context_of_action: [*
+	concept_draniki <-concept_dish;;
+	concept_draniki=>nrel_ingredients:
+		concept_salt;
+		concept_potato;
+		concept_vegetable_oil;
+		concept_onion;;
+*];;
+
+concept_draniki_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_hour: 1;;
+	*);;
+*);;
+concept_draniki_recept <=nrel_cooking_level: concept_easy;;
+concept_draniki_recept ->rrel_1: concept_draniki;;
+concept_draniki_recept <=nrel_stage_decomposition: concept_draniki_recept_stages;;
+
+concept_draniki_recept_stage1 <-rrel_1: concept_draniki_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_knife;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_potato;;
+						*);
+						=>nrel_processing_method: concept_purification;
+						=>nrel_final_product: concept_purified_potato;
+						=>nrel_sequencing: concept_draniki_recept_stage2;;
+
+concept_draniki_recept_stage2 <- concept_draniki_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_knife;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_onion;;
+						*);
+						=>nrel_processing_method: concept_purification;
+						=>nrel_final_product: concept_purified_onion;
+						=>nrel_sequencing: concept_draniki_recept_stage3;;
+
+concept_draniki_recept_stage3 <- concept_draniki_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_bowl;;
+							->concept_grater;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_purified_onion;;
+						*);
+						=>nrel_processing_method: concept_rubbing;
+						=>nrel_final_product: concept_grated_onion;
+						=>nrel_sequencing: concept_draniki_recept_stage4;;
+
+concept_draniki_recept_stage4 <- concept_draniki_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_bowl;;
+							->concept_grater;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_purified_potato;;
+						*);
+						=>nrel_processing_method: concept_rubbing;
+						=>nrel_final_product: concept_grated_potato;
+						=>nrel_sequencing: concept_draniki_recept_stage5;;
+
+concept_draniki_recept_stage5 <- concept_draniki_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_bowl;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_grated_onion;;
+							->concept_grated_potato;;
+							->concept_salt;;
+						*);
+						=>nrel_processing_method: concept_mixing;
+						=>nrel_stage_time: ...
+						(*
+							<=nrel_value:...
+							(*
+								->rrel_minute: 4;;
+							*);;
+						*);
+						=>nrel_final_product: concept_dranik_dough;
+						=>nrel_sequencing: concept_draniki_recept_stage6;;
+
+concept_draniki_recept_stage6 <- concept_draniki_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_cutting_board;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_dranik_dough;;
+						*);
+						=>nrel_processing_method: concept_forming;
+						=>nrel_form: concept_flapjack;
+						=>nrel_final_product: concept_draniki_flapjacks;
+						=>nrel_sequencing: concept_draniki_recept_stage7;;
+
+concept_draniki_recept_stage7 <- concept_draniki_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_frying_pan;;
+							->concept_kitchen_stove;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_draniki_flapjacks;;
+						*);
+						=>nrel_processing_method: concept_frying;
+						=>nrel_final_product: concept_draniki;
+						=>nrel_additional_component: concept_vegetable_oil;;
+
+
+concept_draniki_recept => nrel_main_idtf:
+	[драники.Рецепт](* <- lang_ru;; *);
+	[draniki.recipe](* <- lang_en;; *);;
+concept_draniki_recept_stages =>nrel_main_idtf:
+	[драники.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_draniki_recept_stage1 =>nrel_main_idtf:
+	[драники.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_draniki_recept_stage2 =>nrel_main_idtf:
+	[драники.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_draniki_recept_stage3 =>nrel_main_idtf:
+	[драники.Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_draniki_recept_stage4 =>nrel_main_idtf:
+	[драники.Рецепт.Этап 4](* <- lang_ru;; *);;
+concept_draniki_recept_stage5 =>nrel_main_idtf:
+	[драники.Рецепт.Этап 5](* <- lang_ru;; *);;
+concept_draniki_recept_stage6 =>nrel_main_idtf:
+	[драники.Рецепт.Этап 6](* <- lang_ru;; *);;
+concept_draniki_recept_stage7 =>nrel_main_idtf:
+	[драники.Рецепт.Этап 7](* <- lang_ru;; *);;

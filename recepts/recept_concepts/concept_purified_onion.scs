@@ -1,0 +1,4 @@
+concept_purified_onion => nrel_main_idtf:
+	[очищенный лук](* <- lang_ru;; *);
+	[purified onion](* <- lang_en;; *);;
+
