@@ -1,0 +1,40 @@
+concept_plate=>nrel_idtf:[plate] (* <- lang_en;; *);;
+concept_plate=>nrel_main_idtf:[тарелка] (* <- lang_ru;; *);;
+
+concept_plate<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(тарелка)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Приспособление накладывания пищи для употребления](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;concept_equipment_for_eating;;
+	*);;
+
+*);;
+
+concept_plate<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//plate.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_plate<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_plate;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(вилка, суп)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Керамическая тарелка крайне хрупкая.](* <- lang_ru;; *);;
+	*);;
+*);;

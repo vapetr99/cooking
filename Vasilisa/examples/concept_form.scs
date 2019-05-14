@@ -38,11 +38,3 @@ concept_baking_form<-rrel_key_sc_element:...
 		->rrel_example:[Существуют резиновые формы для запекания.](* <- lang_ru;; *);;
 	*);;
 *);;
-
-concept_metall_baking<-...
-(*
-	->concept_plastik_baking;;
-	->concept_rubber_baking;;
-	=>nrel_main_idtf:[Разбиение по признаку материала](* <- lang_ru;; *);;
-	=>nrel_subdividing:concept_baking_form;;
-*);;
