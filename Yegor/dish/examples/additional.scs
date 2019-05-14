@@ -1,6 +1,6 @@
-sc_node_not_relation->concept_porridge;;
-concept_porridge=>nrel_main_idtf:
-[каша](* <-lang_ru;; *);;
+sc_node_not_relation->concept_bowl;;
+concept_bowl=>nrel_main_idtf:
+[тарелка](* <-lang_ru;; *);;
 
 sc_node_not_relation->concept_country;;
 concept_country=>nrel_main_idtf:
@@ -45,10 +45,6 @@ concept_easter_cake=>nrel_main_idtf:
 sc_node_not_relation->concept_russian_salad;;
 concept_russian_salad=>nrel_main_idtf:
 [оливье](* <-lang_ru;; *);;
-
-sc_node_not_relation->concept_croissant;;
-concept_croissant=>nrel_main_idtf:
-[круассан](* <-lang_ru;; *);;
 
 sc_node_not_relation->concept_oatmeal;;
 concept_oatmeal=>nrel_main_idtf:

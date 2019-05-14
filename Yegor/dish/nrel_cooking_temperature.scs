@@ -1,3 +1,4 @@
+sc_node_norole_relation->nrel_cooking_temperature;;
 nrel_cooking_temperature=>nrel_idtf:[cooking temperature*] (* <- lang_en;; *);;
 nrel_cooking_temperature=>nrel_main_idtf:[температура приготовления*] (* <- lang_ru;; *);;
 

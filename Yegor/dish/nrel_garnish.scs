@@ -1,3 +1,5 @@
+sc_node_role_relation->nrel_garnish;;
+
 nrel_garnish=>nrel_idtf:[garnish*] (* <- lang_en;; *);;
 nrel_garnish=>nrel_main_idtf:[гарнир*] (* <- lang_ru;; *);;
 

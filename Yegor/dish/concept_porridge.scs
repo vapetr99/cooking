@@ -1,0 +1,49 @@
+concept_porridge=>nrel_idtf:[porridge] (* <- lang_en;; *);;
+concept_porridge=>nrel_main_idtf:[каша] (* <- lang_ru;; *);;
+
+concept_porridge<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(каша)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Каша - блюдо из сваренной крупы или муки](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_boiling;concept_groat;concept_baking_flour;concept_dish;;
+	*);;
+
+*);;
+
+concept_porridge<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_porridge;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, каша)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в каше на 100 г продукта: 0,2 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_porridge<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_porridge;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, каша)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в каше на 100 г продукта: 1,4 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_porridge<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_porridge;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, каша)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в каше на 100 г продукта: 11 г](* <- lang_ru;; *);;
+	*);;
+*);;

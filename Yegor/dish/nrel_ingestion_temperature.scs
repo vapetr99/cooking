@@ -1,3 +1,4 @@
+sc_node_norole_relation->nrel_ingestion_temperature;;
 nrel_ingestion_temperature=>nrel_idtf:[ingestion temperature*] (* <- lang_en;; *);;
 nrel_ingestion_temperature=>nrel_main_idtf:[температура приема блюда*] (* <- lang_ru;; *);;
 
