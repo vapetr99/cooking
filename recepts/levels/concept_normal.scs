@@ -1,0 +1,19 @@
+concept_normal => nrel_main_idtf:
+	[норма](* <- lang_ru;; *);
+	[normal](* <- lang_en;; *);;
+
+concept_normal <- concept_cooking_level;;
+
+
+concept_normal<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(норма)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Норма - средний уровень трудности рецепта блюда.](*<-lang_ru;;*);;
+	*);;
+*);;

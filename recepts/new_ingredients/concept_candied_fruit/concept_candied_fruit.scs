@@ -1,0 +1,27 @@
+concept_candied_fruit => nrel_main_idtf:
+	[цукаты](* <- lang_ru;; *);
+	[candied fruit](* <- lang_en;; *);;
+
+concept_candied_fruit<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(цукаты)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Цукаты - сваренные в сахарном или сахаропаточном сиропе сочные плоды. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_candied_fruit <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_candied_fruit.jpg";;
+		*);;
+	*);;
+

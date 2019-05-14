@@ -1,0 +1,4 @@
+concept_purified_potato => nrel_main_idtf:
+	[очищенный картофель](* <- lang_ru;; *);
+	[purified potato](* <- lang_en;; *);;
+

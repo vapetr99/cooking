@@ -1,0 +1,4 @@
+concept_mazurka_dough => nrel_main_idtf:
+	[тесто для мазурки](* <- lang_ru;; *);
+	[mazurka dough](* <- lang_en;; *);;
+

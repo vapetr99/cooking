@@ -1,0 +1,28 @@
+concept_kneading => nrel_main_idtf:
+	[вымешивание](* <- lang_ru;; *);
+	[kneading](* <- lang_en;; *);;
+
+concept_kneading<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(вымешивание)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Вымешивание -- тщательное разминание теста для приданя ему свойств эластичности, однородности и упругости. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_kneading <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_kneading.jpg";;
+		*);;
+	*);;
+
+concept_kneading <- concept_processing_method;;

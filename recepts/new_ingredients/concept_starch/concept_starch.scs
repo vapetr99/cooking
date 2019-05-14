@@ -1,0 +1,27 @@
+concept_starch => nrel_main_idtf:
+	[крахмал](* <- lang_ru;; *);
+	[starch](* <- lang_en;; *);;
+
+concept_starch<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(крахмал)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Крахмал - мучнистый углевод, добываемый из растений, который используется как загуститель для киселей, соусов, запеканок. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_starch <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_starch.jpg";;
+		*);;
+	*);;
+

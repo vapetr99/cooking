@@ -1,0 +1,27 @@
+concept_almond => nrel_main_idtf:
+	[миндаль](* <- lang_ru;; *);
+	[almond](* <- lang_en;; *);;
+
+concept_almond<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(миндаль)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Миндаль - съедобные ядра семян растения вида Миндаль обыкновенный. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_almond <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_almond.jpg";;
+		*);;
+	*);;
+

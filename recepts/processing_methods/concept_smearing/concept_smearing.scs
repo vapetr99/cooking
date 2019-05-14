@@ -1,0 +1,28 @@
+concept_smearing => nrel_main_idtf:
+	[намазывание](* <- lang_ru;; *);
+	[smearing](* <- lang_en;; *);;
+
+concept_smearing<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(намазывание)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Намазывание - процесс нанесения тонкого слоя массы на поверхность. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_smearing <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_smearing.jpg";;
+		*);;
+	*);;
+
+concept_smearing <- concept_processing_method;;

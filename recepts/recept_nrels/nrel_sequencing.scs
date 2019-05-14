@@ -1,0 +1,10 @@
+sc_node_norole_relation -> nrel_sequencing;;
+nrel_sequencing=>nrel_main_idtf:[последовательность действий*] (* <- lang_ru;; *);;
+nrel_sequencing=>nrel_main_idtf:[sequencing*] (* <- lang_en;; *);;
+nrel_sequencing<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+antisymmetric_relation->nrel_sequencing;;
+antitransitive_relation->nrel_sequencing;;
+antireflexive_relation->nrel_sequencing;;
+nrel_sequencing<-oriented_relation;;

@@ -1,0 +1,4 @@
+concept_sliced_bacon => nrel_main_idtf:
+	[нарезанный бекон](* <- lang_ru;; *);
+	[sliced bacon](* <- lang_en;; *);;
+

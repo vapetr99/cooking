@@ -1,0 +1,31 @@
+sc_node_not_relation -> concept_recept;;
+concept_recept => nrel_main_idtf:
+	[рецепт] (* <- lang_ru;; *);
+	[recept] (* <- lang_en;; *);;
+
+concept_recept<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(рецепт)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Рецепт - руководство по приготовлению кулинарного изделия. Содержит информацию о его времени приготовления, ингредиентах, уровня сложности и др.](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_recept <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_recept.jpg";;
+		*);;
+	*);;
+
+
+
+

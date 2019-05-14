@@ -1,0 +1,17 @@
+concept_processing_method => nrel_main_idtf:
+	[способ обработки](* <- lang_ru;; *);
+	[processing_method](* <- lang_en;; *);;
+concept_processing_method => nrel_idtf:	[способ обработки изделия](* <- lang_ru;; *);;
+
+concept_processing_method<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(способ обработки)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Способ обработки - метод обработки продукта для его преобразования в новый продукт.](*<-lang_ru;;*);;
+	*);;
+*);;

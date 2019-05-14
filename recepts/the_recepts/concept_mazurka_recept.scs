@@ -1,0 +1,183 @@
+concept_mazurka_recept <- concept_recept;;
+concept_draniki_recept <=nrel_context_of_action: [*
+	concept_mazurka <-concept_dish;;
+	concept_mazurka=>nrel_ingredients:
+		concept_almond;
+		concept_egg;
+		concept_butter;
+		concept_flour;
+		concept_sugar;
+		concept_candied_fruit;
+		concept_vegetable_oil;
+		concept_dried_apricots;;
+*];;
+
+concept_mazurka_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_hour: 1.5;;
+	*);;
+*);;
+concept_mazurka_recept <=nrel_cooking_level: concept_easy;;
+concept_mazurka_recept ->rrel_1: concept_mazurka;;
+concept_mazurka_recept <=nrel_stage_decomposition: concept_mazurka_recept_stages;;
+
+concept_mazurka_recept_stage1 <-rrel_1: concept_mazurka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_frying_pan;;
+							->concept_kitchen_stove;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_almond;;
+						*);
+						=>nrel_processing_method: concept_roasting;
+						=>nrel_additional_component: concept_vegetable_oil;
+						=>nrel_final_product: concept_roasted_almond;
+						=>nrel_sequencing: concept_mazurka_recept_stage2;;
+
+concept_mazurka_recept_stage2 <- concept_mazurka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_bowl;;
+							->concept_electric_mixer;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_roasted_almond;;
+						*);
+						=>nrel_processing_method: concept_grinding;
+						=>nrel_final_product: concept_grinted_roasted_almond;
+						=>nrel_sequencing: concept_mazurka_recept_stage3;;
+
+concept_mazurka_recept_stage3 <- concept_mazurka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_bowl;;
+							->concept_fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_butter;;
+							->concept_sugar;;
+						*);
+						=>nrel_processing_method: concept_trituration;
+						=>nrel_final_product: concept_triturated_sweet_butter;
+						=>nrel_sequencing: concept_mazurka_recept_stage4;;
+
+
+concept_mazurka_recept_stage4 <- concept_mazurka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_bowl;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_triturated_sweet_butter;;
+							->concept_grinted_roasted_almond;;
+							->concept_dried_apricots;;
+							->concept_dried_apricots;;
+							->concept_egg;;
+							->concept_flour;;
+						*);
+						=>nrel_processing_method: concept_mixing;
+						=>nrel_stage_time: ...
+						(*
+							<=nrel_value:...
+							(*
+								->rrel_minute: 5;;
+							*);;
+						*);
+						=>nrel_final_product: concept_mazurka_dough;
+						=>nrel_sequencing: concept_mazurka_recept_stage5;;
+
+concept_mazurka_recept_stage5 <- concept_mazurka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_cutting_board;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_mazurka_dough;;
+						*);
+						=>nrel_processing_method: concept_kneading;
+						=>nrel_stage_time: ...
+						(*
+							<=nrel_value:...
+							(*
+								->rrel_minute: 15;;
+							*);;
+						*);
+						=>nrel_final_product: concept_mazurka_kneaded_dough;
+						=>nrel_sequencing: concept_mazurka_recept_stage6;;
+
+concept_mazurka_recept_stage6 <- concept_mazurka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_cutting_board;;
+							->concept_fridge;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_mazurka_kneaded_dough;;
+						*);
+						=>nrel_processing_method: concept_cooling;
+						=>nrel_stage_time: ...
+						(*
+							<=nrel_value:...
+							(*
+								->rrel_minute: 30;;
+							*);;
+						*);
+						=>nrel_final_product: concept_mazurka_cooled_dough;
+						=>nrel_sequencing: concept_mazurka_recept_stage7;;
+
+concept_mazurka_recept_stage7 <- concept_mazurka_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_oven;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_mazurka_cooled_dough;;
+						*);
+						=>nrel_processing_method: concept_baking;
+						=>nrel_stage_time: ...
+						(*
+							<=nrel_value:...
+							(*
+								->rrel_minute: 25;;
+							*);;
+						*);
+						=>nrel_final_product: concept_mazurka;
+						=>nrel_additional_component: concept_butter;;
+
+
+concept_mazurka_recept => nrel_main_idtf:
+	[мазурка.Рецепт](* <- lang_ru;; *);
+	[mazurka.recipe](* <- lang_en;; *);;
+concept_mazurka_recept_stages =>nrel_main_idtf:
+	[мазурка.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_mazurka_recept_stage1 =>nrel_main_idtf:
+	[мазурка.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_mazurka_recept_stage2 =>nrel_main_idtf:
+	[мазурка.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_mazurka_recept_stage3 =>nrel_main_idtf:
+	[мазурка.Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_mazurka_recept_stage4 =>nrel_main_idtf:
+	[мазурка.Рецепт.Этап 4](* <- lang_ru;; *);;
+concept_mazurka_recept_stage5 =>nrel_main_idtf:
+	[мазурка.Рецепт.Этап 5](* <- lang_ru;; *);;
+concept_mazurka_recept_stage6 =>nrel_main_idtf:
+	[мазурка.Рецепт.Этап 6](* <- lang_ru;; *);;
+concept_mazurka_recept_stage7 =>nrel_main_idtf:
+	[мазурка.Рецепт.Этап 7](* <- lang_ru;; *);;

@@ -1,0 +1,4 @@
+concept_mazurka_cooled_dough => nrel_main_idtf:
+	[охлажденное тесто для мазурки](* <- lang_ru;; *);
+	[mazurka cooled dough](* <- lang_en;; *);;
+

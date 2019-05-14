@@ -1,0 +1,260 @@
+concept_potato_pizi_recept <- concept_recept;;
+concept_potato_pizi_recept <=nrel_context_of_action: [*
+	concept_potato_pizi <-concept_dish;;
+	concept_potato_pizi=>nrel_ingredients:
+		concept_cottage_cheese;
+		concept_egg;
+		concept_spice;
+		concept_flour;
+		concept_onion;
+		concept_salt;
+		concept_ground_beef;
+		concept_minced_pork;
+		concept_potato;
+		concept_starch;
+		concept_vegetable_oil;;
+*];;
+
+concept_potato_pizi_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_minute: 70;;
+	*);;
+*);;
+concept_potato_pizi_recept <=nrel_cooking_level: concept_normal;;
+concept_potato_pizi_recept ->rrel_1: concept_potato_pizi;;
+concept_potato_pizi_recept <=nrel_stage_decomposition: concept_potato_pizi_recept_stages;;
+
+concept_potato_pizi_recept_stage1 <-rrel_1: concept_potato_pizi_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_knife;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_potato;;
+						*);
+						=>nrel_processing_method: concept_purification;
+						=>nrel_final_product: concept_purified_potato;
+						=>nrel_sequencing: concept_potato_pizi_recept_stage2;;
+
+concept_potato_pizi_recept_stage2 <- concept_potato_pizi_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_bowl;;
+							->concept_grater;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_purified_potato;;
+						*);
+						=>nrel_processing_method: concept_rubbing;
+						=>nrel_final_product: concept_grated_potato;
+						=>nrel_sequencing: concept_potato_pizi_recept_stage3;;
+
+concept_potato_pizi_recept_stage3 <- concept_potato_pizi_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_bowl;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_grated_potato;;
+							->concept_cottage_cheese;;
+							->concept_starch;;
+							->concept_flour;;
+							->concept_salt;;
+						*);
+						=>nrel_processing_method: concept_mixing;
+						=>nrel_stage_time: ...
+						(*
+							<=nrel_value:...
+							(*
+								->rrel_minute: 4;;
+							*);;
+						*);
+						=>nrel_final_product: concept_potato_pizi_dough;
+						=>nrel_sequencing: concept_potato_pizi_recept_stage4;;
+
+concept_potato_pizi_recept_stage4 <- concept_potato_pizi_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_cutting_board;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_potato_pizi_dough;;
+						*);
+						=>nrel_processing_method: concept_kneading;
+						=>nrel_stage_time: ...
+						(*
+							<=nrel_value:...
+							(*
+								->rrel_minute: 10;;
+							*);;
+						*);
+						=>nrel_final_product: concept_potato_pizi_kneaded_dough;
+						=>nrel_sequencing: concept_potato_pizi_recept_stage5;;
+
+concept_potato_pizi_recept_stage5 <- concept_potato_pizi_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_knife;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_onion;;
+						*);
+						=>nrel_processing_method: concept_purification;
+						=>nrel_final_product: concept_purified_onion;
+						=>nrel_sequencing: concept_potato_pizi_recept_stage6;;
+
+concept_potato_pizi_recept_stage6 <- concept_potato_pizi_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_knife;;
+							->concept_bowl;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_purified_onion;;
+						*);
+						=>nrel_processing_method: concept_cutting;
+						=>nrel_form: concept_small_cube;
+						=>nrel_final_product: concept_sliced_onion;
+						=>nrel_sequencing: concept_potato_pizi_recept_stage7;;
+
+concept_potato_pizi_recept_stage7 <- concept_potato_pizi_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_bowl;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_ground_beef;;
+							->concept_minced_pork;;
+							->concept_sliced_onion;;
+							->concept_egg;;
+							->concept_salt;;
+							->concept_spice;;
+						*);
+						=>nrel_processing_method: concept_mixing;
+						=>nrel_stage_time: ...
+						(*
+							<=nrel_value:...
+							(*
+								->rrel_minute: 3;;
+							*);;
+						*);
+						=>nrel_final_product: concept_potato_pizi_filling;
+						=>nrel_sequencing: concept_potato_pizi_recept_stage8;;
+
+concept_potato_pizi_recept_stage8 <- concept_potato_pizi_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_cutting_board;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_potato_pizi_kneaded_dough;;
+						*);
+						=>nrel_processing_method: concept_forming;
+						=>nrel_form: concept_flapjack;
+						=>nrel_final_product: concept_potato_pizi_flapjacks;
+						=>nrel_sequencing: concept_potato_pizi_recept_stage9;;
+
+concept_potato_pizi_recept_stage9 <- concept_potato_pizi_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_cutting_board;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_potato_pizi_filling;;
+							->concept_potato_pizi_flapjacks;;
+						*);
+						=>nrel_processing_method: concept_filling_process;
+						=>nrel_final_product: concept_raw_potato_pizi;
+						=>nrel_sequencing: concept_potato_pizi_recept_stage10;;
+
+concept_potato_pizi_recept_stage10 <- concept_potato_pizi_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_frying_pan;;
+							->concept_kitchen_stove;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_raw_potato_pizi;;
+						*);
+						=>nrel_processing_method: concept_roasting;
+						=>nrel_additional_component: concept_vegetable_oil;
+						=>nrel_stage_time: ...
+						(*
+							<=nrel_value:...
+							(*
+								->rrel_minute: 4;;
+							*);;
+						*);
+						=>nrel_final_product: concept_roasted_potato_pizi;
+						=>nrel_sequencing: concept_potato_pizi_recept_stage11;;
+
+concept_potato_pizi_recept_stage11 <- concept_potato_pizi_recept_stages;
+						<- concept_stage;
+						<=nrel_equipment:...
+						(*
+							->concept_frying_pan;;
+							->concept_oven;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_roasted_potato_pizi;;
+						*);
+						=>nrel_processing_method: concept_baking;
+						=>nrel_stage_time: ...
+						(*
+							<=nrel_value:...
+							(*
+								->rrel_minute: 15;;
+							*);;
+						*);
+						=>nrel_final_product: concept_potato_pizi;;
+//this must be there
+concept_potato_pizi_recept => nrel_main_idtf:
+	[картофельные пызы.Рецепт](* <- lang_ru;; *);
+	[potato_pizi.recept](* <- lang_en;; *);;
+concept_potato_pizi_recept_stages =>nrel_main_idtf:
+	[картофельные пызы.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_potato_pizi_recept_stage1 =>nrel_main_idtf:
+	[картофельные пызы.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_potato_pizi_recept_stage2 =>nrel_main_idtf:
+	[картофельные пызы.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_potato_pizi_recept_stage3 =>nrel_main_idtf:
+	[картофельные пызы.Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_potato_pizi_recept_stage4 =>nrel_main_idtf:
+	[картофельные пызы.Рецепт.Этап 4](* <- lang_ru;; *);;
+concept_potato_pizi_recept_stage5 =>nrel_main_idtf:
+	[картофельные пызы.Рецепт.Этап 5](* <- lang_ru;; *);;
+concept_potato_pizi_recept_stage6 =>nrel_main_idtf:
+	[картофельные пызы.Рецепт.Этап 6](* <- lang_ru;; *);;
+concept_potato_pizi_recept_stage7 =>nrel_main_idtf:
+	[картофельные пызы.Рецепт.Этап 7](* <- lang_ru;; *);;
+concept_potato_pizi_recept_stage8 =>nrel_main_idtf:
+	[картофельные пызы.Рецепт.Этап 8](* <- lang_ru;; *);;
+concept_potato_pizi_recept_stage9 =>nrel_main_idtf:
+	[картофельные пызы.Рецепт.Этап 9](* <- lang_ru;; *);;
+concept_potato_pizi_recept_stage10 =>nrel_main_idtf:
+	[картофельные пызы.Рецепт.Этап 10](* <- lang_ru;; *);;
+concept_potato_pizi_recept_stage11 =>nrel_main_idtf:
+	[картофельные пызы.Рецепт.Этап 11](* <- lang_ru;; *);;

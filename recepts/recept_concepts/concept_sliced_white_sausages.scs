@@ -1,0 +1,4 @@
+concept_sliced_white_sausages => nrel_main_idtf:
+	[нарезанные белые колбаски](* <- lang_ru;; *);
+	[sliced white sausages](* <- lang_en;; *);;
+

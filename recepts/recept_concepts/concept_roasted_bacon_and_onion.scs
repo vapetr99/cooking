@@ -1,0 +1,4 @@
+concept_roasted_bacon_and_onion => nrel_main_idtf:
+	[обжаренные лук и бекон](* <- lang_ru;; *);
+	[roasted bacon and onion](* <- lang_en;; *);;
+

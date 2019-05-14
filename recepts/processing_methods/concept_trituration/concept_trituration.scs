@@ -1,0 +1,28 @@
+concept_trituration => nrel_main_idtf:
+	[растирание](* <- lang_ru;; *);
+	[trituration](* <- lang_en;; *);;
+
+concept_trituration<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(растирание)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Растирание - процесс разминания массы для придания ей свойств мягкости, кремообразности, а также процесс распределения этой массы по поверхности. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_trituration <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_trituration.jpg";;
+		*);;
+	*);;
+
+concept_trituration <- concept_processing_method;;

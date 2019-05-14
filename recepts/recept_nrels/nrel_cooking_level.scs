@@ -1,0 +1,10 @@
+sc_node_norole_relation -> nrel_cooking_level;;
+nrel_cooking_level=>nrel_main_idtf:[уровень приготовления*] (* <- lang_ru;; *);;
+nrel_cooking_level=>nrel_main_idtf:[cooking level*] (* <- lang_en;; *);;
+nrel_cooking_level<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+antisymmetric_relation->nrel_cooking_level;;
+antitransitive_relation->nrel_cooking_level;;
+antireflexive_relation->nrel_cooking_level;;
+nrel_cooking_level<-oriented_relation;;

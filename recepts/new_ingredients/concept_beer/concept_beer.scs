@@ -1,0 +1,27 @@
+concept_beer => nrel_main_idtf:
+	[пиво](* <- lang_ru;; *);
+	[beer](* <- lang_en;; *);;
+
+concept_beer<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(пиво)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+	...
+	(*
+	->rrel_example:
+      [Пиво - пенистый напиток из ячменного солода и хмеля с небольшим содержанием алкоголя. ](*<-lang_ru;;*);;
+	*);;
+*);;
+concept_beer <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_beer.jpg";;
+		*);;
+	*);;
+
