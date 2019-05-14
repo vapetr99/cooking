@@ -1,3 +1,7 @@
+sc_node_not_relation->concept_porridge;;
+concept_porridge=>nrel_main_idtf:
+[каша](* <-lang_ru;; *);;
+
 sc_node_not_relation->concept_country;;
 concept_country=>nrel_main_idtf:
 [страна](* <-lang_ru;; *);;
@@ -5,6 +9,10 @@ concept_country=>nrel_main_idtf:
 sc_node_not_relation->Ukraine;;
 Ukraine=>nrel_main_idtf:
 [Украина](* <-lang_ru;; *);;
+
+sc_node_not_relation->UK;;
+UK=>nrel_main_idtf:
+[Великобритания](* <-lang_ru;; *);;
 
 sc_node_not_relation->concept_borscht;;
 concept_borscht=>nrel_main_idtf:
@@ -22,6 +30,10 @@ sc_node_not_relation->concept_slavic_cuisine;;
 concept_slavic_cuisine=>nrel_main_idtf:
 [славянская кухня](* <-lang_ru;; *);;
 
+sc_node_not_relation->concept_europe_cuisine;;
+concept_europe_cuisine=>nrel_main_idtf:
+[европейская кухня](* <-lang_ru;; *);;
+
 sc_node_not_relation->concept_aggregation_state;;
 concept_aggregation_state=>nrel_main_idtf:
 [агрегатное состояние](* <-lang_ru;; *);;
@@ -30,9 +42,25 @@ sc_node_not_relation->concept_easter_cake;;
 concept_easter_cake=>nrel_main_idtf:
 [кулич](* <-lang_ru;; *);;
 
+sc_node_not_relation->concept_russian_salad;;
+concept_russian_salad=>nrel_main_idtf:
+[оливье](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_croissant;;
+concept_croissant=>nrel_main_idtf:
+[круассан](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_oatmeal;;
+concept_oatmeal=>nrel_main_idtf:
+[овсянка](* <-lang_ru;; *);;
+
 sc_node_not_relation->concept_solid;;
 concept_solid=>nrel_main_idtf:
 [блюдо с постоянной формой](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_cutting;;
+concept_cutting=>nrel_main_idtf:
+[нарезка](* <-lang_ru;; *);;
 
 sc_node_not_relation->concept_baking_flour;;
 concept_baking_flour=>nrel_main_idtf:
