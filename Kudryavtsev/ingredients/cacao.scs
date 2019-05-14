@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_cocoa;;
+
+concept_cocoa => nrel_main_idtf:
+[Какао] (* <- lang_ru;; *);
+[Cocoa] (* <- lang_en;; *);;
+concept_cocoa <- concept_ingridient;;
+
+concept_cocoa => nrel_kkal : 312_kkal
+(*
+=> nrel_main_idtf:
+[312 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_cocoa => nrel_price : 2_rub
+(*
+=> nrel_main_idtf:
+[2 рубля]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_cocoa => nrel_storage_time: 12_month
+(*
+=> nrel_main_idtf:
+[12 месяцев]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_cocoa => nrel_storage_conditions: cacao_cond
+(*
+=> nrel_main_idtf:
+[от +15 до +21 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_cocoa=> nrel_glycemic_index: 20
+
+(*
+=> nrel_main_idtf:
+[20]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

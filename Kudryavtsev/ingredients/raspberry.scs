@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_raspberry;;
+
+concept_raspberry => nrel_main_idtf:
+[Малина] (* <- lang_ru;; *);
+[Raspberry] (* <- lang_en;; *);;
+concept_raspberry <- concept_ingridient;;
+
+concept_raspberry => nrel_kkal : 52_kkal
+(*
+=> nrel_main_idtf:
+[52 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_raspberry => nrel_price : 3_rub
+(*
+=> nrel_main_idtf:
+[3 рубля]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_raspberry => nrel_storage_time: 7_days
+(*
+=> nrel_main_idtf:
+[7 дней]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_raspberry => nrel_storage_conditions: rasberry_cond
+(*
+=> nrel_main_idtf:
+[от +3 до +4 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_raspberry=> nrel_glycemic_index: 30
+
+(*
+=> nrel_main_idtf:
+[30]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

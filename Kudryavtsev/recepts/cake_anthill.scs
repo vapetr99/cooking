@@ -1,0 +1,190 @@
+concept_cake_anthill_recept <=nrel_context_of_action: [*
+	concept_cake_anthill <-dish;;
+	concept_cake_anthill=>nrel_ingredients:
+		concept_butter;
+		concept_sugar;
+		concept_egg;
+		concept_soda;
+		concept_salt;
+                concept_flour;
+		concept_condensed_milk;;
+*];;
+
+concept_cake_anthill_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_hours:2.5;;
+	*);;
+*);;
+concept_cake_anthill_recept ->rrel_1: concept_cake_anthill;;
+concept_cake_anthill_recept <=nrel_stage_decomposition: concept_cake_anthill_recept_stages;;
+
+concept_cake_anthill_recept_stage1 <-rrel_1: concept_cake_anthill_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_egg;;
+						*);
+						=>nrel_processing_method: beatting;
+						=>nrel_final_product: cake_anthill_e1;
+						=>nrel_sequencing: concept_cake_anthill_recept_stage2;;
+
+concept_cake_anthill_recept_stage2 <- concept_cake_anthill_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_butter;;
+							->concept_sugar;;
+						*);
+						=>nrel_processing_method: beatting;
+						=>nrel_final_product: cake_anthill_e2;
+						=>nrel_sequencing: concept_cake_anthill_recept_stage3;;
+
+concept_cake_anthill_recept_stage3 <- concept_cake_anthill_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->cake_anthill_e1;;
+							->cake_anthill_e2;;
+							->concept_salt;;
+							->concept_soda;;
+							->concept_flour;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: cake_anthill_e3;
+						=>nrel_sequencing: concept_cake_anthill_recept_stage4;;
+
+concept_cake_anthill_recept_stage4 <- concept_cake_anthill_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->grater;;
+							->pan;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->cake_anthill_e3;;
+						*);
+						=>nrel_processing_method: rubbing;
+						=>nrel_final_product: cake_anthill_e4;
+						=>nrel_sequencing:
+
+concept_cake_anthill_recept_stage5;;
+
+concept_cake_anthill_recept_stage5 <- concept_cake_anthill_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->gas_cooker;;
+							->pan;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->cake_anthill_e4;;
+						*);
+						=>nrel_processing_method: frying;
+						=>nrel_final_product: cake_anthill_e5;
+						=>nrel_sequencing:
+
+concept_cake_anthill_recept_stage6;;
+
+concept_cake_anthill_recept_stage6 <- concept_cake_anthill_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->fork;;
+							->bowl;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_butter;;
+							->concept_condensed_milk;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: cake_anthill_e6;
+						=>nrel_sequencing:
+
+concept_cake_anthill_recept_stage7;;
+
+concept_cake_anthill_recept_stage7 <- concept_cake_anthill_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->plate;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->cake_anthill_e6;;
+							->cake_anthill_e5;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: cake_anthill_e7;;
+
+
+
+cake_anthill_e1
+=> nrel_main_idtf:[Взбитые яйца]
+(* <- lang_ru;; *);;
+
+cake_anthill_e2
+=> nrel_main_idtf:[Взбивтое масло]
+(* <- lang_ru;; *);;
+
+cake_anthill_e3
+=> nrel_main_idtf:[Готовое тесто]
+(* <- lang_ru;; *);;
+
+cake_anthill_e4
+=> nrel_main_idtf:[Нарезанное тесто]
+(* <- lang_ru;; *);;
+
+cake_anthill_e5
+=> nrel_main_idtf:[Жареное тесто]
+(* <- lang_ru;; *);;
+
+cake_anthill_e6
+=> nrel_main_idtf:[Крем]
+(* <- lang_ru;; *);;
+
+cake_anthill_e7
+=> nrel_main_idtf:[Готовый торт]
+(* <- lang_ru;; *);;
+
+
+concept_cake_anthill_recept
+=> nrel_main_idtf:[Торт "Муравейник".Рецепт]
+(* <- lang_ru;; *);;
+
+concept_cake_anthill_recept_stages =>nrel_main_idtf:
+	[Торт "Муравейник".Рецепт.Этапы](* <- lang_ru;; *);;
+concept_cake_anthill_recept_stage1 =>nrel_main_idtf:
+	[Торт "Муравейник".Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_cake_anthill_recept_stage2 =>nrel_main_idtf:
+	[Торт "Муравейник".Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_cake_anthill_recept_stage3 =>nrel_main_idtf:
+	[Торт "Муравейник".Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_cake_anthill_recept_stage4 =>nrel_main_idtf:
+	[Торт "Муравейник".Рецепт.Этап 4](* <- lang_ru;; *);;
+concept_cake_anthill_recept_stage5 =>nrel_main_idtf:
+	[Торт "Муравейник".Рецепт.Этап 5](* <- lang_ru;; *);;
+concept_cake_anthill_recept_stage6 =>nrel_main_idtf:
+	[Торт "Муравейник".Рецепт.Этап 6](* <- lang_ru;; *);;
+concept_cake_anthill_recept_stage7 =>nrel_main_idtf:
+	[Торт "Муравейник".Рецепт.Этап 7](* <- lang_ru;; *);;
+

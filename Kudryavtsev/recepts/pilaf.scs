@@ -1,0 +1,102 @@
+concept_pilaf_recept <=nrel_context_of_action: [*
+	concept_pilaf <-dish;;
+	concept_pilaf=>nrel_ingredients:
+		concept_mince;
+		concept_rice;
+		concept_carrot;
+		concept_onion;
+		concept_salt;
+                concept_garlic;
+                concept_pepper;
+                concept_vegetable_oil;;
+*];;
+
+concept_pilaf_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_minutes:40;;
+	*);;
+*);;
+concept_pilaf_recept ->rrel_1: concept_pilaf;;
+concept_pilaf_recept <=nrel_stage_decomposition: concept_pilaf_recept_stages;;
+
+concept_pilaf_recept_stage1 <-rrel_1: concept_pilaf_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->knife;;
+							->plate;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_carrot;;
+							->concept_onion;;
+						*);
+						=>nrel_processing_method: tapping;
+						=>nrel_final_product: pilaf_e1;
+						=>nrel_sequencing: concept_pilaf_recept_stage2;;
+
+concept_pilaf_recept_stage2 <- concept_pilaf_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->pan;;
+							->gas_cooker;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->pilaf_e1;;
+							->concept_salt;;
+							->concept_pepper;;
+							->concept_mince;;
+						*);
+						=>nrel_processing_method: frying;
+						=>nrel_final_product: pilaf_e2;
+                                                =>nrel_additional_component: concept_vegetable_oil;
+						=>nrel_sequencing: concept_pilaf_recept_stage3;;
+
+concept_pilaf_recept_stage3 <- concept_pilaf_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->pan;;
+							->gas_cooker;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_water;;
+							->concept_rice;;
+							->pilaf_e2;;
+							->concept_garlic;;
+						*);
+						=>nrel_processing_method: boiling;
+						=>nrel_final_product: pilaf_e3;;
+						
+
+pilaf_e1
+=> nrel_main_idtf:[Нарезанные овощи]
+(* <- lang_ru;; *);;
+
+pilaf_e2
+=> nrel_main_idtf:[Зажарка с мясом]
+(* <- lang_ru;; *);;
+
+pilaf_e3
+=> nrel_main_idtf:[Готовый плов]
+(* <- lang_ru;; *);;
+
+concept_pilaf_recept
+=> nrel_main_idtf:[Плов.Рецепт]
+(* <- lang_ru;; *);;
+
+concept_pilaf_recept_stages =>nrel_main_idtf:
+	[Плов.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_pilaf_recept_stage1 =>nrel_main_idtf:
+	[Плов.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_pilaf_recept_stage2 =>nrel_main_idtf:
+	[Плов.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_pilaf_recept_stage3 =>nrel_main_idtf:
+	[Плов.Рецепт.Этап 3](* <- lang_ru;; *);;
+
+

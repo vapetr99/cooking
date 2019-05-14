@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_garlic;;
+
+concept_garlic => nrel_main_idtf:
+[Чеснок] (* <- lang_ru;; *);
+[Garlic] (* <- lang_en;; *);;
+concept_garlic <- concept_ingridient;;
+
+concept_garlic => nrel_kkal : 149_kkal
+(*
+=> nrel_main_idtf:
+[149 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_garlic => nrel_price : 7_rub
+(*
+=> nrel_main_idtf:
+[7 рублей]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_garlic => nrel_storage_time: 12_month
+(*
+=> nrel_main_idtf:
+[12 месяцев]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_garlic => nrel_storage_conditions: garlic_cond
+(*
+=> nrel_main_idtf:
+[до +20 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_garlic=> nrel_glycemic_index: 10
+
+(*
+=> nrel_main_idtf:
+[10]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

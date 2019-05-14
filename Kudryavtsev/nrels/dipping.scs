@@ -1,0 +1,51 @@
+dipping=>nrel_idtf:[dipping*] (* <- lang_en;; *);;
+dipping=>nrel_main_idtf:[Обмакивание*] (* <- lang_ru;; *);;
+
+dipping<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(Обмакивание*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+		(*
+		->[Процесс обмакивания ингридиента в жидкость или крошку.](* <- lang_ru;; *);;
+		*);;
+	<=nrel_using_constants:...
+		(*
+		->concept_end_dip;;
+		->concept_start_dip;;
+		*);;
+*);;
+
+dipping=>nrel_first_domain:concept_end_dip;;
+dipping=>nrel_second_domain:concept_start_dip;;
+concept_end_dip<-...
+(*
+	->concept_start_dip;;
+	=>nrel_combination:...
+	(*
+		<=nrel_definitional_domain:dipping;;
+	*);;
+*);;
+
+dipping<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+dipping<-oriented_relation;;
+antisymmetric_relation->dipping;;
+antitransitive_relation->dipping;;
+antireflexive_relation->dipping;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;
+binary_relation=>nrel_inclusion:transitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+concept_end_dip
+=> nrel_main_idtf: [Ингридиент после обмакивания]
+(* <- lang_ru;; *);;
+
+concept_start_dip
+=> nrel_main_idtf: [Начальный ингридиент]
+(* <- lang_ru;; *);;
+	

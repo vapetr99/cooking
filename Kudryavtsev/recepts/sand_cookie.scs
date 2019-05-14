@@ -1,0 +1,95 @@
+concept_sand_cookie_recept <=nrel_context_of_action: [*
+	concept_sand_cookie <-dish;;
+	concept_sand_cookie=>nrel_ingredients:
+		concept_butter;
+		concept_sugar;
+		concept_egg;
+                concept_flour;
+                concept_baking_powder;;
+*];;
+
+concept_sand_cookie_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_hours:1;;
+	*);;
+*);;
+concept_sand_cookie_recept ->rrel_1: concept_sand_cookie;;
+concept_sand_cookie_recept <=nrel_stage_decomposition: concept_sand_cookie_recept_stages;;
+
+concept_sand_cookie_recept_stage1 <-rrel_1: concept_sand_cookie_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_egg;;
+							->concept_sugar;;
+							->concept_butter;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: sand_cookie_e1;
+						=>nrel_sequencing: concept_sand_cookie_recept_stage2;;
+
+concept_sand_cookie_recept_stage2 <- concept_sand_cookie_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_flour;;
+							->concept_baking_powder;;
+							->sand_cookie_e1;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: sand_cookie_e2;
+						=>nrel_sequencing: concept_sand_cookie_recept_stage3;;
+
+concept_sand_cookie_recept_stage3 <- concept_sand_cookie_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->gas_cooker;;
+							->pan;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->sand_cookie_e2;;
+						*);
+						=>nrel_processing_method: frying;
+						=>nrel_final_product: sand_cookie_e3;;
+						
+sand_cookie_e1
+=> nrel_main_idtf:[Яйца с сахаром и маслом]
+(* <- lang_ru;; *);;
+
+sand_cookie_e2
+=> nrel_main_idtf:[Тесто]
+(* <- lang_ru;; *);;
+
+sand_cookie_e3
+=> nrel_main_idtf:[Готовое печенье]
+(* <- lang_ru;; *);;
+
+
+concept_sand_cookie_recept
+=> nrel_main_idtf:[Песочное печенье.Рецепт]
+(* <- lang_ru;; *);;
+
+concept_sand_cookie_recept_stages =>nrel_main_idtf:
+	[Песочное печенье.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_sand_cookie_recept_stage1 =>nrel_main_idtf:
+	[Песочное печенье.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_sand_cookie_recept_stage2 =>nrel_main_idtf:
+	[Песочное печенье.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_sand_cookie_recept_stage3 =>nrel_main_idtf:
+	[Песочное печенье.Рецепт.Этап 3](* <- lang_ru;; *);;
+
+

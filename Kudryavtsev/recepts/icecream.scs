@@ -1,0 +1,137 @@
+concept_icecream_recept <=nrel_context_of_action: [*
+	concept_icecream <-dish;;
+	concept_icecream=>nrel_ingredients:
+		concept_butter;
+		concept_sugar;
+		concept_egg;
+		concept_cream;
+		concept_milk;;
+*];;
+
+concept_icecream_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_hours:1.5;;
+	*);;
+*);;
+concept_icecream_recept ->rrel_1: concept_icecream;;
+concept_icecream_recept <=nrel_stage_decomposition: concept_icecream_recept_stages;;
+
+concept_icecream_recept_stage1 <-rrel_1: concept_icecream_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_egg;;
+							->concept_sugar;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: icecream_e1;
+						=>nrel_sequencing: concept_icecream_recept_stage2;;
+
+concept_icecream_recept_stage2 <- concept_icecream_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->pan;;
+							->gas_cooker;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_water;;
+							->icecream_e1;;
+						*);
+						=>nrel_processing_method: boiling;
+						=>nrel_final_product: icecream_e2;
+						=>nrel_sequencing: concept_icecream_recept_stage3;;
+
+concept_icecream_recept_stage3 <- concept_icecream_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->spoon;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_cream;;
+						*);
+						=>nrel_processing_method: beatting;
+						=>nrel_final_product: icecream_e3;
+						=>nrel_sequencing: concept_icecream_recept_stage4;;
+
+concept_icecream_recept_stage4 <- concept_icecream_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->spoon;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->icecream_e3;;
+							->icecream_e2;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: icecream_e4;
+						=>nrel_sequencing:
+
+concept_icecream_recept_stage5;;
+
+concept_icecream_recept_stage5 <- concept_icecream_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->freezer;;
+							->plate;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->icecream_e4;;
+						*);
+						=>nrel_processing_method: freezing;
+						=>nrel_final_product: icecream_e5;;
+
+icecream_e1
+=> nrel_main_idtf:[Взбитые яйца]
+(* <- lang_ru;; *);;
+
+icecream_e2
+=> nrel_main_idtf:[Вода с яйцами]
+(* <- lang_ru;; *);;
+
+icecream_e3
+=> nrel_main_idtf:[Сливки]
+(* <- lang_ru;; *);;
+
+icecream_e4
+=> nrel_main_idtf:[Жидкое мороженное]
+(* <- lang_ru;; *);;
+
+icecream_e5
+=> nrel_main_idtf:[Готовое мороженное]
+(* <- lang_ru;; *);;
+
+
+concept_icecream_recept
+=> nrel_main_idtf:[Мороженное.Рецепт]
+(* <- lang_ru;; *);;
+
+concept_icecream_recept_stages =>nrel_main_idtf:
+	[Мороженное.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_icecream_recept_stage1 =>nrel_main_idtf:
+	[Мороженное.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_icecream_recept_stage2 =>nrel_main_idtf:
+	[Мороженное.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_icecream_recept_stage3 =>nrel_main_idtf:
+	[Мороженное.Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_icecream_recept_stage4 =>nrel_main_idtf:
+	[Мороженное.Рецепт.Этап 4](* <- lang_ru;; *);;
+concept_icecream_recept_stage5 =>nrel_main_idtf:
+	[Мороженное.Рецепт.Этап 5](* <- lang_ru;; *);;
+

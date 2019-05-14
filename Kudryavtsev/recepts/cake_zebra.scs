@@ -1,0 +1,146 @@
+concept_cake_zebra_recept <=nrel_context_of_action: [*
+	concept_cake_zebra <-dish;;
+	concept_cake_zebra=>nrel_ingredients:
+		concept_sour_cream;
+		concept_sugar;
+		concept_egg;
+		concept_soda;
+		concept_salt;
+                concept_flour;
+		concept_cocoa;
+		concept_butter;;
+*];;
+
+concept_cake_zebra_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_hours:1.5;;
+	*);;
+*);;
+concept_cake_zebra_recept ->rrel_1: concept_cake_zebra;;
+concept_cake_zebra_recept <=nrel_stage_decomposition: concept_cake_zebra_recept_stages;;
+
+concept_cake_zebra_recept_stage1 <-rrel_1: concept_cake_zebra_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_egg;;
+							->concept_sugar;;
+						*);
+						=>nrel_processing_method: beatting;
+						=>nrel_final_product: cake_zebra_e1;
+						=>nrel_sequencing: concept_cake_zebra_recept_stage2;;
+
+concept_cake_zebra_recept_stage2 <- concept_cake_zebra_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_flour;;
+							->concept_butter;;
+							->concept_sour_cream;;
+							->cake_zebra_e1;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: cake_zebra_e2;
+						=>nrel_sequencing: concept_cake_zebra_recept_stage3;;
+
+concept_cake_zebra_recept_stage3 <- concept_cake_zebra_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->spoon;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->cake_zebra_e2;;
+							->concept_flour;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: cake_zebra_e3;
+						=>nrel_sequencing: concept_cake_zebra_recept_stage4;;
+
+concept_cake_zebra_recept_stage4 <- concept_cake_zebra_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->spoon;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->cake_zebra_e2;;
+							->concept_cocoa;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: cake_zebra_e4;
+						=>nrel_sequencing:
+
+concept_cake_zebra_recept_stage5;;
+
+concept_cake_zebra_recept_stage5 <- concept_cake_zebra_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->gas_cooker;;
+							->pan;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->cake_zebra_e4;;
+							->cake_zebra_e3;;
+						*);
+						=>nrel_processing_method: frying;
+						=>nrel_final_product: cake_zebra_e5;;
+						
+cake_zebra_e1
+=> nrel_main_idtf:[Взбитые яйца]
+(* <- lang_ru;; *);;
+
+cake_zebra_e2
+=> nrel_main_idtf:[Тесто]
+(* <- lang_ru;; *);;
+
+cake_zebra_e3
+=> nrel_main_idtf:[Тесто с мукой]
+(* <- lang_ru;; *);;
+
+cake_zebra_e4
+=> nrel_main_idtf:[Тесто с какао]
+(* <- lang_ru;; *);;
+
+cake_zebra_e5
+=> nrel_main_idtf:[Готовый торт]
+(* <- lang_ru;; *);;
+
+
+
+concept_cake_zebra_recept
+=> nrel_main_idtf:[Торт "Зебра".Рецепт]
+(* <- lang_ru;; *);;
+
+concept_cake_zebra_recept_stages =>nrel_main_idtf:
+	[Торт "Зебра".Рецепт.Этапы](* <- lang_ru;; *);;
+concept_cake_zebra_recept_stage1 =>nrel_main_idtf:
+	[Торт "Зебра".Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_cake_zebra_recept_stage2 =>nrel_main_idtf:
+	[Торт "Зебра".Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_cake_zebra_recept_stage3 =>nrel_main_idtf:
+	[Торт "Зебра".Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_cake_zebra_recept_stage4 =>nrel_main_idtf:
+	[Торт "Зебра".Рецепт.Этап 4](* <- lang_ru;; *);;
+concept_cake_zebra_recept_stage5 =>nrel_main_idtf:
+	[Торт "Зебра".Рецепт.Этап 5](* <- lang_ru;; *);;
+
+

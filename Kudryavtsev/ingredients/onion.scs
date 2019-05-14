@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_onion;;
+
+concept_onion => nrel_main_idtf:
+[Лук] (* <- lang_ru;; *);
+[Onion] (* <- lang_en;; *);;
+concept_onion <- concept_ingridient;;
+
+concept_onion => nrel_kkal : 41_kkal
+(*
+=> nrel_main_idtf:
+[41 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_onion => nrel_price : 3_rub
+(*
+=> nrel_main_idtf:
+[3 рубля]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_onion => nrel_storage_time: 6_month
+(*
+=> nrel_main_idtf:
+[6 месяцев]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_onion => nrel_storage_conditions: onion_cond
+(*
+=> nrel_main_idtf:
+[до +20 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_onion=> nrel_glycemic_index: 10
+
+(*
+=> nrel_main_idtf:
+[10]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

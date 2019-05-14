@@ -1,0 +1,118 @@
+concept_beef_stew_recept <=nrel_context_of_action: [*
+	concept_beef_stew <-dish;;
+	concept_beef_stew=>nrel_ingredients:
+		concept_beef;
+		concept_carrot;
+		concept_pepper;
+		concept_beer;
+		concept_salt;
+                concept_olive_oil;
+		concept_onion;;
+*];;
+
+concept_beef_stew_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_hours:1;;
+	*);;
+*);;
+concept_beef_stew_recept ->rrel_1: concept_beef_stew;;
+concept_beef_stew_recept <=nrel_stage_decomposition: concept_beef_stew_recept_stages;;
+
+concept_beef_stew_recept_stage1 <-rrel_1: concept_beef_stew_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->knife;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_beef;;
+						*);
+						=>nrel_processing_method: tapping;
+						=>nrel_final_product: beef_stew_e1;
+						=>nrel_sequencing: concept_beef_stew_recept_stage2;;
+
+concept_beef_stew_recept_stage2 <- concept_beef_stew_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->pan;;
+							->gas_cooker;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_carrot;;
+							->concept_onion;;
+							->concept_pepper;;
+						*);
+						=>nrel_processing_method: frying;
+						=>nrel_final_product: beef_stew_e2;
+						=>nrel_sequencing: concept_beef_stew_recept_stage3;;
+
+concept_beef_stew_recept_stage3 <- concept_beef_stew_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->pan;;
+							->gas_cooker;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_flour;;
+							->beef_stew_e2;;
+						*);
+						=>nrel_processing_method: frying;
+						=>nrel_final_product: beef_stew_e3;
+						=>nrel_additional_component:                concept_olive_oil;
+						=>nrel_sequencing: concept_beef_stew_recept_stage4;;
+
+concept_beef_stew_recept_stage4 <- concept_beef_stew_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->gas_cooker;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->beef_stew_e3;;
+							->concept_salt;;
+							->concept_beer;;
+						*);
+						=>nrel_processing_method: frying;
+						=>nrel_final_product: beef_stew_e4;;
+
+
+beef_stew_e1
+=> nrel_main_idtf:[Нарезанная говядина]
+(* <- lang_ru;; *);;
+
+beef_stew_e2
+=> nrel_main_idtf:[Зажарка]
+(* <- lang_ru;; *);;
+
+beef_stew_e3
+=> nrel_main_idtf:[Говядина с овощами]
+(* <- lang_ru;; *);;
+
+beef_stew_e4
+=> nrel_main_idtf:[Готовое говядина]
+(* <- lang_ru;; *);;
+
+concept_beef_stew_recept
+=> nrel_main_idtf:[Тушеная говядина.Рецепт]
+(* <- lang_ru;; *);;
+
+concept_beef_stew_recept_stages =>nrel_main_idtf:
+	[Тушеная говядина.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_beef_stew_recept_stage1 =>nrel_main_idtf:
+	[Тушеная говядина.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_beef_stew_recept_stage2 =>nrel_main_idtf:
+	[Тушеная говядина.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_beef_stew_recept_stage3 =>nrel_main_idtf:
+	[Тушеная говядина.Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_beef_stew_recept_stage4 =>nrel_main_idtf:
+	[Тушеная говядина.Рецепт.Этап 4](* <- lang_ru;; *);;
+

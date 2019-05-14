@@ -1,0 +1,145 @@
+concept_cheese_soup_recept <=nrel_context_of_action: [*
+	concept_cheese_soup <-dish;;
+	concept_cheese_soup=>nrel_ingredients:
+                concept_chicken_fillet;
+		concept_processed_cheese;
+		concept_potato;
+		concept_onion;
+		concept_carrot;
+                concept_butter;
+                concept_pepper;
+                concept_vegetable_oil;
+		concept_salt;;
+*];;
+
+concept_cheese_soup_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_minutes:50;;
+	*);;
+*);;
+concept_cheese_soup_recept ->rrel_1: concept_cheese_soup;;
+concept_cheese_soup_recept <=nrel_stage_decomposition: concept_cheese_soup_recept_stages;;
+
+concept_cheese_soup_recept_stage1 <-rrel_1: concept_cheese_soup_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->plate;;
+							->knife;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_chicken_fillet;;
+							->concept_chicken_carrot;;
+							->concept_chicken_potato;;
+						*);
+						=>nrel_processing_method: tapping;
+						=>nrel_final_product: cheese_soup_e1;
+						=>nrel_sequencing: concept_cheese_soup_recept_stage2;;
+
+concept_cheese_soup_recept_stage2 <- concept_cheese_soup_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->pan;;
+							->gas_cooker;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->cheese_soup_e1;;
+							->concept_water;;
+						*);
+						=>nrel_processing_method: boiling;
+						=>nrel_final_product: cheese_soup_e2;
+						=>nrel_sequencing: concept_cheese_soup_recept_stage3;;
+
+concept_cheese_soup_recept_stage3 <- concept_cheese_soup_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->pan;;
+							->gas_cooker;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_carrot;;
+							->concept_onion;;
+						*);
+						=>nrel_processing_method: frying;
+						=>nrel_final_product: cheese_soup_e3;
+						=>nrel_additional_component:                  concept_vegetable_oil;
+						=>nrel_sequencing: concept_cheese_soup_recept_stage4;;
+
+concept_cheese_soup_recept_stage4 <- concept_cheese_soup_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->plate;;
+							->knife;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_processed_cheese;;
+						*);
+						=>nrel_processing_method: tapping;
+						=>nrel_final_product: cheese_soup_e4;
+						=>nrel_sequencing:
+
+concept_cheese_soup_recept_stage5;;
+
+concept_cheese_soup_recept_stage5 <- concept_cheese_soup_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->gas_cooker;;
+							->pan;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->cheese_soup_e4;;
+							->cheese_soup_e3;;
+							->cheese_soup_e2;;
+						*);
+						=>nrel_processing_method: boiling;
+						=>nrel_final_product: cheese_soup_e5;;
+
+cheese_soup_e1
+=> nrel_main_idtf:[Нарезка]
+(* <- lang_ru;; *);;
+
+cheese_soup_e2
+=> nrel_main_idtf:[Варим филе и овощи]
+(* <- lang_ru;; *);;
+
+cheese_soup_e3
+=> nrel_main_idtf:[Зажарка]
+(* <- lang_ru;; *);;
+
+cheese_soup_e4
+=> nrel_main_idtf:[Нарезанный сырок]
+(* <- lang_ru;; *);;
+
+cheese_soup_e5
+=> nrel_main_idtf:[Готовый суп]
+(* <- lang_ru;; *);;
+
+concept_cheese_soup_recept
+=> nrel_main_idtf:[Сырный суп.Рецепт]
+(* <- lang_ru;; *);;
+
+concept_cheese_soup_recept_stages =>nrel_main_idtf:
+	[Сырный суп.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_cheese_soup_recept_stage1 =>nrel_main_idtf:
+	[Сырный суп.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_cheese_soup_recept_stage2 =>nrel_main_idtf:
+	[Сырный суп.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_cheese_soup_recept_stage3 =>nrel_main_idtf:
+	[Сырный суп.Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_cheese_soup_recept_stage4 =>nrel_main_idtf:
+	[Сырный суп.Рецепт.Этап 4](* <- lang_ru;; *);;
+concept_cheese_soup_recept_stage5 =>nrel_main_idtf:
+	[Сырный суп.Рецепт.Этап 5](* <- lang_ru;; *);;
+
+

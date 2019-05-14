@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_chicken_fillet;;
+
+concept_chicken_fillet => nrel_main_idtf:
+[Куриное филе] (* <- lang_ru;; *);
+[Chicken_fillet] (* <- lang_en;; *);;
+concept_chicken_fillet <- concept_ingridient;;
+
+concept_chicken_fillet => nrel_kkal : 110_kkal
+(*
+=> nrel_main_idtf:
+[110 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_chicken_fillet => nrel_price : 5_rub
+(*
+=> nrel_main_idtf:
+[5 рублей]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_chicken_fillet => nrel_storage_time: 15_days
+(*
+=> nrel_main_idtf:
+[15 дней]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_chicken_fillet => nrel_storage_conditions: c_fillet_cond
+(*
+=> nrel_main_idtf:
+[до +2 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_chicken_fillet=> nrel_glycemic_index: 0
+
+(*
+=> nrel_main_idtf:
+[0]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

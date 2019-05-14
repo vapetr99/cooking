@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_yeast;;
+
+concept_yeast => nrel_main_idtf:
+[Дрожжи] (* <- lang_ru;; *);
+[yeast] (* <- lang_en;; *);;
+concept_yeast <- concept_ingridient;;
+
+concept_yeast => nrel_kkal : 75_kkal
+(*
+=> nrel_main_idtf:
+[75 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_yeast => nrel_price : 1_rub
+(*
+=> nrel_main_idtf:
+[1 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_yeast => nrel_storage_time: 1_month
+(*
+=> nrel_main_idtf:
+[1 месяц]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_yeast => nrel_storage_conditions: yeast_cond
+(*
+=> nrel_main_idtf:
+[+4]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_yeast=> nrel_glycemic_index: 10
+
+(*
+=> nrel_main_idtf:
+[10]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

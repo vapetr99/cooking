@@ -1,0 +1,192 @@
+concept_baked_zucchini_recept <=nrel_context_of_action: [*
+	concept_baked_zucchini <-dish;;
+	concept_baked_zucchini=>nrel_ingredients:
+		concept_zucchini;
+		concept_tomato;
+		concept_egg;
+		concept_cheese;
+		concept_salt;
+                concept_sour_cream;
+		concept_garlic;
+		concept_vegetable_oil;;
+*];;
+
+concept_baked_zucchini_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_hours:1;;
+	*);;
+*);;
+concept_baked_zucchini_recept ->rrel_1: concept_baked_zucchini;;
+concept_baked_zucchini_recept <=nrel_stage_decomposition: concept_baked_zucchini_recept_stages;;
+
+concept_baked_zucchini_recept_stage1 <-rrel_1: concept_baked_zucchini_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->plate;;
+							->knife;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_zucchini;;
+							->concept_tomato;;
+						*);
+						=>nrel_processing_method: tapping;
+						=>nrel_final_product: baked_zucchini_e1;
+						=>nrel_sequencing: concept_baked_zucchini_recept_stage2;;
+
+concept_baked_zucchini_recept_stage2 <- concept_baked_zucchini_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_egg;;
+							->concept_sour_cream;;
+							->concept_vegetable_oil;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: baked_zucchini_e2;
+						=>nrel_sequencing: concept_baked_zucchini_recept_stage3;;
+
+concept_baked_zucchini_recept_stage3 <- concept_baked_zucchini_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->plate;;
+							->grater;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_garlic;;
+						*);
+						=>nrel_processing_method: rubbing;
+						=>nrel_final_product: baked_zucchini_e3;
+						=>nrel_sequencing: concept_baked_zucchini_recept_stage4;;
+
+concept_baked_zucchini_recept_stage4 <- concept_baked_zucchini_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->baked_zucchini_e3;;
+							->baked_zucchini_e2;;
+							->concept_salt;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: baked_zucchini_e4;
+						=>nrel_sequencing:
+
+concept_baked_zucchini_recept_stage5;;
+
+concept_baked_zucchini_recept_stage5 <- concept_baked_zucchini_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->gas_cooker;;
+							->pan;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->baked_zucchini_e4;;
+							->baked_zucchini_e1;;
+						*);
+						=>nrel_processing_method: frying;
+						=>nrel_final_product: baked_zucchini_e5;
+						=>nrel_sequencing:
+
+concept_baked_zucchini_recept_stage6;;
+
+concept_baked_zucchini_recept_stage6 <- concept_baked_zucchini_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->plate;;
+							->grater;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_cheese;;
+						*);
+						=>nrel_processing_method: rubbing;
+						=>nrel_final_product: baked_zucchini_e6;
+						=>nrel_sequencing:
+
+concept_baked_zucchini_recept_stage7;;
+
+concept_baked_zucchini_recept_stage7 <- concept_baked_zucchini_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->gas_cooker;;
+							->pan;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->baked_zucchini_e6;;
+							->baked_zucchini_e5;;
+						*);
+						=>nrel_processing_method: frying;
+						=>nrel_final_product: baked_zucchini_e7;;
+
+
+
+baked_zucchini_e1
+=> nrel_main_idtf:[Нарезанные кабачки и помидоры]
+(* <- lang_ru;; *);;
+
+baked_zucchini_e2
+=> nrel_main_idtf:[Заправка]
+(* <- lang_ru;; *);;
+
+baked_zucchini_e3
+=> nrel_main_idtf:[Тёртый чеснок]
+(* <- lang_ru;; *);;
+
+baked_zucchini_e4
+=> nrel_main_idtf:[Запрвка с чесноком]
+(* <- lang_ru;; *);;
+
+baked_zucchini_e5
+=> nrel_main_idtf:[Поджаренные кабачки с заправкой]
+(* <- lang_ru;; *);;
+
+baked_zucchini_e6
+=> nrel_main_idtf:[Тёртый сыр]
+(* <- lang_ru;; *);;
+
+baked_zucchini_e7
+=> nrel_main_idtf:[Готовые кабачки]
+(* <- lang_ru;; *);;
+
+
+concept_baked_zucchini_recept
+=> nrel_main_idtf:[Запечённые кабачки.Рецепт]
+(* <- lang_ru;; *);;
+
+concept_baked_zucchini_recept_stages =>nrel_main_idtf:
+	[Запечённые кабачки.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_baked_zucchini_recept_stage1 =>nrel_main_idtf:
+	[Запечённые кабачки.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_baked_zucchini_recept_stage2 =>nrel_main_idtf:
+	[Запечённые кабачки.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_baked_zucchini_recept_stage3 =>nrel_main_idtf:
+	[Запечённые кабачки.Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_baked_zucchini_recept_stage4 =>nrel_main_idtf:
+	[Запечённые кабачки.Рецепт.Этап 4](* <- lang_ru;; *);;
+concept_baked_zucchini_recept_stage5 =>nrel_main_idtf:
+	[Запечённые кабачки.Рецепт.Этап 5](* <- lang_ru;; *);;
+concept_baked_zucchini_recept_stage6 =>nrel_main_idtf:
+	[Запечённые кабачки.Рецепт.Этап 6](* <- lang_ru;; *);;
+concept_baked_zucchini_recept_stage7 =>nrel_main_idtf:
+	[Запечённые кабачки.Рецепт.Этап 7](* <- lang_ru;; *);;
+

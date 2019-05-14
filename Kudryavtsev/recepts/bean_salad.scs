@@ -1,0 +1,117 @@
+concept_bean_salad_recept <=nrel_context_of_action: [*
+	concept_bean_salad <-dish;;
+	concept_bean_salad=>nrel_ingredients:
+		concept_bean;
+		concept_cucumber;
+		concept_egg;
+		concept_sour_cream;
+		concept_salt;
+                concept_pepper;;
+*];;
+
+concept_bean_salad_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_minutes:25;;
+	*);;
+*);;
+concept_bean_salad_recept ->rrel_1: concept_bean_salad;;
+concept_bean_salad_recept <=nrel_stage_decomposition: concept_bean_salad_recept_stages;;
+
+concept_bean_salad_recept_stage1 <-rrel_1: concept_bean_salad_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->pan;;
+							->gas_cooker;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_egg;;
+							->concept_water;;
+						*);
+						=>nrel_processing_method: boiling;
+						=>nrel_final_product: bean_salad_e1;
+						=>nrel_sequencing: concept_bean_salad_recept_stage2;;
+
+concept_bean_salad_recept_stage2 <- concept_bean_salad_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->plate;;
+							->knife;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_onion;;
+							->bean_salad_e1;;
+						*);
+						=>nrel_processing_method: tapping;
+						=>nrel_final_product: bean_salad_e2;
+						=>nrel_sequencing: concept_bean_salad_recept_stage3;;
+
+concept_bean_salad_recept_stage3 <- concept_bean_salad_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->spoon;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->bean_salad_e2;;
+							->concept_been;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: bean_salad_e3;
+						=>nrel_sequencing: concept_bean_salad_recept_stage4;;
+
+concept_bean_salad_recept_stage4 <- concept_bean_salad_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->spoon;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->bean_salad_e3;;
+							->concept_sour_cream;;
+							->concept_salt;;
+							->concept_pepper;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: bean_salad_e4;;
+						
+bean_salad_e1
+=> nrel_main_idtf:[Сваренные яйца]
+(* <- lang_ru;; *);;
+
+bean_salad_e2
+=> nrel_main_idtf:[Нарезнные лук и яйца]
+(* <- lang_ru;; *);;
+
+bean_salad_e3
+=> nrel_main_idtf:[Первый слой]
+(* <- lang_ru;; *);;
+
+bean_salad_e4
+=> nrel_main_idtf:[Готовый салат]
+(* <- lang_ru;; *);;
+
+concept_bean_salad_recept
+=> nrel_main_idtf:[Салат из фасоли.Рецепт]
+(* <- lang_ru;; *);;
+
+concept_bean_salad_recept_stages =>nrel_main_idtf:
+	[Салат из фасоли.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_bean_salad_recept_stage1 =>nrel_main_idtf:
+	[Салат из фасоли.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_bean_salad_recept_stage2 =>nrel_main_idtf:
+	[Салат из фасоли.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_bean_salad_recept_stage3 =>nrel_main_idtf:
+	[Салат из фасоли.Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_bean_salad_recept_stage4 =>nrel_main_idtf:
+	[Салат из фасоли.Рецепт.Этап 4](* <- lang_ru;; *);;
+

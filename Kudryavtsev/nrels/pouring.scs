@@ -1,0 +1,51 @@
+pouring=>nrel_idtf:[pouring*] (* <- lang_en;; *);;
+pouring=>nrel_main_idtf:[Переливание*] (* <- lang_ru;; *);;
+
+pouring<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(Переливание*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+		(*
+		->[Переливание - процесс перемещения жидкости из одного объёма в другой.](* <- lang_ru;; *);;
+		*);;
+	<=nrel_using_constants:...
+		(*
+		->concept_pot_full;;
+		->concept_pot_empty;;
+		*);;
+*);;
+
+pouring=>nrel_first_domain:concept_pot_empty;;
+pouring=>nrel_second_domain:concept_pot_full;;
+concept_pot_empty<-...
+(*
+	->concept_pot_full;;
+	=>nrel_combination:...
+	(*
+		<=nrel_definitional_domain:pouring;;
+	*);;
+*);;
+
+pouring<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+pouring<-oriented_relation;;
+antisymmetric_relation->pouring;;
+antitransitive_relation->pouring;;
+antireflexive_relation->pouring;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;
+binary_relation=>nrel_inclusion:transitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+concept_pot_full
+=> nrel_main_idtf: [Сосуд с жидкостью]
+(* <- lang_ru;; *);;
+
+concept_pot_empty
+=> nrel_main_idtf: [Пустой сосуд]
+(* <- lang_ru;; *);;
+	

@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_pasta;;
+
+concept_pasta => nrel_main_idtf:
+[Макароны] (* <- lang_ru;; *);
+[Pasta] (* <- lang_en;; *);;
+concept_pasta <- concept_ingridient;;
+
+concept_pasta => nrel_kkal : 112_kkal
+(*
+=> nrel_main_idtf:
+[112 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_pasta => nrel_price : 2_rub
+(*
+=> nrel_main_idtf:
+[2 рублей]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_pasta => nrel_storage_time: 12_month
+(*
+=> nrel_main_idtf:
+[12 месяцев]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_pasta => nrel_storage_conditions: pasta_cond
+(*
+=> nrel_main_idtf:
+[до +30 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_pasta=> nrel_glycemic_index: 50
+
+(*
+=> nrel_main_idtf:
+[50]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_soda;;
+
+concept_soda => nrel_main_idtf:
+[Сода] (* <- lang_ru;; *);
+[Soda] (* <- lang_en;; *);;
+concept_soda <- concept_ingridient;;
+
+concept_soda => nrel_kkal : 0_kkal
+(*
+=> nrel_main_idtf:
+[0 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_soda => nrel_price : 1_rub
+(*
+=> nrel_main_idtf:
+[1 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_soda => nrel_storage_time: 18_month
+(*
+=> nrel_main_idtf:
+[18 месяцев]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_soda => nrel_storage_conditions: soda_cond
+(*
+=> nrel_main_idtf:
+[Не имеет значения]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_soda=> nrel_glycemic_index: 0
+
+(*
+=> nrel_main_idtf:
+[0]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

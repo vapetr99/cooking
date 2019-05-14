@@ -1,0 +1,122 @@
+concept_carrot_pie_recept <=nrel_context_of_action: [*
+	concept_carrot_pie <-dish;;
+	concept_carrot_pie=>nrel_ingredients:
+		concept_carrot;
+		concept_vegetable_oil;
+		concept_egg;
+		concept_sugar;
+		concept_salt;
+                concept_flour;
+		concept_baking_powder;;
+*];;
+
+concept_carrot_pie_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_hours:1;;
+	*);;
+*);;
+concept_carrot_pie_recept ->rrel_1: concept_carrot_pie;;
+concept_carrot_pie_recept <=nrel_stage_decomposition: concept_carrot_pie_recept_stages;;
+
+concept_carrot_pie_recept_stage1 <-rrel_1: concept_carrot_pie_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_egg;;
+							->concept_sugar;;
+							->concept_vegetable_oil;;
+						*);
+						=>nrel_processing_method: beatting;
+						=>nrel_final_product: carrot_pie_e1;
+						=>nrel_sequencing: concept_carrot_pie_recept_stage2;;
+
+concept_carrot_pie_recept_stage2 <- concept_carrot_pie_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_flour;;
+							->concept_baking_powder;;
+							->carrot_pie_e1;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: carrot_pie_e2;
+						=>nrel_sequencing: concept_carrot_pie_recept_stage3;;
+
+concept_carrot_pie_recept_stage3 <- concept_carrot_pie_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->plate;;
+							->grater;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_carrot;;
+						*);
+						=>nrel_processing_method: rubbing;
+						=>nrel_final_product: carrot_pie_e3;
+						=>nrel_sequencing: concept_carrot_pie_recept_stage4;;
+
+concept_carrot_pie_recept_stage4 <- concept_carrot_pie_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->gas_cooker;;
+							->pan;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->carrot_pie_e3;;
+							->carrot_pie_e2;;
+						*);
+						=>nrel_processing_method: frying;
+						=>nrel_final_product: carrot_pie_e4;
+						=>nrel_additional_component:                concept_olive_oil;;
+						
+carrot_pie_e1
+=> nrel_main_idtf:[Взбитые яйца]
+(* <- lang_ru;; *);;
+
+carrot_pie_e2
+=> nrel_main_idtf:[Тесто]
+(* <- lang_ru;; *);;
+
+carrot_pie_e3
+=> nrel_main_idtf:[Тёртая морковь]
+(* <- lang_ru;; *);;
+
+carrot_pie_e4
+=> nrel_main_idtf:[Готовый пирог]
+(* <- lang_ru;; *);;
+
+
+
+
+concept_carrot_pie_recept
+=> nrel_main_idtf:[Морковный пирог.Рецепт]
+(* <- lang_ru;; *);;
+
+concept_carrot_pie_recept_stages =>nrel_main_idtf:
+	[Морковный пирог.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_carrot_pie_recept_stage1 =>nrel_main_idtf:
+	[Морковный пирог.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_carrot_pie_recept_stage2 =>nrel_main_idtf:
+	[Морковный пирог.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_carrot_pie_recept_stage3 =>nrel_main_idtf:
+	[Морковный пирог.Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_carrot_pie_recept_stage4 =>nrel_main_idtf:
+	[Морковный пирог.Рецепт.Этап 4](* <- lang_ru;; *);;
+
+

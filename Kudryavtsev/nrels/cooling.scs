@@ -1,0 +1,51 @@
+cooling=>nrel_idtf:[cooling*] (* <- lang_en;; *);;
+cooling=>nrel_main_idtf:[Охлаждение*] (* <- lang_ru;; *);;
+
+cooling<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(Охлаждение*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+		(*
+		->[Нагревание - процесс уменьшения температуры ингридиента или блюда.](* <- lang_ru;; *);;
+		*);;
+	<=nrel_using_constants:...
+		(*
+		->concept_value;;
+		->concept_ing;;
+		*);;
+*);;
+
+cooling=>nrel_first_domain:concept_value;;
+cooling=>nrel_second_domain:concept_ing;;
+concept_value<-...
+(*
+	->concept_ing;;
+	=>nrel_combination:...
+	(*
+		<=nrel_definitional_domain:cooling;;
+	*);;
+*);;
+
+cooling<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+cooling<-oriented_relation;;
+antisymmetric_relation->cooling;;
+antitransitive_relation->cooling;;
+antireflexive_relation->cooling;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+concept_value
+=> nrel_main_idtf: [Значение]
+(* <- lang_ru;; *);;
+
+concept_ing
+=> nrel_main_idtf: [Охлаждаемый объект]
+(* <- lang_ru;; *);;
+	

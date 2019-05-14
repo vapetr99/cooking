@@ -1,0 +1,32 @@
+stirring
+=> nrel_main_idtf: [Перемешивание*]
+(* <- lang_ru;; *);;
+
+frying
+=> nrel_main_idtf: [Жарка*]
+(* <- lang_ru;; *);;
+
+beatting
+=> nrel_main_idtf: [Взбивание*]
+(* <- lang_ru;; *);;
+
+tapping
+=> nrel_main_idtf: [Нарезание*]
+(* <- lang_ru;; *);;
+
+boiling
+=> nrel_main_idtf: [Варение*]
+(* <- lang_ru;; *);;
+
+lubricating
+=> nrel_main_idtf: [Смазывание*]
+(* <- lang_ru;; *);;
+
+rubbing
+=> nrel_main_idtf: [Натирание*]
+(* <- lang_ru;; *);;
+
+smearing
+=> nrel_main_idtf: [Намазывание*]
+(* <- lang_ru;; *);;
+
