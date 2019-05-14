@@ -21,12 +21,14 @@ concept_spoon<-rrel_key_sc_element:...
 	(*
 		<-illustration;;<=nrel_sc_text_translation:...
 			(*
-			    ->rrel_example: "file://pictures//spoon.jpg"
+			    ->rrel_example: "file://pictures//spoon.jpeg"
 			(*
 		=>nrel_format:format_jpg;;
 		*);;
 	*);;
 *);;
+
+concept_spoon=>nrel_material:concept_metall;;
 
 concept_spoon<-rrel_key_sc_element:...
 (*
