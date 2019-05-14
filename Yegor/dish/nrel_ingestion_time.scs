@@ -1,3 +1,4 @@
+sc_node_norole_relation->nrel_ingestion_time;;
 nrel_ingestion_time=>nrel_idtf:[ingestion time*] (* <- lang_en;; *);;
 nrel_ingestion_time=>nrel_main_idtf:[момент приема блюда*] (* <- lang_ru;; *);;
 

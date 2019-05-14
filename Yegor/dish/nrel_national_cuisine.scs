@@ -1,3 +1,4 @@
+sc_node_norole_relation->nrel_national_cuisine;;
 nrel_national_cuisine=>nrel_idtf:[national cuisine*] (* <- lang_en;; *);;
 nrel_national_cuisine=>nrel_main_idtf:[национальная кухня*] (* <- lang_ru;; *);;
 

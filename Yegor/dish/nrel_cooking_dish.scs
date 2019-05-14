@@ -1,3 +1,4 @@
+sc_node_norole_relation->nrel_cooking_dish;;
 nrel_cooking_dish=>nrel_idtf:[cooking dish*] (* <- lang_en;; *);;
 nrel_cooking_dish=>nrel_main_idtf:[посуда для блюда*] (* <- lang_ru;; *);;
 

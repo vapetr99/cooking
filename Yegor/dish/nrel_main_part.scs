@@ -1,3 +1,4 @@
+sc_node_norole_relation->nrel_main_part;;
 nrel_main_part=>nrel_idtf:[main part*] (* <- lang_en;; *);;
 nrel_main_part=>nrel_main_idtf:[основная часть*] (* <- lang_ru;; *);;
 

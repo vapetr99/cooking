@@ -1,3 +1,4 @@
+sc_node_norole_relation->nrel_ingredient;;
 nrel_ingredient=>nrel_idtf:[ingredient*] (* <- lang_en;; *);;
 nrel_ingredient=>nrel_main_idtf:[ингредиент*] (* <- lang_ru;; *);;
 
