@@ -1,0 +1,136 @@
+concept_raspberry_kissel_recept <=nrel_context_of_action: [*
+	concept_raspberry_kissel <-dish;;
+	concept_raspberry_kissel=>nrel_ingredients:
+		concept_raspberry;
+		concept_sugar;
+		concept_water;
+		concept_starch;;
+*];;
+
+concept_raspberry_kissel_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_minutes:20;;
+	*);;
+*);;
+concept_raspberry_kissel_recept ->rrel_1: concept_raspberry_kissel;;
+concept_raspberry_kissel_recept <=nrel_stage_decomposition: concept_raspberry_kissel_recept_stages;;
+
+concept_raspberry_kissel_recept_stage1 <-rrel_1: concept_raspberry_kissel_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->pan;;
+							->spoon;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_raspberry;;
+							->concept_sugar;;
+							->concept_water;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: raspberry_kissel_e1;
+						=>nrel_sequencing: concept_raspberry_kissel_recept_stage2;;
+
+concept_raspberry_kissel_recept_stage2 <- concept_raspberry_kissel_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->gas_cooker;;
+							->pan;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->raspberry_kissel_e1;;
+						*);
+						=>nrel_processing_method: boiling;
+						=>nrel_final_product: raspberry_kissel_e2;
+						=>nrel_sequencing: concept_raspberry_kissel_recept_stage3;;
+
+concept_raspberry_kissel_recept_stage3 <- concept_raspberry_kissel_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->pan;;
+							->freezer;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->raspberry_kissel_e2;;
+						*);
+						=>nrel_processing_method: cooling;
+						=>nrel_final_product: raspberry_kissel_e3;
+						=>nrel_sequencing: concept_raspberry_kissel_recept_stage4;;
+
+concept_raspberry_kissel_recept_stage4 <- concept_raspberry_kissel_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->spoon;;
+							->pan;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->raspberry_kissel_e3;;
+							->concept_starch;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: raspberry_kissel_e4;
+						=>nrel_sequencing:
+
+concept_raspberry_kissel_recept_stage5;;
+
+concept_raspberry_kissel_recept_stage5 <- concept_raspberry_kissel_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->gas_cooker;;
+							->pan;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->raspberry_kissel_e4;;
+						*);
+						=>nrel_processing_method: boiling;
+						=>nrel_final_product: raspberry_kissel_e5;;
+						
+raspberry_kissel_e1
+=> nrel_main_idtf:[Ягоды с сахаром]
+(* <- lang_ru;; *);;
+
+raspberry_kissel_e2
+=> nrel_main_idtf:[Нагретая жидкость]
+(* <- lang_ru;; *);;
+
+raspberry_kissel_e3
+=> nrel_main_idtf:[Охлаждённая жидкость]
+(* <- lang_ru;; *);;
+
+raspberry_kissel_e4
+=> nrel_main_idtf:[Жидкость с крахмалом]
+(* <- lang_ru;; *);;
+
+raspberry_kissel_e5
+=> nrel_main_idtf:[Готовый кисель]
+(* <- lang_ru;; *);;
+
+concept_raspberry_kissel_recept
+=> nrel_main_idtf:[Малиновый кисель.Рецепт]
+(* <- lang_ru;; *);;
+
+concept_raspberry_kissel_recept_stages =>nrel_main_idtf:
+	[Малиновый кисель.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_raspberry_kissel_recept_stage1 =>nrel_main_idtf:
+	[Малиновый кисель.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_raspberry_kissel_recept_stage2 =>nrel_main_idtf:
+	[Малиновый кисель.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_raspberry_kissel_recept_stage3 =>nrel_main_idtf:
+	[Малиновый кисель.Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_raspberry_kissel_recept_stage4 =>nrel_main_idtf:
+	[Малиновый кисель.Рецепт.Этап 4](* <- lang_ru;; *);;
+concept_raspberry_kissel_recept_stage5 =>nrel_main_idtf:
+	[Малиновый кисель.Рецепт.Этап 5](* <- lang_ru;; *);;
+
+

@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_cheese;;
+
+concept_cheese => nrel_main_idtf:
+[Сыр] (* <- lang_ru;; *);
+[Cheese] (* <- lang_en;; *);;
+concept_cheese <- concept_ingridient;;
+
+concept_cheese => nrel_kkal : 365_kkal
+(*
+=> nrel_main_idtf:
+[365 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_cheese => nrel_price : 15_rub
+(*
+=> nrel_main_idtf:
+[15 рублей]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_cheese => nrel_storage_time: 1_month
+(*
+=> nrel_main_idtf:
+[1 месяц]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_cheese => nrel_storage_conditions: cheese_cond
+(*
+=> nrel_main_idtf:
+[от 0 до +6 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_cheese=> nrel_glycemic_index: 14
+
+(*
+=> nrel_main_idtf:
+[14]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

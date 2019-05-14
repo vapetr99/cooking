@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_beef;;
+
+concept_beef => nrel_main_idtf:
+[Говядина] (* <- lang_ru;; *);
+[Beef] (* <- lang_en;; *);;
+concept_beef <- concept_ingridient;;
+
+concept_beef => nrel_kkal : 187_kkal
+(*
+=> nrel_main_idtf:
+[187 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_beef => nrel_price : 14_rub
+(*
+=> nrel_main_idtf:
+[14 рублей]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_beef => nrel_storage_time: 12_month
+(*
+=> nrel_main_idtf:
+[12 месяцев]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_beef => nrel_storage_conditions: beef_cond
+(*
+=> nrel_main_idtf:
+[от -24 до -18 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_beef=> nrel_glycemic_index: 0
+
+(*
+=> nrel_main_idtf:
+[0]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

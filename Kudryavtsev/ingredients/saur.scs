@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_sour_cream;;
+
+concept_sour_cream => nrel_main_idtf:
+[Сметана] (* <- lang_ru;; *);
+[Sour_cream] (* <- lang_en;; *);;
+concept_sour_cream <- concept_ingridient;;
+
+concept_sour_cream => nrel_kkal : 150_kkal
+(*
+=> nrel_main_idtf:
+[150 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_sour_cream => nrel_price : 2_rub
+(*
+=> nrel_main_idtf:
+[2 рубля]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_sour_cream => nrel_storage_time: 10_days
+(*
+=> nrel_main_idtf:
+[10 дней]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_sour_cream => nrel_storage_conditions: sour_cream_cond
+(*
+=> nrel_main_idtf:
+[от +3 до +6 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_sour_cream=> nrel_glycemic_index: 56
+
+(*
+=> nrel_main_idtf:
+[56]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

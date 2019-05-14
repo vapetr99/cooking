@@ -1,0 +1,193 @@
+concept_herring_recept <=nrel_context_of_action: [*
+	concept_herring <-dish;;
+	concept_herring=>nrel_ingredients:
+		concept_herring;
+		concept_beet;
+		concept_potato;
+		concept_carrot;
+		concept_onion;
+                concept_salt;
+		concept_mayonnaise;;
+*];;
+
+concept_herring_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_hours:1.5;;
+	*);;
+*);;
+concept_herring_recept ->rrel_1: concept_herring;;
+concept_herring_recept <=nrel_stage_decomposition: concept_herring_recept_stages;;
+
+concept_herring_recept_stage1 <-rrel_1: concept_herring_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->pan;;
+							->gas_cooker;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_water;;
+							->concept_carrot;;
+							->concept_potato;;
+						*);
+						=>nrel_processing_method: boiling;
+						=>nrel_final_product: herring_e1;
+						=>nrel_sequencing: concept_herring_recept_stage2;;
+
+concept_herring_recept_stage2 <- concept_herring_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->pan;;
+							->gas_cooker;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_beet;;
+						*);
+						=>nrel_processing_method: boiling;
+						=>nrel_final_product: herring_e2;
+						=>nrel_sequencing: concept_herring_recept_stage3;;
+
+concept_herring_recept_stage3 <- concept_herring_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->plate;;
+							->knife;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_herring;;
+							->concept_onion;;
+						*);
+						=>nrel_processing_method: tapping;
+						=>nrel_final_product: herring_e3;
+						=>nrel_sequencing: concept_herring_recept_stage4;;
+
+concept_herring_recept_stage4 <- concept_herring_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->grater;;
+							->pan;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->herring_e1;;
+							->herring_e2;;
+						*);
+						=>nrel_processing_method: rubbing;
+						=>nrel_final_product: herring_e4;
+						=>nrel_sequencing:
+
+concept_herring_recept_stage5;;
+
+concept_herring_recept_stage5 <- concept_herring_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_potato;;
+							->concept_mayonnaise;;
+							->herring_e3;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: herring_e5;
+						=>nrel_sequencing:
+
+concept_herring_recept_stage6;;
+
+concept_herring_recept_stage6 <- concept_herring_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->fork;;
+							->bowl;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->herring_e5;;
+							->concept_potato;;
+							->concept_mayonnaise;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: herring_e6;
+						=>nrel_sequencing:
+
+concept_herring_recept_stage7;;
+
+concept_herring_recept_stage7 <- concept_herring_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->fork;;
+							->bowl;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->herring_e2;;
+							->concept_mayonnaise;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: herring_e7;;
+
+
+
+herring_e1
+=> nrel_main_idtf:[Вареные овощи]
+(* <- lang_ru;; *);;
+
+herring_e2
+=> nrel_main_idtf:[Вареная свекла]
+(* <- lang_ru;; *);;
+
+herring_e3
+=> nrel_main_idtf:[Нарезаная сельдь и лук]
+(* <- lang_ru;; *);;
+
+herring_e4
+=> nrel_main_idtf:[Натёртые овощи]
+(* <- lang_ru;; *);;
+
+herring_e5
+=> nrel_main_idtf:[Первый слой]
+(* <- lang_ru;; *);;
+
+herring_e6
+=> nrel_main_idtf:[Второй слоай]
+(* <- lang_ru;; *);;
+
+herring_e7
+=> nrel_main_idtf:[Готовый салат]
+(* <- lang_ru;; *);;
+
+
+concept_herring_recept
+=> nrel_main_idtf:[Сельдь под шубой.Рецепт]
+(* <- lang_ru;; *);;
+
+concept_herring_recept_stages =>nrel_main_idtf:
+	[Сельдь под шубой.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_herring_recept_stage1 =>nrel_main_idtf:
+	[Сельдь под шубой.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_herring_recept_stage2 =>nrel_main_idtf:
+	[Сельдь под шубой.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_herring_recept_stage3 =>nrel_main_idtf:
+	[Сельдь под шубой.Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_herring_recept_stage4 =>nrel_main_idtf:
+	[Сельдь под шубой.Рецепт.Этап 4](* <- lang_ru;; *);;
+concept_herring_recept_stage5 =>nrel_main_idtf:
+	[Сельдь под шубой.Рецепт.Этап 5](* <- lang_ru;; *);;
+concept_herring_recept_stage6 =>nrel_main_idtf:
+	[Сельдь под шубой.Рецепт.Этап 6](* <- lang_ru;; *);;
+concept_herring_recept_stage7 =>nrel_main_idtf:
+	[Сельдь под шубой.Рецепт.Этап 7](* <- lang_ru;; *);;
+

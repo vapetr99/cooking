@@ -1,0 +1,164 @@
+concept_banana_cookie_recept <=nrel_context_of_action: [*
+	concept_banana_cookie <-dish;;
+	concept_banana_cookie=>nrel_ingredients:
+		concept_banana;
+		concept_sugar;
+		concept_egg;
+		concept_soda;
+		concept_salt;
+                concept_flour;
+                concept_butter;;
+*];;
+
+concept_banana_cookie_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_hours:1;;
+	*);;
+*);;
+concept_banana_cookie_recept ->rrel_1: concept_banana_cookie;;
+concept_banana_cookie_recept <=nrel_stage_decomposition: concept_banana_cookie_recept_stages;;
+
+concept_banana_cookie_recept_stage1 <-rrel_1: concept_banana_cookie_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->plate;;
+							->knife;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_banana;;
+						*);
+						=>nrel_processing_method: tapping;
+						=>nrel_final_product: banana_cookie_e1;
+						=>nrel_sequencing: concept_banana_cookie_recept_stage2;;
+
+concept_banana_cookie_recept_stage2 <- concept_banana_cookie_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->banana_cookie_e1;;
+							->concept_sugar;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: banana_cookie_e2;
+						=>nrel_sequencing: concept_banana_cookie_recept_stage3;;
+
+concept_banana_cookie_recept_stage3 <- concept_banana_cookie_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_salt;;
+							->concept_soda;;
+							->concept_butter;;
+							->concept_sugar;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: banana_cookie_e3;
+						=>nrel_sequencing: concept_banana_cookie_recept_stage4;;
+
+concept_banana_cookie_recept_stage4 <- concept_banana_cookie_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->banana_cookie_e3;;
+							->banana_cookie_e2;;
+						*);
+						=>nrel_processing_method: beating;
+						=>nrel_final_product: banana_cookie_e4;
+						=>nrel_sequencing:
+
+concept_banana_cookie_recept_stage5;;
+
+concept_banana_cookie_recept_stage5 <- concept_banana_cookie_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->plate;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->banana_cookie_e4;;
+							->concept_flour;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: banana_cookie_e5;
+						=>nrel_sequencing:
+
+concept_banana_cookie_recept_stage6;;
+
+concept_banana_cookie_recept_stage6 <- concept_banana_cookie_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->gas_cooker;;
+							->pan;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->banana_cookie_e5;;
+						*);
+						=>nrel_processing_method: frying;
+						=>nrel_final_product: banana_cookie_e6;;
+
+banana_cookie_e1
+=> nrel_main_idtf:[Нарезанные бананы]
+(* <- lang_ru;; *);;
+
+banana_cookie_e2
+=> nrel_main_idtf:[Раздавленные бананы с сахаром]
+(* <- lang_ru;; *);;
+
+banana_cookie_e3
+=> nrel_main_idtf:[Смесь яиц и масла]
+(* <- lang_ru;; *);;
+
+banana_cookie_e4
+=> nrel_main_idtf:[Общая смесь]
+(* <- lang_ru;; *);;
+
+banana_cookie_e5
+=> nrel_main_idtf:[Сырое печенье]
+(* <- lang_ru;; *);;
+
+banana_cookie_e6
+=> nrel_main_idtf:[Готовое печенье]
+(* <- lang_ru;; *);;
+
+
+concept_banana_cookie_recept
+=> nrel_main_idtf:[Банановое печенье.Рецепт]
+(* <- lang_ru;; *);;
+
+concept_banana_cookie_recept_stages =>nrel_main_idtf:
+	[Банановое печенье.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_banana_cookie_recept_stage1 =>nrel_main_idtf:
+	[Банановое печенье.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_banana_cookie_recept_stage2 =>nrel_main_idtf:
+	[Банановое печенье.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_banana_cookie_recept_stage3 =>nrel_main_idtf:
+	[Банановое печенье.Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_banana_cookie_recept_stage4 =>nrel_main_idtf:
+	[Банановое печенье.Рецепт.Этап 4](* <- lang_ru;; *);;
+concept_banana_cookie_recept_stage5 =>nrel_main_idtf:
+	[Банановое печенье.Рецепт.Этап 5](* <- lang_ru;; *);;
+concept_banana_cookie_recept_stage6 =>nrel_main_idtf:
+	[Банановое печенье.Рецепт.Этап 6](* <- lang_ru;; *);;
+

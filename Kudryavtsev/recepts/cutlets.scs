@@ -1,0 +1,163 @@
+concept_cutlets_recept <=nrel_context_of_action: [*
+	concept_cutlets <-dish;;
+	concept_cutlets=>nrel_ingredients:
+		concept_chicken_fillet;
+		concept_butter;
+		concept_pepper;
+		concept_egg;
+		concept_salt;
+                concept_flour;
+                concept_vegetable_oil;;
+*];;
+
+concept_cutlets_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_minutes:40;;
+	*);;
+*);;
+concept_cutlets_recept ->rrel_1: concept_cutlets;;
+concept_cutlets_recept <=nrel_stage_decomposition: concept_cutlets_recept_stages;;
+
+concept_cutlets_recept_stage1 <-rrel_1: concept_cutlets_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->chopper;;
+							->plate;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_chicken_fillet;;
+						*);
+						=>nrel_processing_method: beating;
+						=>nrel_final_product: cutlets_e1;
+						=>nrel_sequencing: concept_cutlets_recept_stage2;;
+
+concept_cutlets_recept_stage2 <- concept_cutlets_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_butter;;
+							->concept_salt;;
+							->concept_pepper;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: cutlets_e2;
+						=>nrel_sequencing: concept_cutlets_recept_stage3;;
+
+concept_cutlets_recept_stage3 <- concept_cutlets_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->plate;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->cutlets_e1;;
+							->cutlets_e2;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: cutlets_e3;
+						=>nrel_sequencing: concept_cutlets_recept_stage4;;
+
+concept_cutlets_recept_stage4 <- concept_cutlets_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->plate;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->cutlets_e3;;
+							->concept_flour;;
+						*);
+						=>nrel_processing_method: dipping;
+						=>nrel_final_product: cutlets_e4;
+						=>nrel_sequencing:
+
+concept_cutlets_recept_stage5;;
+
+concept_cutlets_recept_stage5 <- concept_cutlets_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_eggs;;
+						*);
+						=>nrel_processing_method: beatting;
+						=>nrel_final_product: cutlets_e5;
+						=>nrel_sequencing:
+
+concept_cutlets_recept_stage6;;
+
+concept_cutlets_recept_stage6 <- concept_cutlets_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->pan;;
+							->gas_cooker;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->cutlets_e4;;
+							->cutlets_e5;;
+						*);
+						=>nrel_processing_method: frying;
+						=>nrel_final_product: cutlets_e6;
+                                                =>nrel_additional_component: concept_vegetable_oil;;
+						
+
+cutlets_e1
+=> nrel_main_idtf:[Отбитое мясо]
+(* <- lang_ru;; *);;
+
+cutlets_e2
+=> nrel_main_idtf:[Масло с солью и перцем]
+(* <- lang_ru;; *);;
+
+cutlets_e3
+=> nrel_main_idtf:[Филе с маслом]
+(* <- lang_ru;; *);;
+
+cutlets_e4
+=> nrel_main_idtf:[Филе в муке]
+(* <- lang_ru;; *);;
+
+cutlets_e5
+=> nrel_main_idtf:[Взбитые яйца]
+(* <- lang_ru;; *);;
+
+cutlets_e6
+=> nrel_main_idtf:[Готовые котлеты]
+(* <- lang_ru;; *);;
+
+
+concept_cutlets_recept
+=> nrel_main_idtf:["Котлеты по кевски".Рецепт]
+(* <- lang_ru;; *);;
+
+concept_cutlets_recept_stages =>nrel_main_idtf:
+	["Котлеты по кевски".Рецепт.Этапы](* <- lang_ru;; *);;
+concept_cutlets_recept_stage1 =>nrel_main_idtf:
+	["Котлеты по кевски".Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_cutlets_recept_stage2 =>nrel_main_idtf:
+	["Котлеты по кевски".Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_cutlets_recept_stage3 =>nrel_main_idtf:
+	["Котлеты по кевски".Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_cutlets_recept_stage4 =>nrel_main_idtf:
+	["Котлеты по кевски".Рецепт.Этап 4](* <- lang_ru;; *);;
+concept_cutlets_recept_stage5 =>nrel_main_idtf:
+	["Котлеты по кевски".Рецепт.Этап 5](* <- lang_ru;; *);;
+concept_cutlets_recept_stage6 =>nrel_main_idtf:
+	["Котлеты по кевски".Рецепт.Этап 6](* <- lang_ru;; *);;
+

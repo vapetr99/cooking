@@ -1,0 +1,275 @@
+concept_carrot_pie
+=> nrel_main_idtf: [Морковный пирог]
+(* <- lang_ru;; *);;
+
+concept_berry_compote
+=> nrel_main_idtf: [Ягодный компот]
+(* <- lang_ru;; *);;
+
+concept_raspberry_kissel
+=> nrel_main_idtf: [Малиновый кисель]
+(* <- lang_ru;; *);;
+
+concept_buckwheat_porridge
+=> nrel_main_idtf: [Гречневая каша]
+(* <- lang_ru;; *);;
+
+concept_banana_cookie
+=> nrel_main_idtf: [Банановое печенье]
+(* <- lang_ru;; *);;
+
+concept_baked_zucchini
+=> nrel_main_idtf: [Запечённые кабачки]
+(* <- lang_ru;; *);;
+
+concept_sand_cookie
+=> nrel_main_idtf: [Песочное печенье]
+(* <- lang_ru;; *);;
+
+concept_sandwich
+=> nrel_main_idtf: [Сендвич]
+(* <- lang_ru;; *);;
+
+concept_cake_zebra
+=> nrel_main_idtf: [Торт "Зебра"]
+(* <- lang_ru;; *);;
+
+concept_pilaf
+=> nrel_main_idtf: [Плов]
+(* <- lang_ru;; *);;
+
+concept_dumplings
+=> nrel_main_idtf: [Вареники]
+(* <- lang_ru;; *);;
+
+concept_potato_casserole
+=> nrel_main_idtf: [Картофельная запеканка]
+(* <- lang_ru;; *);;
+
+concept_tomato_soup
+=> nrel_main_idtf: [Томатный суп]
+(* <- lang_ru;; *);;
+
+concept_bean_salad
+=> nrel_main_idtf: [Салат из фасоли]
+(* <- lang_ru;; *);;
+
+concept_roasted_chicken
+=> nrel_main_idtf: [Запечённая курица]
+(* <- lang_ru;; *);;
+
+concept_cheese_soup
+=> nrel_main_idtf: [Сырный суп]
+(* <- lang_ru;; *);;
+
+concept_herring
+=> nrel_main_idtf: [Сельдь под шубой]
+(* <- lang_ru;; *);;
+
+concept_cutlets
+=> nrel_main_idtf: [Котлеты "По Киевски"]
+(* <- lang_ru;; *);;
+
+concept_cake_anthill
+=> nrel_main_idtf: [Торт "Муравейник"]
+(* <- lang_ru;; *);;
+
+concept_beef_stew
+=> nrel_main_idtf: [Тушеная говядина]
+(* <- lang_ru;; *);;
+
+concept_oat_cookies
+=> nrel_main_idtf: [Овсяное печенье]
+(* <- lang_ru;; *);;
+
+omlet
+=> nrel_main_idtf: [Омлет]
+(* <- lang_ru;; *);;
+
+concept_egg
+=> nrel_main_idtf: [Яйца]
+(* <- lang_ru;; *);;
+
+concept_milk
+=> nrel_main_idtf: [Молоко]
+(* <- lang_ru;; *);;
+
+concept_salt
+=> nrel_main_idtf: [Соль]
+(* <- lang_ru;; *);;
+
+concept_vegetable_oil
+=> nrel_main_idtf: [Растительное масло]
+(* <- lang_ru;; *);;
+
+oladya
+=> nrel_main_idtf: [Оладьи]
+(* <- lang_ru;; *);;
+
+concept_sugar
+=> nrel_main_idtf: [Сахар]
+(* <- lang_ru;; *);;
+
+concept_flour
+=> nrel_main_idtf: [Мука]
+(* <- lang_ru;; *);;
+
+tsezar
+=> nrel_main_idtf: [Салат "Цезарь"]
+(* <- lang_ru;; *);;
+
+concept_salad
+=> nrel_main_idtf: [Салат]
+(* <- lang_ru;; *);;
+
+ccake
+=> nrel_main_idtf: [Сырники]
+(* <- lang_ru;; *);;
+
+concept_butter
+=> nrel_main_idtf: [Масло]
+(* <- lang_ru;; *);;
+
+maffins
+=> nrel_main_idtf: [Шоколадные маффины]
+(* <- lang_ru;; *);;
+
+concept_chocolate
+=> nrel_main_idtf: [Шоколад]
+(* <- lang_ru;; *);;
+
+lasanya
+=> nrel_main_idtf: [Лазанья с мясом]
+(* <- lang_ru;; *);;
+
+concept_mince
+=> nrel_main_idtf: [Фарш]
+(* <- lang_ru;; *);;
+
+concept_carrot
+=> nrel_main_idtf: [Морковь]
+(* <- lang_ru;; *);;
+
+concept_tomato
+=> nrel_main_idtf: [Помидоры]
+(* <- lang_ru;; *);;
+
+cur_cake
+=> nrel_main_idtf: [Творожный кекс]
+(* <- lang_ru;; *);;
+
+cabbage_c
+=> nrel_main_idtf: [Капустный пирог]
+(* <- lang_ru;; *);;
+
+concept_cabbage
+=> nrel_main_idtf: [Капуста]
+(* <- lang_ru;; *);;
+
+concept_apple
+=> nrel_main_idtf: [Яблоки]
+(* <- lang_ru;; *);;
+
+apple_pie
+=> nrel_main_idtf: [Яблочный пирог]
+(* <- lang_ru;; *);;
+
+solyanka_m
+=> nrel_main_idtf: [Солянка мясная]
+(* <- lang_ru;; *);;
+
+concept_sausage
+=> nrel_main_idtf: [Колбаса]
+(* <- lang_ru;; *);;
+
+concept_water
+=> nrel_main_idtf: [Вода]
+(* <- lang_ru;; *);;
+
+S_cake
+=> nrel_main_idtf: [Торт "Сметанник"]
+(* <- lang_ru;; *);;
+
+Cr_soup
+=> nrel_main_idtf: [Суп-пюре]
+(* <- lang_ru;; *);;
+
+concept_potato
+=> nrel_main_idtf: [Картофель]
+(* <- lang_ru;; *);;
+
+concept_oat
+=> nrel_main_idtf: [Овсяные хлопья]
+(* <- lang_ru;; *);;
+
+concept_condensed_milk
+=> nrel_main_idtf: [Сгущённое молоко]
+(* <- lang_ru;; *);;
+
+concept_cream
+=> nrel_main_idtf: [Сливки]
+(* <- lang_ru;; *);;
+
+concept_herring
+=> nrel_main_idtf: [Сельдь]
+(* <- lang_ru;; *);;
+
+concept_beet
+=> nrel_main_idtf: [Свекла]
+(* <- lang_ru;; *);;
+
+concept_chicken
+=> nrel_main_idtf: [Курица]
+(* <- lang_ru;; *);;
+
+concept_mayonnaise
+=> nrel_main_idtf: [Майонез]
+(* <- lang_ru;; *);;
+
+concept_processed_cheese
+=> nrel_main_idtf: [Плавленный сыр]
+(* <- lang_ru;; *);;
+
+concept_tomato_pasta
+=> nrel_main_idtf: [Томатная паста]
+(* <- lang_ru;; *);;
+
+concept_rice
+=> nrel_main_idtf: [Рис]
+(* <- lang_ru;; *);;
+
+concept_bean
+=> nrel_main_idtf: [Фасоль]
+(* <- lang_ru;; *);;
+
+concept_cucumber
+=> nrel_main_idtf: [Огурец]
+(* <- lang_ru;; *);;
+
+concept_bread
+=> nrel_main_idtf: [Хлеб]
+(* <- lang_ru;; *);;
+
+concept_baking_powder
+=> nrel_main_idtf: [Разрыхлитель]
+(* <- lang_ru;; *);;
+
+concept_zucchini
+=> nrel_main_idtf: [Кабачки]
+(* <- lang_ru;; *);;
+
+concept_banana
+=> nrel_main_idtf: [Бананы]
+(* <- lang_ru;; *);;
+
+concept_buckwheat
+=> nrel_main_idtf: [Гречка]
+(* <- lang_ru;; *);;
+
+concept_starch
+=> nrel_main_idtf: [Крахмал]
+(* <- lang_ru;; *);;
+
+concept_berry
+=> nrel_main_idtf: [Ягоды]
+(* <- lang_ru;; *);;

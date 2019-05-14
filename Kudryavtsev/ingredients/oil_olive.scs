@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_olive_oil;;
+
+concept_olive_oil => nrel_main_idtf:
+[Оливковое масло] (* <- lang_ru;; *);
+[Olive_oil] (* <- lang_en;; *);;
+concept_olive_oil <- concept_ingridient;;
+
+concept_olive_oil => nrel_kkal : 898_kkal
+(*
+=> nrel_main_idtf:
+[898 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_olive_oil => nrel_price : 7_rub
+(*
+=> nrel_main_idtf:
+[7 рублей]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_olive_oil => nrel_storage_time: 12_month
+(*
+=> nrel_main_idtf:
+[12 месяцев]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_olive_oil => nrel_storage_conditions: olive_oil_cond
+(*
+=> nrel_main_idtf:
+[от +14 до +16 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_olive_oil=> nrel_glycemic_index: 0
+
+(*
+=> nrel_main_idtf:
+[0]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

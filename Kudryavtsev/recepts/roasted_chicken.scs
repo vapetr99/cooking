@@ -1,0 +1,91 @@
+concept_roasted_chicken_recept <=nrel_context_of_action: [*
+	concept_roasted_chicken <-dish;;
+	concept_roasted_chicken=>nrel_ingredients:
+		concept_chicken;
+		concept_salt;
+		concept_mayonnaise;
+		concept_garlic;
+		concept_pepper;;
+*];;
+
+concept_roasted_chicken_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_hours:1.5;;
+	*);;
+*);;
+concept_roasted_chicken_recept ->rrel_1: concept_roasted_chicken;;
+concept_roasted_chicken_recept <=nrel_stage_decomposition: concept_roasted_chicken_recept_stages;;
+
+concept_roasted_chicken_recept_stage1 <-rrel_1: concept_roasted_chicken_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->plate;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_chicken;;
+							->concept_pepper;;
+							->concept_salt;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: roasted_chicken_e1;
+						=>nrel_sequencing: concept_roasted_chicken_recept_stage2;;
+
+concept_roasted_chicken_recept_stage2 <- concept_roasted_chicken_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->pan;;
+							->gas_cooker;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->roasted_chicken_e1;;
+						*);
+						=>nrel_processing_method: frying;
+						=>nrel_final_product: roasted_chicken_e2;
+						=>nrel_sequencing: concept_roasted_chicken_recept_stage3;;
+
+concept_roasted_chicken_recept_stage3 <- concept_roasted_chicken_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->pan;;
+							->gas_cooker;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->roasted_chicken_e2;;
+							->concept_mayonnaise;;
+						*);
+						=>nrel_processing_method: frying;
+						=>nrel_final_product: roasted_chicken_e3;;
+						
+roasted_chicken_e1
+=> nrel_main_idtf:[Курица со специями]
+(* <- lang_ru;; *);;
+
+roasted_chicken_e2
+=> nrel_main_idtf:[Прожаренная курица]
+(* <- lang_ru;; *);;
+
+roasted_chicken_e3
+=> nrel_main_idtf:[Готовая запечённая курица]
+(* <- lang_ru;; *);;
+
+concept_roasted_chicken_recept
+=> nrel_main_idtf:[Запечённая курица.Рецепт]
+(* <- lang_ru;; *);;
+
+concept_roasted_chicken_recept_stages =>nrel_main_idtf:
+	[Запечённая курица.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_roasted_chicken_recept_stage1 =>nrel_main_idtf:
+	[Запечённая курица.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_roasted_chicken_recept_stage2 =>nrel_main_idtf:
+	[Запечённая курица.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_roasted_chicken_recept_stage3 =>nrel_main_idtf:
+	[Запечённая курица.Рецепт.Этап 3](* <- lang_ru;; *);;
+

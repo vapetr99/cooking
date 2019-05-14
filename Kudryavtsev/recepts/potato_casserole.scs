@@ -1,0 +1,120 @@
+concept_potato_casserole_recept <=nrel_context_of_action: [*
+	concept_potato_casserole <-dish;;
+	concept_potato_casserole=>nrel_ingredients:
+		concept_potato;
+		concept_mince;
+		concept_cheese;
+		concept_egg;
+		concept_salt;
+                concept_pepper;
+		concept_vegetable_oil;;
+*];;
+
+concept_potato_casserole_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_hours:1.2;;
+	*);;
+*);;
+concept_potato_casserole_recept ->rrel_1: concept_potato_casserole;;
+concept_potato_casserole_recept <=nrel_stage_decomposition: concept_potato_casserole_recept_stages;;
+
+concept_potato_casserole_recept_stage1 <-rrel_1: concept_potato_casserole_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->plate;;
+							->grater;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_potato;;
+						*);
+						=>nrel_processing_method: rubbing;
+						=>nrel_final_product: potato_casserole_e1;
+						=>nrel_sequencing: concept_potato_casserole_recept_stage2;;
+
+concept_potato_casserole_recept_stage2 <- concept_potato_casserole_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->bowl;;
+							->fork;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->potato_casserole_e1;;
+							->concept_salt;;
+							->concept_pepper;;
+							->concept_mince;;
+						*);
+						=>nrel_processing_method: stirring;
+						=>nrel_final_product: potato_casserole_e2;
+						=>nrel_sequencing: concept_potato_casserole_recept_stage3;;
+
+concept_potato_casserole_recept_stage3 <- concept_potato_casserole_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->plate;;
+							->grater;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->concept_cheese;;
+						*);
+						=>nrel_processing_method: rubbing;
+						=>nrel_final_product: potato_casserole_e3;
+						=>nrel_sequencing: concept_potato_casserole_recept_stage4;;
+
+concept_potato_casserole_recept_stage4 <- concept_potato_casserole_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->gas_cooker;;
+							->pan;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->potato_casserole_e3;;
+							->potato_casserole_e2;;
+						*);
+						=>nrel_processing_method: frying;
+						=>nrel_final_product: potato_casserole_e4;
+						=>nrel_additional_component:                concept_olive_oil;;
+
+potato_casserole_e1
+=> nrel_main_idtf:[Тёртый картофель]
+(* <- lang_ru;; *);;
+
+potato_casserole_e2
+=> nrel_main_idtf:[Картофель с фаршем и специями]
+(* <- lang_ru;; *);;
+
+potato_casserole_e3
+=> nrel_main_idtf:[Тёртый сыр]
+(* <- lang_ru;; *);;
+
+potato_casserole_e4
+=> nrel_main_idtf:[Готовая запеканка]
+(* <- lang_ru;; *);;
+
+
+
+concept_potato_casserole_recept
+=> nrel_main_idtf:[Картофельная запеканка.Рецепт]
+(* <- lang_ru;; *);;
+
+concept_potato_casserole_recept_stages =>nrel_main_idtf:
+	[Картофельная запеканка.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_potato_casserole_recept_stage1 =>nrel_main_idtf:
+	[Картофельная запеканка.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_potato_casserole_recept_stage2 =>nrel_main_idtf:
+	[Картофельная запеканка.Рецепт.Этап 2](* <- lang_ru;; *);;
+concept_potato_casserole_recept_stage3 =>nrel_main_idtf:
+	[Картофельная запеканка.Рецепт.Этап 3](* <- lang_ru;; *);;
+concept_potato_casserole_recept_stage4 =>nrel_main_idtf:
+	[Картофельная запеканка.Рецепт.Этап 4](* <- lang_ru;; *);;
+
+
