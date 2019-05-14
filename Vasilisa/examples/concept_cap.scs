@@ -1,0 +1,40 @@
+concept_cap=>nrel_idtf:[cap] (* <- lang_en;; *);;
+concept_cap=>nrel_main_idtf:[чашка] (* <- lang_ru;; *);;
+
+concept_cap<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(чашка)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Посуда, предназначенная содержания жидкостей.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_dishes;concept_liquid;;
+	*);;
+
+*);;
+
+concept_cap<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//cap.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_cap<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_drink;concept_cap;concept_fridge;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(холодильник, чашка, напиток)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[После питья горячих напитков нельзя ставить чашку в холодильник.](* <- lang_ru;; *);;
+	*);;
+*);;
