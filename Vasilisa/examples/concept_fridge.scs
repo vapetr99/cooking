@@ -1,0 +1,40 @@
+concept_fridge=>nrel_idtf:[fridge] (* <- lang_en;; *);;
+concept_fridge=>nrel_main_idtf:[холодильник] (* <- lang_ru;; *);;
+
+concept_fridge<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(холодильник)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Кухонное электронное оборудование, предназначенное для хранения скоропортящихся продуктов.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_dish;concept_electronic_equipment;;
+	*);;
+
+*);;
+
+concept_fridge<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//fridge.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_fridge<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_fridge;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(холодильник)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Не рекомендуется долго держать холодильник открытым](* <- lang_ru;; *);;
+	*);;
+*);;

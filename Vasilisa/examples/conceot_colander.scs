@@ -1,0 +1,40 @@
+concept_colander=>nrel_idtf:[colander] (* <- lang_en;; *);;
+concept_colander=>nrel_main_idtf:[дуршлаг] (* <- lang_ru;; *);;
+
+concept_colander<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(дуршлаг)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[предмет кухонной утвари в виде маленькой кастрюли с отверстиями на дне (а иногда и по бокам).](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_equipment;concept_colander;concept_pan;;
+	*);;
+
+*);;
+
+concept_colander<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//colander.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_colander<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_colander;concept_porrage;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(дуршлаг, каша)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[С помощью дуршлага можно сливать воду из каши.](* <- lang_ru;; *);;
+	*);;
+*);;

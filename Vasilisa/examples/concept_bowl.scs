@@ -1,0 +1,40 @@
+concept_bowl=>nrel_idtf:[bowl] (* <- lang_en;; *);;
+concept_bowl=>nrel_main_idtf:[миска] (* <- lang_ru;; *);;
+
+concept_bowl<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(миска)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Посуда, предназначенная для содержания жидких блюд.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_dishes;concept_dish;;
+	*);;
+
+*);;
+
+concept_bowl<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//bowl.jpeg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_bowl<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:concept_liquid;concept_bowl;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(миска, жидкость)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[В миску можно класть не только жидкости.](* <- lang_ru;; *);;
+	*);;
+*);;

@@ -39,7 +39,7 @@ concept_baking_dishes<-rrel_key_sc_element:...
 	*);;
 *);;
 
-concept_baking_dishes=>nrel_inclusion:concept_form;
+concept_baking_dishes=>nrel_inclusion:concept_form;;
 
 concept_metall_baking<-...
 (*
