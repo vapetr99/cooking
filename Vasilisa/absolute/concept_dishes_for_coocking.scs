@@ -38,3 +38,5 @@ concept_dishes_for_coocking<-rrel_key_sc_element:...
 		->rrel_example:[Для кипячения воды обычно используют чайник](* <- lang_ru;; *);;
 	*);;
 *);;
+
+concept_dishes_for_coocking=>nrel_inclusion:concept_baking_dishes;concept_fri_dishes;concept_cut_items;;

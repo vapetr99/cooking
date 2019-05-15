@@ -47,4 +47,4 @@ concept_dishes_for_coocking<-...
 	=>nrel_subdividing:concept_dishes;;
 *);;
 
-concept_dishes=>nrel_inclusion:concept_coocking_dishes;concept_eating_dishes;concept_storage_dishes;;
+concept_dishes=>nrel_inclusion:concept_dishes_for_coocking;concept_dishes_for_food;concept_storage_dishes;;
