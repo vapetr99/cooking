@@ -1,0 +1,43 @@
+spoon
+=> nrel_main_idtf: [Ложка]
+(* <- lang_ru;; *);;
+
+bottle
+=> nrel_main_idtf: [Банка]
+(* <- lang_ru;; *);;
+
+bowl
+=> nrel_main_idtf: [Миска]
+(* <- lang_ru;; *);;
+
+fork
+=> nrel_main_idtf: [Вилка]
+(* <- lang_ru;; *);;
+
+pan
+=> nrel_main_idtf: [Сковорода]
+(* <- lang_ru;; *);;
+
+gas_cooker
+=> nrel_main_idtf: [Кухонная плита]
+(* <- lang_ru;; *);;
+
+plate
+=> nrel_main_idtf: [Тарелка]
+(* <- lang_ru;; *);;
+
+knife
+=> nrel_main_idtf: [Нож]
+(* <- lang_ru;; *);;
+
+grater
+=> nrel_main_idtf: [Тёрка]
+(* <- lang_ru;; *);;
+
+freezer
+=> nrel_main_idtf: [Холодильник]
+(* <- lang_ru;; *);;
+
+chopper
+=> nrel_main_idtf: [Отбивалка]
+(* <- lang_ru;; *);;

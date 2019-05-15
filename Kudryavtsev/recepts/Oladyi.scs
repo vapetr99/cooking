@@ -1,0 +1,153 @@
+oladyi =
+[*
+dish-> oladya;;
+oladya=>nrel_ingredient:
+concept_egg;
+concept_milk;
+concept_salt;
+concept_vegetable_oil;
+concept_flour;
+concept_sugar;;
+*];;
+
+oladyi<=nrel_context:n1_oladya;;
+recept->n1_oladya;;
+link_oladya=>nrel_decomposition:n1_oladya;;
+n1_oladya->rrel_1:oladya;;
+
+link_oladya->rrel_1:e1_oladya;;
+stage->e1_oladya;;
+e1_oladya=>nrel_stage_tools:link_oladya_e1_tool;;
+link_oladya_e1_tool->
+fork;
+bowl;;
+e1_oladya=>nrel_processing_type:beatting;;
+e1_oladya=>nrel_stage_products:link_oladya_e1_products;;
+link_oladya_e1_products->
+concept_egg;
+concept_salt;
+concept_sugar;;
+e1_oladya=>nrel_result_product:oladya_res_1;;
+
+e1_oladya=>nrel_action_sequence:e2_oladya;;
+
+link_oladya->e2_oladya;;
+stage->e2_oladya;;
+e2_oladya=>nrel_stage_tools:link_oladya_e2_tool;;
+link_oladya_e2_tool->
+bowl;
+fork;;
+e2_oladya=>nrel_processing_type:stirring;;
+e2_oladya=>nrel_stage_products:link_oladya_e2_products;;
+link_oladya_e2_products->
+oladya_res_1;
+concept_milk;;
+e2_oladya=>nrel_result_product:oladya_res_2;;
+
+e2_oladya=>nrel_action_sequence:e3_oladya;;
+
+link_oladya->e3_oladya;;
+stage->e3_oladya;;
+e3_oladya=>nrel_stage_tools:link_oladya_e3_tool;;
+link_oladya_e3_tool->
+bowl;
+fork;;
+e3_oladya=>nrel_processing_type:stirring;;
+e3_oladya=>nrel_stage_products:link_oladya_e3_products;;
+link_oladya_e3_products->
+oladya_res_2;
+concept_flour;;
+e3_oladya=>nrel_result_product:oladya_res_3;;
+
+e3_oladya=>nrel_action_sequence:e3_oladya;;
+
+link_oladya->e4_oladya;;
+stage->e4_oladya;;
+e4_oladya=>nrel_stage_tools:link_oladya_e4_tool;;
+link_oladya_e4_tool->
+pan;
+gas_cooker;;
+e4_oladya=>nrel_processing_type:frying;;
+e4_oladya=>nrel_stage_products:link_oladya_e4_products;;
+link_oladya_e4_products->
+oladya_res_3;;
+e4_oladya=>nrel_bonus_component:concept_vegetable_oil;;
+e4_oladya=>nrel_result_product:oladya_res_4;;
+
+
+
+oladya_res_1
+=> nrel_main_idtf: [Яйца с солью и сахаром]
+(* <- lang_ru;; *);;
+
+oladya_res_2
+=> nrel_main_idtf: [Смесь с молоком]
+(* <- lang_ru;; *);;
+
+oladya_res_3
+=> nrel_main_idtf: [Смесь с мукой]
+(* <- lang_ru;; *);;
+
+oladya_res_4
+=> nrel_main_idtf: [Готовые оладьи]
+(* <- lang_ru;; *);;
+
+link_oladya_e1_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_oladya_e2_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_oladya_e3_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_oladya_e4_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_oladya_e1_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_oladya_e2_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_oladya_e3_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_oladya_e4_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+oladyi
+=> nrel_main_idtf: [Оладьи.Рецепт]
+(* <- lang_ru;; *);;
+
+e1_oladya
+=> nrel_main_idtf: [Этап 1]
+(* <- lang_ru;; *);;
+
+e2_oladya
+=> nrel_main_idtf: [Этап 2]
+(* <- lang_ru;; *);;
+
+e3_oladya
+=> nrel_main_idtf: [Этап 3]
+(* <- lang_ru;; *);;
+
+e4_oladya
+=> nrel_main_idtf: [Этап 4]
+(* <- lang_ru;; *);;
+
+n1_oladya
+=> nrel_main_idtf: [..]
+(* <- lang_ru;; *);;
+
+link_oladya
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;

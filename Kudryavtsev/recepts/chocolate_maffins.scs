@@ -1,0 +1,160 @@
+chocolate_maffins =
+[*
+dish-> maffins;;
+maffins=>nrel_ingredient:
+concept_egg;
+concept_milk;
+concept_salt;
+concept_chocolate;
+concept_sugar;
+concept_flour;
+concept_sour_cream;
+concept_cocoa;
+concept_soda;
+concept_butter;;
+*];;
+
+chocolate_maffins<=nrel_context:n1_maffins;;
+recept->n1_maffins;;
+link_maffins=>nrel_decomposition:n1_maffins;;
+n1_maffins->rrel_1:maffins;;
+
+link_maffins->rrel_1:e1_maffins;;
+stage->e1_maffins;;
+e1_maffins=>nrel_stage_tools:link_maffins_e1_tool;;
+link_maffins_e1_tool->
+fork;
+bowl;;
+e1_maffins=>nrel_processing_type:stirring;;
+e1_maffins=>nrel_stage_products:link_maffins_e1_products;;
+link_maffins_e1_products->
+concept_salt;
+concept_cocoa;
+concept_flour;
+concept_soda;;
+e1_maffins=>nrel_result_product:maffins_res_1;;
+
+e1_maffins=>nrel_action_sequence:e2_maffins;;
+
+link_maffins->e2_maffins;;
+stage->e2_maffins;;
+e2_maffins=>nrel_stage_tools:link_maffins_e2_tool;;
+link_maffins_e2_tool->
+bowl;
+fork;;
+e2_maffins=>nrel_processing_type:stirring;;
+e2_maffins=>nrel_stage_products:link_maffins_e2_products;;
+link_maffins_e2_products->
+concept_butter;
+concept_sugar;
+concept_eggs;;
+e2_maffins=>nrel_result_product:maffins_res_2;;
+
+e2_maffins=>nrel_action_sequence:e3_maffins;;
+
+link_maffins->e3_maffins;;
+stage->e3_maffins;;
+e3_maffins=>nrel_stage_tools:link_maffins_e3_tool;;
+link_maffins_e3_tool->
+bowl;
+fork;;
+e3_maffins=>nrel_processing_type:pouring;;
+e3_maffins=>nrel_stage_products:link_maffins_e3_products;;
+link_maffins_e3_products->
+maffins_res_2;
+maffins_res_1;
+concept_milk;
+concept_chocolate;;
+e3_maffins=>nrel_result_product:maffins_res_3;;
+
+e3_maffins=>nrel_action_sequence:e4_maffins;;
+
+link_maffins->e4_maffins;;
+stage->e4_maffins;;
+e4_maffins=>nrel_stage_tools:link_maffins_e4_tool;;
+link_maffins_e4_tool->
+pan;
+gas_cooker;;
+e4_maffins=>nrel_processing_type:frying;;
+e4_maffins=>nrel_stage_products:link_maffins_e4_products;;
+link_maffins_e4_products->
+maffins_res_3;;
+e4_maffins=>nrel_result_product:maffins_res_4;;
+
+
+
+maffins_res_1
+=> nrel_main_idtf: [Какао,соль и т.д.]
+(* <- lang_ru;; *);;
+
+maffins_res_2
+=> nrel_main_idtf: [Масло, сахар и т.д.]
+(* <- lang_ru;; *);;
+
+maffins_res_3
+=> nrel_main_idtf: [Смесь 1 и 2 и шоколада с молоком]
+(* <- lang_ru;; *);;
+
+maffins_res_4
+=> nrel_main_idtf: [Готовые маффины]
+(* <- lang_ru;; *);;
+
+link_maffins_e1_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_maffins_e2_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_maffins_e3_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_maffins_e4_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_maffins_e1_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_maffins_e2_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_maffins_e3_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_maffins_e4_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+chocolate_maffins
+=> nrel_main_idtf: [Шоколадные маффины.Рецепт]
+(* <- lang_ru;; *);;
+
+e1_maffins
+=> nrel_main_idtf: [Этап 1]
+(* <- lang_ru;; *);;
+
+e2_maffins
+=> nrel_main_idtf: [Этап 2]
+(* <- lang_ru;; *);;
+
+e3_maffins
+=> nrel_main_idtf: [Этап 3]
+(* <- lang_ru;; *);;
+
+e4_maffins
+=> nrel_main_idtf: [Этап 4]
+(* <- lang_ru;; *);;
+
+n1_maffins
+=> nrel_main_idtf: [..]
+(* <- lang_ru;; *);;
+
+link_maffins
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;

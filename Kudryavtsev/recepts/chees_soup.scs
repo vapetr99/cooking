@@ -12,6 +12,8 @@ concept_cheese_soup_recept <=nrel_context_of_action: [*
 		concept_salt;;
 *];;
 
+concept_cheese_soup_recept<-concept_recept;;
+
 concept_cheese_soup_recept <=nrel_cooking_time:...
 (*
 	<=nrel_value:...

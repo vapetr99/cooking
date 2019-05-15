@@ -1,0 +1,154 @@
+Sour_cake =
+[*
+dish-> S_cake;;
+S_cake=>nrel_ingredient:
+concept_sour_cream;
+concept_sugar;
+concept_flour;
+concept_butter;
+concept_cocoa;;
+*];;
+
+Sour_cake<=nrel_context:n1_S_cake;;
+recept->n1_S_cake;;
+link_S_cake=>nrel_decomposition:n1_S_cake;;
+n1_S_cake->rrel_1:S_cake;;
+
+link_S_cake->rrel_1:e1_S_cake;;
+stage->e1_S_cake;;
+e1_S_cake=>nrel_stage_tools:link_S_cake_e1_tool;;
+link_S_cake_e1_tool->
+fork;
+bowl;;
+e1_S_cake=>nrel_processing_type:stirring;;
+e1_S_cake=>nrel_stage_products:link_S_cake_e1_products;;
+link_S_cake_e1_products->
+concept_sugar;
+concept_butter;
+concept_sour_cream;
+concept_flour;;
+e1_S_cake=>nrel_result_product:S_cake_res_1;;
+
+e1_S_cake=>nrel_action_sequence:e2_S_cake;;
+
+link_S_cake->e2_S_cake;;
+stage->e2_S_cake;;
+e2_S_cake=>nrel_stage_tools:link_S_cake_e2_tool;;
+link_S_cake_e2_tool->
+gas_cooker;
+pan;;
+e2_S_cake=>nrel_processing_type:frying;;
+e2_S_cake=>nrel_stage_products:link_S_cake_e2_products;;
+link_S_cake_e2_products->
+S_cake_res_1;
+concept_cocoa;;
+e2_S_cake=>nrel_result_product:S_cake_res_2;;
+
+e2_S_cake=>nrel_action_sequence:e3_S_cake;;
+
+link_S_cake->e3_S_cake;;
+stage->e3_S_cake;;
+e3_S_cake=>nrel_stage_tools:link_S_cake_e3_tool;;
+link_S_cake_e3_tool->
+bowl;
+spoon;;
+e3_S_cake=>nrel_processing_type:stirring;;
+e3_S_cake=>nrel_stage_products:link_S_cake_e3_products;;
+link_S_cake_e3_products->
+concept_sugar;
+concept_sour_cream;;
+e3_S_cake=>nrel_result_product:S_cake_res_3;;
+
+e3_S_cake=>nrel_action_sequence:e4_S_cake;;
+
+link_S_cake->e4_S_cake;;
+stage->e4_S_cake;;
+e4_S_cake=>nrel_stage_tools:link_S_cake_e4_tool;;
+link_S_cake_e4_tool->
+spoon;
+plate;;
+e4_S_cake=>nrel_processing_type:lubricating;;
+e4_S_cake=>nrel_stage_products:link_S_cake_e4_products;;
+link_S_cake_e4_products->
+S_cake_res2;
+S_cake_res3;;
+e4_S_cake=>nrel_result_product:S_cake_res_4;;
+
+
+S_cake_res_1
+=> nrel_main_idtf: [Тесто для основы]
+(* <- lang_ru;; *);;
+
+S_cake_res_2
+=> nrel_main_idtf: [Коржи]
+(* <- lang_ru;; *);;
+
+S_cake_res_3
+=> nrel_main_idtf: [Крем]
+(* <- lang_ru;; *);;
+
+S_cake_res_4
+=> nrel_main_idtf: [Готовый торт]
+(* <- lang_ru;; *);;
+
+link_S_cake_e1_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_S_cake_e2_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_S_cake_e3_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_S_cake_e4_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_S_cake_e1_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_S_cake_e2_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_S_cake_e3_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_S_cake_e4_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+
+Sour_cake
+=> nrel_main_idtf: [Торт "Сметанник".Рецепт]
+(* <- lang_ru;; *);;
+
+e1_S_cake
+=> nrel_main_idtf: [Этап 1]
+(* <- lang_ru;; *);;
+
+e2_S_cake
+=> nrel_main_idtf: [Этап 2]
+(* <- lang_ru;; *);;
+
+e3_S_cake
+=> nrel_main_idtf: [Этап 3]
+(* <- lang_ru;; *);;
+
+e4_S_cake
+=> nrel_main_idtf: [Этап 4]
+(* <- lang_ru;; *);;
+
+
+n1_S_cake
+=> nrel_main_idtf: [..]
+(* <- lang_ru;; *);;
+
+link_S_cake
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;

@@ -10,6 +10,8 @@ concept_carrot_pie_recept <=nrel_context_of_action: [*
 		concept_baking_powder;;
 *];;
 
+concept_carrot_pie_recept<-concept_recept;;
+
 concept_carrot_pie_recept <=nrel_cooking_time:...
 (*
 	<=nrel_value:...

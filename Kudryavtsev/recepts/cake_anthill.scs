@@ -10,6 +10,8 @@ concept_cake_anthill_recept <=nrel_context_of_action: [*
 		concept_condensed_milk;;
 *];;
 
+concept_cake_anthill_recept<-concept_recept;;
+
 concept_cake_anthill_recept <=nrel_cooking_time:...
 (*
 	<=nrel_value:...

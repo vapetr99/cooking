@@ -1,0 +1,125 @@
+cheesecake =
+[*
+dish-> ccake;;
+ccake=>nrel_ingredient:
+concept_egg;
+concept_milk;
+concept_salt;
+concept_curd;
+concept_flour;
+concept_butter;
+concept_sugar;
+concept_vegetable_oil;;
+*];;
+
+cheesecake<=nrel_context:n1_ccake;;
+recept->n1_ccake;;
+link_ccake=>nrel_decomposition:n1_ccake;;
+n1_ccake->rrel_1:ccake;;
+
+link_ccake->rrel_1:e1_ccake;;
+stage->e1_ccake;;
+e1_ccake=>nrel_stage_tools:link_ccake_e1_tool;;
+link_ccake_e1_tool->
+fork;
+bowl;;
+e1_ccake=>nrel_processing_type:stirring;;
+e1_ccake=>nrel_stage_products:link_ccake_e1_products;;
+link_ccake_e1_products->
+concept_egg;
+concept_salt;
+concept_curd;
+concept_sugar;
+concept_flour;;
+e1_ccake=>nrel_result_product:ccake_res_1;;
+
+e1_ccake=>nrel_action_sequence:e2_ccake;;
+
+link_ccake->e2_ccake;;
+stage->e2_ccake;;
+e2_ccake=>nrel_stage_tools:link_ccake_e2_tool;;
+link_ccake_e2_tool->
+bowl;;
+e2_ccake=>nrel_processing_type:pouring;;
+e2_ccake=>nrel_stage_products:link_ccake_e2_products;;
+link_ccake_e2_products->
+ccake_res_1;
+milk;;
+e2_ccake=>nrel_result_product:ccake_res_2;;
+
+e2_ccake=>nrel_action_sequence:e3_ccake;;
+
+link_ccake->e3_ccake;;
+stage->e3_ccake;;
+e3_ccake=>nrel_stage_tools:link_ccake_e3_tool;;
+link_ccake_e3_tool->
+pan;
+gas_cooker;;
+e3_ccake=>nrel_processing_type:frying;;
+e3_ccake=>nrel_stage_products:link_ccake_e3_products;;
+link_ccake_e3_products->
+ccake_res_2;;
+e3_ccake=>nrel_bonus_component:concept_vegetable_oil;;
+e3_ccake=>nrel_result_product:ccake_res_3;;
+
+
+
+ccake_res_1
+=> nrel_main_idtf: [Смесь]
+(* <- lang_ru;; *);;
+
+ccake_res_2
+=> nrel_main_idtf: [Тесто]
+(* <- lang_ru;; *);;
+
+ccake_res_3
+=> nrel_main_idtf: [Готовые сырники]
+(* <- lang_ru;; *);;
+
+link_ccake_e1_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_ccake_e2_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_ccake_e3_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_ccake_e1_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_ccake_e2_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_ccake_e3_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+cheesecake
+=> nrel_main_idtf: [Сырники.Рецепт]
+(* <- lang_ru;; *);;
+
+e1_ccake
+=> nrel_main_idtf: [Этап 1]
+(* <- lang_ru;; *);;
+
+e2_ccake
+=> nrel_main_idtf: [Этап 2]
+(* <- lang_ru;; *);;
+
+e3_ccake
+=> nrel_main_idtf: [Этап 3]
+(* <- lang_ru;; *);;
+
+n1_ccake
+=> nrel_main_idtf: [..]
+(* <- lang_ru;; *);;
+
+link_ccake
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;

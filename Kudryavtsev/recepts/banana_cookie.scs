@@ -10,6 +10,9 @@ concept_banana_cookie_recept <=nrel_context_of_action: [*
                 concept_butter;;
 *];;
 
+
+concept_banana_cookie_recept<-concept_recept;;
+
 concept_banana_cookie_recept <=nrel_cooking_time:...
 (*
 	<=nrel_value:...

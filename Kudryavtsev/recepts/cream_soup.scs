@@ -1,0 +1,123 @@
+Cream_soup =
+[*
+dish-> Cr_soup;;
+Cr_soup=>nrel_ingredient:
+concept_butter;
+concept_onion;
+concept_potato;
+concept_water;
+concept_salt;
+concept_pepper;;
+*];;
+
+Cream_soup<=nrel_context:n1_Cr_soup;;
+recept->n1_Cr_soup;;
+link_Cr_soup=>nrel_decomposition:n1_Cr_soup;;
+n1_Cr_soup->rrel_1:Cr_soup;;
+
+link_Cr_soup->rrel_1:e1_Cr_soup;;
+stage->e1_Cr_soup;;
+e1_Cr_soup=>nrel_stage_tools:link_Cr_soup_e1_tool;;
+link_Cr_soup_e1_tool->
+gas_cooker;
+pan;;
+e1_Cr_soup=>nrel_processing_type:frying;;
+e1_Cr_soup=>nrel_stage_products:link_Cr_soup_e1_products;;
+link_Cr_soup_e1_products->
+concept_butter;
+concept_onion;;
+e1_Cr_soup=>nrel_result_product:Cr_soup_res_1;;
+
+e1_Cr_soup=>nrel_action_sequence:e2_Cr_soup;;
+
+link_Cr_soup->e2_Cr_soup;;
+stage->e2_Cr_soup;;
+e2_Cr_soup=>nrel_stage_tools:link_Cr_soup_e2_tool;;
+link_Cr_soup_e2_tool->
+gas_cooker;
+pan;;
+e2_Cr_soup=>nrel_processing_type:frying;;
+e2_Cr_soup=>nrel_stage_products:link_Cr_soup_e2_products;;
+link_Cr_soup_e2_products->
+Cr_soup_res_1;
+concept_potato;
+concept_salt;
+concept_pepper;;
+e2_Cr_soup=>nrel_result_product:Cr_soup_res_2;;
+
+e2_Cr_soup=>nrel_action_sequence:e3_Cr_soup;;
+
+link_Cr_soup->e3_Cr_soup;;
+stage->e3_Cr_soup;;
+e3_Cr_soup=>nrel_stage_tools:link_Cr_soup_e3_tool;;
+link_Cr_soup_e3_tool->
+pan;
+gas_cooker;;
+e3_Cr_soup=>nrel_processing_type:boiling;;
+e3_Cr_soup=>nrel_stage_products:link_Cr_soup_e3_products;;
+link_Cr_soup_e3_products->
+Cr_soup_res_2;
+concept_water;;
+e3_Cr_soup=>nrel_result_product:Cr_soup_res_3;;
+
+
+
+Cr_soup_res_1
+=> nrel_main_idtf: [Зажарка]
+(* <- lang_ru;; *);;
+
+Cr_soup_res_2
+=> nrel_main_idtf: [Зажарка с картофелем]
+(* <- lang_ru;; *);;
+
+Cr_soup_res_3
+=> nrel_main_idtf: [Готовый суп-пюре]
+(* <- lang_ru;; *);;
+
+link_Cr_soup_e1_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_Cr_soup_e2_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_Cr_soup_e3_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_Cr_soup_e1_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_Cr_soup_e2_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_Cr_soup_e3_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+Cream_soup
+=> nrel_main_idtf: [Суп-пюре.Рецепт]
+(* <- lang_ru;; *);;
+
+e1_Cr_soup
+=> nrel_main_idtf: [Этап 1]
+(* <- lang_ru;; *);;
+
+e2_Cr_soup
+=> nrel_main_idtf: [Этап 2]
+(* <- lang_ru;; *);;
+
+e3_Cr_soup
+=> nrel_main_idtf: [Этап 3]
+(* <- lang_ru;; *);;
+
+n1_Cr_soup
+=> nrel_main_idtf: [..]
+(* <- lang_ru;; *);;
+
+link_Cr_soup
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;

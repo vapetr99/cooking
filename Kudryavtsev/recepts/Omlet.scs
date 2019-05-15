@@ -1,0 +1,119 @@
+omlete =
+[*
+dish-> omlet;;
+omlet=>nrel_ingredient:
+concept_egg;
+concept_milk;
+concept_salt;
+concept_vegetable_oil;;
+*];;
+
+omlete<=nrel_context:n1_omlet;;
+recept->n1_omlet;;
+link_omlet=>nrel_decomposition:n1_omlet;;
+n1_omlet->rrel_1:omlet;;
+
+link_omlet->rrel_1:e1_omlet;;
+stage->e1_omlet;;
+e1_omlet=>nrel_stage_tools:link_omlet_e1_tool;;
+link_omlet_e1_tool->
+fork;
+bowl;;
+e1_omlet=>nrel_processing_type:stirring;;
+e1_omlet=>nrel_stage_products:link_omlet_e1_products;;
+link_omlet_e1_products->
+concept_egg;
+concept_salt;
+concept_milk;;
+e1_omlet=>nrel_result_product:omlet_res_1;;
+
+e1_omlet=>nrel_action_sequence:e2_omlet;;
+
+link_omlet->e2_omlet;;
+stage->e2_omlet;;
+e2_omlet=>nrel_stage_tools:link_omlet_e2_tool;;
+link_omlet_e2_tool->
+bowl;
+pan;;
+e2_omlet=>nrel_processing_type:pouring;;
+e2_omlet=>nrel_stage_products:link_omlet_e2_products;;
+link_omlet_e2_products->
+omlet_res_1;;
+e2_omlet=>nrel_result_product:omlet_res_2;;
+
+e2_omlet=>nrel_action_sequence:e3_omlet;;
+
+link_omlet->e3_omlet;;
+stage->e3_omlet;;
+e3_omlet=>nrel_stage_tools:link_omlet_e3_tool;;
+link_omlet_e3_tool->
+pan;
+gas_cooker;;
+e3_omlet=>nrel_processing_type:frying;;
+e3_omlet=>nrel_stage_products:link_omlet_e3_products;;
+link_omlet_e3_products->
+omlet_res_2;;
+e3_omlet=>nrel_bonus_component:concept_vegetable_oil;;
+e3_omlet=>nrel_result_product:omlet_res_3;;
+
+
+
+omlet_res_1
+=> nrel_main_idtf: [Смесь яиц с солью и молоком]
+(* <- lang_ru;; *);;
+
+omlet_res_2
+=> nrel_main_idtf: [Смесь на сковороде]
+(* <- lang_ru;; *);;
+
+omlet_res_3
+=> nrel_main_idtf: [Готовый омлет]
+(* <- lang_ru;; *);;
+
+link_omlet_e1_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_omlet_e2_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_omlet_e3_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_omlet_e1_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_omlet_e2_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_omlet_e3_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+omlete
+=> nrel_main_idtf: [Омлет.Рецепт]
+(* <- lang_ru;; *);;
+
+e1_omlet
+=> nrel_main_idtf: [Этап 1]
+(* <- lang_ru;; *);;
+
+e2_omlet
+=> nrel_main_idtf: [Этап 2]
+(* <- lang_ru;; *);;
+
+e3_omlet
+=> nrel_main_idtf: [Этап 3]
+(* <- lang_ru;; *);;
+
+n1_omlet
+=> nrel_main_idtf: [..]
+(* <- lang_ru;; *);;
+
+link_omlet
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;

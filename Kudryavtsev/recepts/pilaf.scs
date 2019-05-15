@@ -11,6 +11,8 @@ concept_pilaf_recept <=nrel_context_of_action: [*
                 concept_vegetable_oil;;
 *];;
 
+concept_pilaf_recept<-concept_recept;;
+
 concept_pilaf_recept <=nrel_cooking_time:...
 (*
 	<=nrel_value:...

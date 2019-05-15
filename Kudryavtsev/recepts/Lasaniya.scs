@@ -1,0 +1,129 @@
+lasaniya =
+[*
+dish-> lasanya;;
+lasanya=>nrel_ingredient:
+concept_mince;
+concept_onion;
+concept_carrot;
+concept_tomato;
+concept_butter;
+concept_cheese;
+concept_milk;
+concept_flour;
+concept_pepper;
+concept_vegetable_oil;
+concept_salt;
+concept_pasta;;
+*];;
+
+lasaniya<=nrel_context:n1_lasanya;;
+recept->n1_lasanya;;
+link_lasanya=>nrel_decomposition:n1_lasanya;;
+n1_lasanya->rrel_1:lasanya;;
+
+link_lasanya->rrel_1:e1_lasanya;;
+stage->e1_lasanya;;
+e1_lasanya=>nrel_stage_tools:link_lasanya_e1_tool;;
+link_lasanya_e1_tool->
+pan;
+gas_cooker;;
+e1_lasanya=>nrel_processing_type:frying;;
+e1_lasanya=>nrel_stage_products:link_lasanya_e1_products;;
+link_lasanya_e1_products->
+concept_mince;
+concept_onion;;
+e1_lasanya=>nrel_bonus_component:concept_vegetable_oil;;
+e1_lasanya=>nrel_result_product:lasanya_res_1;;
+
+e1_lasanya=>nrel_action_sequence:e2_lasanya;;
+
+link_lasanya->e2_lasanya;;
+stage->e2_lasanya;;
+e2_lasanya=>nrel_stage_tools:link_lasanya_e2_tool;;
+link_lasanya_e2_tool->
+bowl;
+fork;;
+e2_lasanya=>nrel_processing_type:stirring;;
+e2_lasanya=>nrel_stage_products:link_lasanya_e2_products;;
+link_lasanya_e2_products->
+concept_butter;
+concept_flour;
+concept_milk;
+concept_salt;;
+e2_lasanya=>nrel_result_product:lasanya_res_2;;
+
+e2_lasanya=>nrel_action_sequence:e3_lasanya;;
+
+link_lasanya->e3_lasanya;;
+stage->e3_lasanya;;
+e3_lasanya=>nrel_stage_tools:link_lasanya_e3_tool;;
+link_lasanya_e3_tool->
+plate;;
+e3_lasanya=>nrel_processing_type:stirring;;
+e3_lasanya=>nrel_stage_products:link_lasanya_e3_products;;
+link_lasanya_e3_products->
+lasanya_res_2;
+lasanya_res_1;
+concept_cheese;
+concept_pasta;;
+e3_lasanya=>nrel_result_product:lasanya_res_3;;
+
+lasanya_res_1
+=> nrel_main_idtf: [Жареный фарш]
+(* <- lang_ru;; *);;
+
+lasanya_res_2
+=> nrel_main_idtf: [Соус]
+(* <- lang_ru;; *);;
+
+lasanya_res_3
+=> nrel_main_idtf: [Готовая лазанья]
+(* <- lang_ru;; *);;
+
+link_lasanya_e1_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_lasanya_e2_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_lasanya_e3_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_lasanya_e1_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_lasanya_e2_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_lasanya_e3_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+lasaniya
+=> nrel_main_idtf: [Лазанья с мясом.Рецепт]
+(* <- lang_ru;; *);;
+
+e1_lasanya
+=> nrel_main_idtf: [Этап 1]
+(* <- lang_ru;; *);;
+
+e2_lasanya
+=> nrel_main_idtf: [Этап 2]
+(* <- lang_ru;; *);;
+
+e3_lasanya
+=> nrel_main_idtf: [Этап 3]
+(* <- lang_ru;; *);;
+
+n1_lasanya
+=> nrel_main_idtf: [..]
+(* <- lang_ru;; *);;
+
+link_lasanya
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;

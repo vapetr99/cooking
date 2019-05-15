@@ -1,0 +1,190 @@
+cabbage_cake =
+[*
+dish-> cabbage_c;;
+cabbage_c=>nrel_ingredient:
+concept_flour;
+concept_milk;
+concept_egg;
+concept_butter;
+concept_sugar;
+concept_salt;
+concept_cabbage;
+concept_carrot;
+concept_onion;
+concept_yeast;;
+*];;
+
+cabbage_cake<=nrel_context:n1_cabbage_c;;
+recept->n1_cabbage_c;;
+link_cabbage_c=>nrel_decomposition:n1_cabbage_c;;
+n1_cabbage_c->rrel_1:cabbage_c;;
+
+link_cabbage_c->rrel_1:e1_cabbage_c;;
+stage->e1_cabbage_c;;
+e1_cabbage_c=>nrel_stage_tools:link_cabbage_c_e1_tool;;
+link_cabbage_c_e1_tool->
+spoon;
+bowl;;
+e1_cabbage_c=>nrel_processing_type:stirring;;
+e1_cabbage_c=>nrel_stage_products:link_cabbage_c_e1_products;;
+link_cabbage_c_e1_products->
+concept_yeast;
+concept_flour;
+concept_milk;;
+e1_cabbage_c=>nrel_result_product:cabbage_c_res_1;;
+
+e1_cabbage_c=>nrel_action_sequence:e2_cabbage_c;;
+
+link_cabbage_c->e2_cabbage_c;;
+stage->e2_cabbage_c;;
+e2_cabbage_c=>nrel_stage_tools:link_cabbage_c_e2_tool;;
+link_cabbage_c_e2_tool->
+bowl;
+pan;;
+e2_cabbage_c=>nrel_processing_type:stirring;;
+e2_cabbage_c=>nrel_stage_products:link_cabbage_c_e2_products;;
+link_cabbage_c_e2_products->
+concept_butter;
+concept_salt;
+concept_sugar;
+concept_egg;
+cabbage_c_res_1;;
+e2_cabbage_c=>nrel_result_product:cabbage_c_res_2;;
+
+e2_cabbage_c=>nrel_action_sequence:e3_cabbage_c;;
+
+link_cabbage_c->e3_cabbage_c;;
+stage->e3_cabbage_c;;
+e3_cabbage_c=>nrel_stage_tools:link_cabbage_c_e3_tool;;
+link_cabbage_c_e3_tool->
+pan;
+gas_cooker;;
+e3_cabbage_c=>nrel_processing_type:frying;;
+e3_cabbage_c=>nrel_stage_products:link_cabbage_c_e3_products;;
+link_cabbage_c_e3_products->
+concept_carrot;
+concept_onion;
+concept_cabbage;;
+e3_cabbage_c=>nrel_bonus_component:concept_vegetable_oil;;
+e3_cabbage_c=>nrel_result_product:cabbage_c_res_3;;
+
+e3_cabbage_c=>nrel_action_sequence:e4_cabbage_c;;
+
+link_cabbage_c->e4_cabbage_c;;
+stage->e4_cabbage_c;;
+e4_cabbage_c=>nrel_stage_tools:link_cabbage_c_e4_tool;;
+link_cabbage_c_e4_tool->
+plate;;
+e4_cabbage_c=>nrel_processing_type:stirring;;
+e4_cabbage_c=>nrel_stage_products:link_cabbage_c_e4_products;;
+link_cabbage_c_e4_products->
+cabbage_c_res_2;
+cabbage_c_res3;;
+e4_cabbage_c=>nrel_result_product:cabbage_c_res_4;;
+
+e4_cabbage_c=>nrel_action_sequence:e5_cabbage_c;;
+
+link_cabbage_c->e5_cabbage_c;;
+stage->e5_cabbage_c;;
+e5_cabbage_c=>nrel_stage_tools:link_cabbage_c_e5_tool;;
+link_cabbage_c_e5_tool->
+pan;
+gas_cooker;;
+e5_cabbage_c=>nrel_processing_type:frying;;
+e5_cabbage_c=>nrel_stage_products:link_cabbage_c_e5_products;;
+link_cabbage_c_e5_products->
+cabbage_c_res_4;;
+e5_cabbage_c=>nrel_bonus_component:concept_vegetable_oil;;
+e5_cabbage_c=>nrel_result_product:cabbage_c_res_5;;
+
+cabbage_c_res_1
+=> nrel_main_idtf: [Дрожжевое тесто]
+(* <- lang_ru;; *);;
+
+cabbage_c_res_2
+=> nrel_main_idtf: [Тесто]
+(* <- lang_ru;; *);;
+
+cabbage_c_res_3
+=> nrel_main_idtf: [Начинка]
+(* <- lang_ru;; *);;
+
+cabbage_c_res_4
+=> nrel_main_idtf: [Сырой пирог с начинкой]
+(* <- lang_ru;; *);;
+
+cabbage_c_res_5
+=> nrel_main_idtf: [Готовый пирог]
+(* <- lang_ru;; *);;
+
+link_cabbage_c_e1_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_cabbage_c_e2_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_cabbage_c_e3_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_cabbage_c_e4_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_cabbage_c_e5_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_cabbage_c_e1_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_cabbage_c_e2_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_cabbage_c_e3_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_cabbage_c_e4_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_cabbage_c_e5_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+cabbage_cake
+=> nrel_main_idtf: [Капустный пирог.Рецепт]
+(* <- lang_ru;; *);;
+
+e1_cabbage_c
+=> nrel_main_idtf: [Этап 1]
+(* <- lang_ru;; *);;
+
+e2_cabbage_c
+=> nrel_main_idtf: [Этап 2]
+(* <- lang_ru;; *);;
+
+e3_cabbage_c
+=> nrel_main_idtf: [Этап 3]
+(* <- lang_ru;; *);;
+
+e3_cabbage_c
+=> nrel_main_idtf: [Этап 4]
+(* <- lang_ru;; *);;
+
+e3_cabbage_c
+=> nrel_main_idtf: [Этап 5]
+(* <- lang_ru;; *);;
+
+n1_cabbage_c
+=> nrel_main_idtf: [..]
+(* <- lang_ru;; *);;
+
+link_cabbage_c
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;

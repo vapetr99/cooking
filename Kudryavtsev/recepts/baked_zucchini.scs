@@ -11,6 +11,8 @@ concept_baked_zucchini_recept <=nrel_context_of_action: [*
 		concept_vegetable_oil;;
 *];;
 
+concept_baked_zucchini_recept<-concept_recept;;
+
 concept_baked_zucchini_recept <=nrel_cooking_time:...
 (*
 	<=nrel_value:...

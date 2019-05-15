@@ -1,0 +1,125 @@
+solyanka =
+[*
+dish-> solyanka_m;;
+solyanka_m=>nrel_ingredient:
+concept_sausage;
+concept_onion;
+concept_water;
+concept_tomato;
+concept_salt;
+concept_beef;;
+*];;
+
+solyanka<=nrel_context:n1_solyanka_m;;
+recept->n1_solyanka_m;;
+link_solyanka_m=>nrel_decomposition:n1_solyanka_m;;
+n1_solyanka_m->rrel_1:solyanka_m;;
+
+link_solyanka_m->rrel_1:e1_solyanka_m;;
+stage->e1_solyanka_m;;
+e1_solyanka_m=>nrel_stage_tools:link_solyanka_m_e1_tool;;
+link_solyanka_m_e1_tool->
+knife;
+plate;;
+e1_solyanka_m=>nrel_processing_type:tapping;;
+e1_solyanka_m=>nrel_stage_products:link_solyanka_m_e1_products;;
+link_solyanka_m_e1_products->
+concept_sausage;
+concept_beef;;
+e1_solyanka_m=>nrel_result_product:solyanka_m_res_1;;
+
+e1_solyanka_m=>nrel_action_sequence:e2_solyanka_m;;
+
+link_solyanka_m->e2_solyanka_m;;
+stage->e2_solyanka_m;;
+e2_solyanka_m=>nrel_stage_tools:link_solyanka_m_e2_tool;;
+link_solyanka_m_e2_tool->
+pan;
+gas_cooker;;
+e2_solyanka_m=>nrel_processing_type:heating;;
+e2_solyanka_m=>nrel_stage_products:link_solyanka_m_e2_products;;
+link_solyanka_m_e2_products->
+concept_salt;
+concept_water;;
+e2_solyanka_m=>nrel_result_product:solyanka_m_res_2;;
+
+e2_solyanka_m=>nrel_action_sequence:e3_solyanka_m;;
+
+link_solyanka_m->e3_solyanka_m;;
+stage->e3_solyanka_m;;
+e3_solyanka_m=>nrel_stage_tools:link_solyanka_m_e3_tool;;
+link_solyanka_m_e3_tool->
+plate;
+pan;
+gas_cooker;;
+e3_solyanka_m=>nrel_processing_type:boiling;;
+e3_solyanka_m=>nrel_stage_products:link_solyanka_m_e3_products;;
+link_solyanka_m_e3_products->
+solyanka_m_res_2;
+solyanka_m_res_1;
+concept_onion;
+concept_tomato;;
+e3_solyanka_m=>nrel_bonus_component:concept_vegetable_oil;;
+e3_solyanka_m=>nrel_result_product:solyanka_m_res_3;;
+
+
+
+solyanka_m_res_1
+=> nrel_main_idtf: [Мясная нарезка]
+(* <- lang_ru;; *);;
+
+solyanka_m_res_2
+=> nrel_main_idtf: [Нагретая до кипения вода]
+(* <- lang_ru;; *);;
+
+solyanka_m_res_3
+=> nrel_main_idtf: [Готовая солянка]
+(* <- lang_ru;; *);;
+
+link_solyanka_m_e1_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_solyanka_m_e2_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_solyanka_m_e3_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_solyanka_m_e1_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_solyanka_m_e2_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_solyanka_m_e3_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+solyanka
+=> nrel_main_idtf: [Солянка мясная.Рецепт]
+(* <- lang_ru;; *);;
+
+e1_solyanka_m
+=> nrel_main_idtf: [Этап 1]
+(* <- lang_ru;; *);;
+
+e2_solyanka_m
+=> nrel_main_idtf: [Этап 2]
+(* <- lang_ru;; *);;
+
+e3_solyanka_m
+=> nrel_main_idtf: [Этап 3]
+(* <- lang_ru;; *);;
+
+n1_solyanka_m
+=> nrel_main_idtf: [..]
+(* <- lang_ru;; *);;
+
+link_solyanka_m
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;

@@ -1,0 +1,55 @@
+stirring
+=> nrel_main_idtf: [Перемешивание]
+(* <- lang_ru;; *);;
+
+pouring
+=> nrel_main_idtf: [Переливание]
+(* <- lang_ru;; *);;
+
+frying
+=> nrel_main_idtf: [Жарка]
+(* <- lang_ru;; *);;
+
+beatting
+=> nrel_main_idtf: [Взбивание]
+(* <- lang_ru;; *);;
+
+beating
+=> nrel_main_idtf: [Отбивание]
+(* <- lang_ru;; *);;
+
+tapping
+=> nrel_main_idtf: [Нарезание]
+(* <- lang_ru;; *);;
+
+heating
+=> nrel_main_idtf: [Нагревание]
+(* <- lang_ru;; *);;
+
+boiling
+=> nrel_main_idtf: [Варение]
+(* <- lang_ru;; *);;
+
+lubricating
+=> nrel_main_idtf: [Смазывание]
+(* <- lang_ru;; *);;
+
+rubbing
+=> nrel_main_idtf: [Натирание]
+(* <- lang_ru;; *);;
+
+freezing
+=> nrel_main_idtf: [Замораживание]
+(* <- lang_ru;; *);;
+
+dipping
+=> nrel_main_idtf: [Обмакивание]
+(* <- lang_ru;; *);;
+
+smearing
+=> nrel_main_idtf: [Намазывание]
+(* <- lang_ru;; *);;
+
+cooling
+=> nrel_main_idtf: [Охлаждение]
+(* <- lang_ru;; *);;

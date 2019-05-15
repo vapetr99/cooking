@@ -1,0 +1,94 @@
+curd_cake =
+[*
+dish-> cur_cake;;
+cur_cake=>nrel_ingredient:
+concept_curd;
+concept_egg;
+concept_flour;
+concept_sugar;
+concept_salt;
+concept_butter;;
+*];;
+
+curd_cake<=nrel_context:n1_cur_cake;;
+recept->n1_cur_cake;;
+link_cur_cake=>nrel_decomposition:n1_cur_cake;;
+n1_cur_cake->rrel_1:cur_cake;;
+
+link_cur_cake->rrel_1:e1_cur_cake;;
+stage->e1_cur_cake;;
+e1_cur_cake=>nrel_stage_tools:link_cur_cake_e1_tool;;
+link_cur_cake_e1_tool->
+fork;
+bowl;;
+e1_cur_cake=>nrel_processing_type:stirring;;
+e1_cur_cake=>nrel_stage_products:link_cur_cake_e1_products;;
+link_cur_cake_e1_products->
+concept_egg;
+concept_curd;
+concept_flour;
+concept_sugar;
+concept_salt;;
+e1_cur_cake=>nrel_result_product:cur_cake_res_1;;
+
+e1_cur_cake=>nrel_action_sequence:e2_cur_cake;;
+
+link_cur_cake->e2_cur_cake;;
+stage->e2_cur_cake;;
+e2_cur_cake=>nrel_stage_tools:link_cur_cake_e2_tool;;
+link_cur_cake_e2_tool->
+gas_cooker;
+pan;;
+e2_cur_cake=>nrel_processing_type:frying;;
+e2_cur_cake=>nrel_stage_products:link_cur_cake_e2_products;;
+link_cur_cake_e2_products->
+cur_cake_res_1;
+concept_butter;;
+e2_cur_cake=>nrel_result_product:cur_cake_res_2;;
+
+
+
+cur_cake_res_1
+=> nrel_main_idtf: [Смесь]
+(* <- lang_ru;; *);;
+
+cur_cake_res_2
+=> nrel_main_idtf: [Готовые кексы]
+(* <- lang_ru;; *);;
+
+link_cur_cake_e1_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_cur_cake_e2_products
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+
+link_cur_cake_e1_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+link_cur_cake_e2_tool
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
+
+curd_cake
+=> nrel_main_idtf: [Творожный кекс.Рецепт]
+(* <- lang_ru;; *);;
+
+e1_cur_cake
+=> nrel_main_idtf: [Этап 1]
+(* <- lang_ru;; *);;
+
+e2_cur_cake
+=> nrel_main_idtf: [Этап 2]
+(* <- lang_ru;; *);;
+
+n1_cur_cake
+=> nrel_main_idtf: [..]
+(* <- lang_ru;; *);;
+
+link_cur_cake
+=> nrel_main_idtf: [link]
+(* <- lang_ru;; *);;
