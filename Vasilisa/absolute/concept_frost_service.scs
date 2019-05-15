@@ -1,42 +1,29 @@
-concept_service=>nrel_idtf:[service] (* <- lang_en;; *);;
-concept_service=>nrel_main_idtf:[сервиз] (* <- lang_ru;; *);;
+concept_frost_service=>nrel_idtf:[frost service] (* <- lang_en;; *);;
+concept_frost_service=>nrel_main_idtf:[холодильное оборудование] (* <- lang_ru;; *);;
 
-concept_service<-rrel_key_sc_element:...
+concept_frost_service<-rrel_key_sc_element:...
 	(*
 		<-definition;;
-		=>nrel_main_idtf:[Опр.(сервиз)] (* <- lang_ru;; *);;
+		=>nrel_main_idtf:[Опр.(холодильное оборудование)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:...
 	(*
-        ->[набор посуды для чаепития](* <- lang_ru;; *);;
+        ->[электронное оборудование, предназначенное для охлаждения пищи.](* <- lang_ru;; *);;
 	*);;
 
 	<=nrel_using_constants:...
 	(*
-		->concept_dishes;;
+		->concept_electronic_equipment;concept_food;;
 	*);;
 
 *);;
 
-concept_service<-rrel_key_sc_element:...
-	(*
-		<-illustration;;<=nrel_sc_text_translation:...
-			(*
-			    ->rrel_example: "file://pictures//fservice.jpeg"
-			(*
-		=>nrel_format:format_jpg;;
-		*);;
-	*);;
-*);;
-
-concept_service<-rrel_key_sc_element:...
+concept_frost_service<-rrel_key_sc_element:...
 (*
-	->rrel_key_sc_element:concept_service;;
+	->rrel_key_sc_element:concept_frost_service;concept_food;;
 	<-statement;;
-	=>nrel_main_idtf:[Утв.(сервиз)](* <- lang_ru;; *);;
+	=>nrel_main_idtf:[Утв.(холодильное оборудование)](* <- lang_ru;; *);;
 	<=nrel_sc_text_translation:...
 	(*
-		->rrel_example:[один из самых лучших сервизов - фарфоровый](* <- lang_ru;; *);;
+		->rrel_example:[холодильное оборудование применяется для хранения пищи](* <- lang_ru;; *);;
 	*);;
 *);;
-
-concept_service<=nrel_inclusion:concept_tea_service;;

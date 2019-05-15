@@ -4,7 +4,7 @@ concept_cut_items=>nrel_main_idtf:[режущие предметы] (* <- lang_r
 concept_cut_items<-rrel_key_sc_element:...
 	(*
 		<-definition;;
-		=>nrel_main_idtf:[Опр.(посуда)] (* <- lang_ru;; *);;
+		=>nrel_main_idtf:[Опр.(режущие предметы)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:...
 	(*
         ->[Предметы, предназначенные для нарезания продуктов питания и пищи](* <- lang_ru;; *);;
