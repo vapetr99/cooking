@@ -30,11 +30,11 @@ concept_container_for_liquids<-rrel_key_sc_element:...
 
 concept_container_for_liquids<-rrel_key_sc_element:...
 (*
-	->rrel_key_sc_element:concept_container_for_liquids;concept_spice;;
+	->rrel_key_sc_element:concept_container_for_liquids;;
 	<-statement;;
-	=>nrel_main_idtf:[Утв.()](* <- lang_ru;; *);;
+	=>nrel_main_idtf:[Утв.(Тара для жидкостей)](* <- lang_ru;; *);;
 	<=nrel_sc_text_translation:...
 	(*
-		->rrel_example:[???](* <- lang_ru;; *);;
+		->rrel_example:[Тары для жидкостей используются для закаток](* <- lang_ru;; *);;
 	*);;
 *);;

@@ -43,8 +43,8 @@ concept_baking_dishes=>nrel_inclusion:concept_form;;
 
 concept_metall_baking<-...
 (*
-	->concept_plastik_baking;;
-	->concept_rubber_baking;;
+	->concept_silikon_baking;;
+	->concept_glass_baking;;
 	=>nrel_main_idtf:[Разбиение по признаку материала](* <- lang_ru;; *);;
 	=>nrel_subdividing:concept_baking_dishes;;
 *);;

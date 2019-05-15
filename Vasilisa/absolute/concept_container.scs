@@ -1,0 +1,19 @@
+concept_container=>nrel_idtf:[container] (* <- lang_en;; *);;
+concept_container=>nrel_main_idtf:[тара] (* <- lang_ru;; *);;
+concept_container=>nrel_idtf:[емкость] (* <- lang_ru;; *);;
+
+concept_container<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(тара)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Кухонное оборудование, предназначенное для хранения каких-либо субстанций.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_equipment;concept_substance;;
+	*);;
+
+*);;

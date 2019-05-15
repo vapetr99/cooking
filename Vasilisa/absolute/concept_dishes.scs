@@ -39,12 +39,12 @@ concept_dishes<-rrel_key_sc_element:...
 	*);;
 *);;
 
-concept_cook_dishes<-...
+concept_dishes_for_coocking<-...
 (*
-	->concept_eat_dishes;;
+	->concept_dishes_for_food;;
 	->concept_storage_dishes;;
 	=>nrel_main_idtf:[Разбиение по признаку предназначения](* <- lang_ru;; *);;
 	=>nrel_subdividing:concept_dishes;;
 *);;
 
-concept_dishes=>nrel_inclusion:concept_baking_dishes;concept_fri_dishes;concept_boil_dishes;;
+concept_dishes=>nrel_inclusion:concept_coocking_dishes;concept_eating_dishes;concept_storage_dishes;;

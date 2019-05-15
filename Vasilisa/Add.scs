@@ -50,46 +50,6 @@ rrel_glass
 	=> nrel_main_idtf: [стакан']
 		(* <- lang_ru;; *);;
 
-rrel_one
-	<- sc_node_role_relation;
-	=> nrel_main_idtf: [1']
-		(* <- lang_ru;; *);;
-
-rrel_two
-	<- sc_node_role_relation;
-	=> nrel_main_idtf: [2']
-		(* <- lang_ru;; *);;
-
-rrel_three
-	<- sc_node_role_relation;
-	=> nrel_main_idtf: [3']
-		(* <- lang_ru;; *);;
-
-rrel_four
-	<- sc_node_role_relation;
-	=> nrel_main_idtf: [4']
-		(* <- lang_ru;; *);;
-
-rrel_five
-	<- sc_node_role_relation;
-	=> nrel_main_idtf: [5']
-		(* <- lang_ru;; *);;
-
-rrel_six
-	<- sc_node_role_relation;
-	=> nrel_main_idtf: [6']
-		(* <- lang_ru;; *);;
-
-rrel_seven
-	<- sc_node_role_relation;
-	=> nrel_main_idtf: [7']
-		(* <- lang_ru;; *);;
-
-rrel_eight
-	<- sc_node_role_relation;
-	=> nrel_main_idtf: [8']
-		(* <- lang_ru;; *);;
-
 		sc_node_not_relation->concept_circle;;
 concept_circle=>nrel_main_idtf:
 [окружность](* <-lang_ru;; *);;
@@ -305,20 +265,52 @@ concept_bitter_chocolate => nrel_main_idtf:
 [горький шоколад] (* <- lang_ru;; *);
 [bitter chocolate] (* <- lang_en;; *);;
 
+sc_node_not_relation -> concept_glass_baking;;
+concept_glass_baking => nrel_main_idtf:
+[стеклянная посуда для запекания] (* <- lang_ru;; *);
+[glass baking dishes] (* <- lang_en;; *);;
 
+sc_node_not_relation -> concept_silikon_baking;;
+concept_silikon_baking => nrel_main_idtf:
+[силиконовая посуда для запекания] (* <- lang_ru;; *);
+[plastik baking dishes] (* <- lang_en;; *);;
 
+sc_node_not_relation -> concept_metall_baking;;
+concept_metall_baking => nrel_main_idtf:
+[металлическая посуда для запекания] (* <- lang_ru;; *);
+[metall baking dishes] (* <- lang_en;; *);;
 
+sc_node_not_relation -> concept_slicer;;
+concept_slicer => nrel_main_idtf:
+[слайсер] (* <- lang_ru;; *);;
 
+sc_node_not_relation -> concept_eat_dishes;;
+concept_eat_dishes => nrel_main_idtf:
+[посуда для употребления пищи] (* <- lang_ru;; *);;
 
+sc_node_not_relation -> concept_cook_dishes;;
+concept_cook_dishes => nrel_main_idtf:
+[посуда для приготовления пищи] (* <- lang_ru;; *);;
 
+sc_node_not_relation -> concept_storage_dishes;;
+concept_storage_dishes => nrel_main_idtf:
+[посуда для хранения пищи] (* <- lang_ru;; *);;
 
+sc_node_not_relation -> concept_boil_dishes;;
+concept_boil_dishes => nrel_main_idtf:
+[посуда варки] (* <- lang_ru;; *);;
 
+sc_node_not_relation -> concept_fartuk;;
+concept_fartuk => nrel_main_idtf:
+[фартук] (* <- lang_ru;; *);;
 
+sc_node_not_relation -> concept_tea_service;;
+concept_tea_service => nrel_main_idtf:
+[чайный сервиз] (* <- lang_ru;; *);;
 
-
-
-
-
+sc_node_not_relation -> concept_pieces;;
+concept_pieces => nrel_main_idtf:
+[кусочки] (* <- lang_ru;; *);;
 
 
 
