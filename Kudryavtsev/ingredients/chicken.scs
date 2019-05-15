@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_chicken;;
+
+concept_chicken => nrel_main_idtf:
+[Курица] (* <- lang_ru;; *);
+[Chicken] (* <- lang_en;; *);;
+concept_chicken <- concept_ingridient;;
+
+concept_chicken => nrel_kkal : 190_kkal
+(*
+=> nrel_main_idtf:
+[110 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_chicken => nrel_price : 4_rub
+(*
+=> nrel_main_idtf:
+[5 рублей]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_chicken => nrel_storage_time: 15_days
+(*
+=> nrel_main_idtf:
+[15 дней]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_chicken => nrel_storage_conditions: chicken_cond
+(*
+=> nrel_main_idtf:
+[до +2 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_chicken=> nrel_glycemic_index: 0
+
+(*
+=> nrel_main_idtf:
+[0]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

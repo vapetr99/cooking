@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_buckwheat;;
+
+concept_buckwheat => nrel_main_idtf:
+[Гречка] (* <- lang_ru;; *);
+[Buckwheat] (* <- lang_en;; *);;
+concept_buckwheat <- concept_ingridient;;
+
+concept_buckwheat => nrel_kkal : 110_kkal
+(*
+=> nrel_main_idtf:
+[110 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_buckwheat => nrel_price : 2_rub
+(*
+=> nrel_main_idtf:
+[2 рубля]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_buckwheat => nrel_storage_time: 18_month
+(*
+=> nrel_main_idtf:
+[18 месяцев]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_buckwheat => nrel_storage_conditions: buckwheat_cond
+(*
+=> nrel_main_idtf:
+[от +5 до +15 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_buckwheat=> nrel_glycemic_index: 50
+
+(*
+=> nrel_main_idtf:
+[50]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+
