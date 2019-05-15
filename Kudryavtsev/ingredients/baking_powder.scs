@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_baking_powder;;
+
+concept_baking_powder => nrel_main_idtf:
+[Разрыхлитель] (* <- lang_ru;; *);
+[Baking Powder] (* <- lang_en;; *);;
+concept_baking_powder <- concept_ingridient;;
+
+concept_baking_powder => nrel_kkal : 79_kkal
+(*
+=> nrel_main_idtf:
+[79 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_baking_powder => nrel_price : 1_rub
+(*
+=> nrel_main_idtf:
+[1 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_baking_powder => nrel_storage_time: 9_month
+(*
+=> nrel_main_idtf:
+[9 месяцев]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_baking_powder => nrel_storage_conditions: bake_powder_cond
+(*
+=> nrel_main_idtf:
+[Не имеет значения]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_baking_powder=> nrel_glycemic_index: 20
+
+(*
+=> nrel_main_idtf:
+[20]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

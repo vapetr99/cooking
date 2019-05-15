@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_tomato_pasta;;
+
+concept_tomato_pasta => nrel_main_idtf:
+[Томатная паста] (* <- lang_ru;; *);
+[Tomato pasta] (* <- lang_en;; *);;
+concept_tomato_pasta <- concept_ingridient;;
+
+concept_tomato_pasta => nrel_kkal : 80_kkal
+(*
+=> nrel_main_idtf:
+[187 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_tomato_pasta => nrel_price : 3_rub
+(*
+=> nrel_main_idtf:
+[3 рубля]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_tomato_pasta => nrel_storage_time: 3_month
+(*
+=> nrel_main_idtf:
+[3 месяца]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_tomato_pasta => nrel_storage_conditions: tomato_pasta_cond
+(*
+=> nrel_main_idtf:
+[от 0 до 25 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_tomato_pasta=> nrel_glycemic_index: 15
+
+(*
+=> nrel_main_idtf:
+[15]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

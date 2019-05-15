@@ -6,6 +6,8 @@ concept_berry_compote_recept <=nrel_context_of_action: [*
 		concept_water;;
 *];;
 
+concept_berry_compote_recept<-concept_recept;;
+
 concept_berry_compote_recept <=nrel_cooking_time:...
 (*
 	<=nrel_value:...

@@ -8,6 +8,8 @@ concept_oat_cookies_recept <=nrel_context_of_action: [*
 		concept_egg;;
 *];;
 
+concept_oat_cookies_recept<-concept_recept;;
+
 concept_oat_cookies_recept <=nrel_cooking_time:...
 (*
 	<=nrel_value:...

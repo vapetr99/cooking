@@ -11,6 +11,8 @@ concept_cake_zebra_recept <=nrel_context_of_action: [*
 		concept_butter;;
 *];;
 
+concept_cake_zebra_recept<-concept_recept;;
+
 concept_cake_zebra_recept <=nrel_cooking_time:...
 (*
 	<=nrel_value:...

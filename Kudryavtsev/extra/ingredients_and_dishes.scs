@@ -62,10 +62,6 @@ concept_cheese_soup
 => nrel_main_idtf: [Сырный суп]
 (* <- lang_ru;; *);;
 
-concept_herring
-=> nrel_main_idtf: [Сельдь под шубой]
-(* <- lang_ru;; *);;
-
 concept_cutlets
 => nrel_main_idtf: [Котлеты "По Киевски"]
 (* <- lang_ru;; *);;
@@ -210,66 +206,27 @@ concept_cream
 => nrel_main_idtf: [Сливки]
 (* <- lang_ru;; *);;
 
-concept_herring
-=> nrel_main_idtf: [Сельдь]
-(* <- lang_ru;; *);;
-
 concept_beet
 => nrel_main_idtf: [Свекла]
-(* <- lang_ru;; *);;
-
-concept_chicken
-=> nrel_main_idtf: [Курица]
-(* <- lang_ru;; *);;
-
-concept_mayonnaise
-=> nrel_main_idtf: [Майонез]
 (* <- lang_ru;; *);;
 
 concept_processed_cheese
 => nrel_main_idtf: [Плавленный сыр]
 (* <- lang_ru;; *);;
 
-concept_tomato_pasta
-=> nrel_main_idtf: [Томатная паста]
-(* <- lang_ru;; *);;
-
-concept_rice
-=> nrel_main_idtf: [Рис]
-(* <- lang_ru;; *);;
-
 concept_bean
 => nrel_main_idtf: [Фасоль]
-(* <- lang_ru;; *);;
-
-concept_cucumber
-=> nrel_main_idtf: [Огурец]
 (* <- lang_ru;; *);;
 
 concept_bread
 => nrel_main_idtf: [Хлеб]
 (* <- lang_ru;; *);;
 
-concept_baking_powder
-=> nrel_main_idtf: [Разрыхлитель]
-(* <- lang_ru;; *);;
-
-concept_zucchini
-=> nrel_main_idtf: [Кабачки]
-(* <- lang_ru;; *);;
-
 concept_banana
 => nrel_main_idtf: [Бананы]
-(* <- lang_ru;; *);;
-
-concept_buckwheat
-=> nrel_main_idtf: [Гречка]
 (* <- lang_ru;; *);;
 
 concept_starch
 => nrel_main_idtf: [Крахмал]
 (* <- lang_ru;; *);;
 
-concept_berry
-=> nrel_main_idtf: [Ягоды]
-(* <- lang_ru;; *);;

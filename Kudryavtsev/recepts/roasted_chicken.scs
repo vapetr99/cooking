@@ -8,6 +8,8 @@ concept_roasted_chicken_recept <=nrel_context_of_action: [*
 		concept_pepper;;
 *];;
 
+concept_roasted_chicken_recept<-concept_recept;;
+
 concept_roasted_chicken_recept <=nrel_cooking_time:...
 (*
 	<=nrel_value:...

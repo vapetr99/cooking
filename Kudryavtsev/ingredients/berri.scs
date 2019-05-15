@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_berry;;
+
+concept_berry => nrel_main_idtf:
+[Ягоды] (* <- lang_ru;; *);
+[Berry] (* <- lang_en;; *);;
+concept_berry <- concept_ingridient;;
+
+concept_berry => nrel_kkal : 38_kkal
+(*
+=> nrel_main_idtf:
+[38 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_berry => nrel_price : 4_rub
+(*
+=> nrel_main_idtf:
+[4 рубля]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_berry => nrel_storage_time: 6_month
+(*
+=> nrel_main_idtf:
+[6 месяцев]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_berry => nrel_storage_conditions: berry_cond
+(*
+=> nrel_main_idtf:
+[от -18 до -12 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_berry=> nrel_glycemic_index: 32
+
+(*
+=> nrel_main_idtf:
+[32]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

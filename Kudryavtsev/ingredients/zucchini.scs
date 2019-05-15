@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_zucchini;;
+
+concept_zucchini => nrel_main_idtf:
+[Кабачки] (* <- lang_ru;; *);
+[Zucchini] (* <- lang_en;; *);;
+concept_zucchini <- concept_ingridient;;
+
+concept_zucchini => nrel_kkal : 24_kkal
+(*
+=> nrel_main_idtf:
+[24 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_zucchini => nrel_price : 4_rub
+(*
+=> nrel_main_idtf:
+[4 рубля]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_zucchini => nrel_storage_time: 3_month
+(*
+=> nrel_main_idtf:
+[3 месяца]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_zucchini => nrel_storage_conditions: zucchini_cond
+(*
+=> nrel_main_idtf:
+[до +10 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_zucchini=> nrel_glycemic_index: 30
+
+(*
+=> nrel_main_idtf:
+[30]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

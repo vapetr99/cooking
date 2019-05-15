@@ -7,6 +7,8 @@ concept_raspberry_kissel_recept <=nrel_context_of_action: [*
 		concept_starch;;
 *];;
 
+concept_raspberry_kissel_recept<-concept_recept;;
+
 concept_raspberry_kissel_recept <=nrel_cooking_time:...
 (*
 	<=nrel_value:...

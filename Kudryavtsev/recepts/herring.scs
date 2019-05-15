@@ -10,6 +10,8 @@ concept_herring_recept <=nrel_context_of_action: [*
 		concept_mayonnaise;;
 *];;
 
+concept_herring_recept<-concept_recept;;
+
 concept_herring_recept <=nrel_cooking_time:...
 (*
 	<=nrel_value:...

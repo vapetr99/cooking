@@ -10,6 +10,8 @@ concept_cutlets_recept <=nrel_context_of_action: [*
                 concept_vegetable_oil;;
 *];;
 
+concept_cutlets_recept<-concept_recept;;
+
 concept_cutlets_recept <=nrel_cooking_time:...
 (*
 	<=nrel_value:...

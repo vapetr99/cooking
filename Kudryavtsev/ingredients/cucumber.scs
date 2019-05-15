@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_cucumber;;
+
+concept_cucumber => nrel_main_idtf:
+[Огурец] (* <- lang_ru;; *);
+[Cucumber] (* <- lang_en;; *);;
+concept_cucumber <- concept_ingridient;;
+
+concept_cucumber => nrel_kkal : 15_kkal
+(*
+=> nrel_main_idtf:
+[15 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_cucumber => nrel_price : 4_rub
+(*
+=> nrel_main_idtf:
+[4 рубля]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_cucumber => nrel_storage_time: 14_days
+(*
+=> nrel_main_idtf:
+[14 дней]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_cucumber => nrel_storage_conditions: cucumber_cond
+(*
+=> nrel_main_idtf:
+[от +2 до +4 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_cucumber=> nrel_glycemic_index: 20
+
+(*
+=> nrel_main_idtf:
+[20]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

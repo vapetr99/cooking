@@ -10,6 +10,8 @@ concept_sandwich_recept <=nrel_context_of_action: [*
 		concept_garlic;;
 *];;
 
+concept_sandwich_recept<-concept_recept;;
+
 concept_sandwich_recept <=nrel_cooking_time:...
 (*
 	<=nrel_value:...

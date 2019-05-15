@@ -8,6 +8,8 @@ concept_sand_cookie_recept <=nrel_context_of_action: [*
                 concept_baking_powder;;
 *];;
 
+concept_sand_cookie_recept<-concept_recept;;
+
 concept_sand_cookie_recept <=nrel_cooking_time:...
 (*
 	<=nrel_value:...

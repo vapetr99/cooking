@@ -9,6 +9,8 @@ concept_dumplings_recept <=nrel_context_of_action: [*
                 concept_sugar;;
 *];;
 
+concept_dumplings_recept<-concept_recept;;
+
 concept_dumplings_recept <=nrel_cooking_time:...
 (*
 	<=nrel_value:...
