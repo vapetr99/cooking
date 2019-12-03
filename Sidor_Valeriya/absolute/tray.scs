@@ -1,0 +1,54 @@
+
+concept_tray=>nrel_idtf:[tray] (* <- lang_en;; *);;
+concept_tray=>nrel_main_idtf:[поднос] (* <- lang_ru;; *);;
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_tray;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Поднос - это платформа для подачи еды на стол, для переноски посуды.](*<- lang_ru;;*);;
+        *);;
+	=> nrel_main_idtf: [Утв.(поднос)](*<- lang_ru;;*);;
+	=>nrel_using_constants:{concept_platorm;concept_food;concept_table;concept_dish;nrel_serving;nrel_carrying};;
+*);;
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_tray;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Подносы для закуски специально предназначены для подачи небольших блюд. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(поднос для закуски)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_small_dish;nrel_serving;nrel_designing};;
+*);;
+
+
+concept_wood_tray<-{concept_plastic_tray}
+(*
+
+	->concept_metal_tray;;
+	->concept_fiberglass_tray;;
+	=>nrel_main_idtf:[Разбиение по материалу.](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_tray;;
+*);;
+
+
+
+concept_tray<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//tray.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

@@ -1,0 +1,44 @@
+
+concept_persimmon  => nrel_system_idtf: [хурма](*<- lang_ru;;*);;
+concept_persimmon => nrel_system_idtf: [persimmon ](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_persimmon  ;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Хурма — плод субтропических и тропических вечнозелёных деревьев и кустарников семейства Эбеновые.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(хурма)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+-> concept_fruit;;
+ -> concept_subtropical_evergreen_trees;;
+ -> concept_tropical_evergreen_trees;;
+ -> concept_Ebony_family;;
+        *);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_persimmon ;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В хурме содержится множество витаминов, а также микроэлементы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(хурма)](*<- lang_ru;;*);;
+ <= nrel_using_constants: ...
+        (*
+ -> concept_vitamin;;
+ -> concept_trace_elements;;
+ -> nrel_containing;;
+        *);;
+*);;
+
+
+
+

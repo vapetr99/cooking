@@ -1,0 +1,43 @@
+
+concept_peanut_paste => nrel_system_idtf: [кули](*<- lang_ru;;*);;
+concept_peanut_paste => nrel_system_idtf: [coolie](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_coolie;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Кули - это разновидность фруктовой или ягодной начинки в современных тортах и пирожных.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(кули)](*<- lang_ru;;*);;
+    <= nrel_using_constants:{concept_cake; concept_pastrie;concept_berry_filling;concept_fruit_filling};;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_coolie;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Иногда в кули добавляют пектин для загущения.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(кули)](*<- lang_ru;;*);;
+ <= nrel_using_constants:{concept_pectin;nrel_thikening;nrel_adding};;
+*);;
+
+
+
+
+concept_friut_coolie<-...
+(*
+	->concept_berry_coolie;;
+->concept_berry_fruit_coolie;;
+	=>nrel_main_idtf:[Разбиение по наличию ягод и фруктов.](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_coolie;;
+*);;
+
+
+

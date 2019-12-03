@@ -1,0 +1,44 @@
+
+concept_prunes => nrel_system_idtf: [чернослив](*<- lang_ru;;*);;
+concept_prunes => nrel_system_idtf: [prunes](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_prunes;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Чернослив - сушеная слива.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(чернослив)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+-> concept_plum;;
+->nrel_drying;;
+        *);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_prunes;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Чернослив используется в разных блюдах — от десерта до приправы к мясу.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(чернослив)](*<- lang_ru;;*);;
+ <= nrel_using_constants: ...
+        (*
+-> concept_dessert;;
+-> concept_meat;;
+-> concept_seasoning;;
+ -> concept_dish;;
+ -> nrel_using;;
+        *);;
+*);;
+
+
+
+

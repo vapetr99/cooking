@@ -1,0 +1,79 @@
+
+concept_bread =>  nrel_main_idtf: [хлеб](*<- lang_ru;;*);;
+concept_bread => nrel_main_idtf: [bread](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_bread;;
+    <= nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:[Хлеб - пищевой продукт, получаемый путём выпекания теста, рахрыхленного дрожжами или закваской.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(хлеб)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_yeast;concept_leaven;concept_dough;concept_food_product};;
+        
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_bread;;
+    <= nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:[Цельнозерновой хлеб содержит клетчатку и минералы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(хлеб)](*<- lang_ru;;*);;
+ =>nrel_using_constants:{concept_whole_wheat_bread;concept_minerals;concept_cellulose};;
+*);;
+
+
+concept_bread => nrel_inclusion:concept_pita;;
+concept_bread => nrel_inclusion:concept_loaf;;
+concept_bread => nrel_inclusion:concept_baguette;;
+concept_bread => nrel_inclusion:concept_focacca;;
+concept_bread => nrel_inclusion:concept_tortilla;;
+concept_bread => nrel_inclusion:concept_naan;;
+concept_bread => nrel_inclusion:concept_pretzel;;
+concept_bread => nrel_inclusion:concept_matzo;;
+
+concept_bread -> rrel_example:concept_pita_0908;;
+
+concept_rye_bread<-{concept_wheat_bread}
+(*
+	->concept_buckwheat_bread;;
+	=>nrel_main_idtf:[Разбиение по признаку вида муки.](* <- lang_ru;; *);;
+	<=nrel_subdividing:concept_bread;;
+*);;
+
+
+concept_bran_bread<-{concept_grain_bread}
+(*
+	=>nrel_main_idtf:[Разбиение по признаку наличия добавок](* <- lang_ru;; *);;
+	<=nrel_subdividing:concept_bread;;
+*);;
+
+
+concept_yeast_bread<-{concept_yeast_free_bread}
+(*
+	=>nrel_main_idtf:[Разбиение по признаку наличия дрожжей](* <- lang_ru;; *);;
+	<=nrel_subdividing:concept_bread;;
+*);;
+
+
+concept_bread<-rrel_key_sc_element:...
+	(*
+		<-sc_illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//bread1.jpg" 
+			(*
+
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+

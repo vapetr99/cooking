@@ -1,0 +1,32 @@
+
+concept_jalapenos => nrel_system_idtf: [халапеньо](*<- lang_ru;;*);;
+concept_jalapenos => nrel_system_idtf: [concept jalapenos](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_jalapenos;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Халапеньо - сорт перца овощного.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(шоколадная паста)](*<- lang_ru;;*);;
+    <= nrel_using_constants:{concept_grade;concept_vegetable_pepper};;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_jalapenos;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Красные плоды используют для приготовления чипотле.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(шоколадная паста)](*<- lang_ru;;*);;
+ <= nrel_using_constants:{concept_red_fruit;concept_chipotle;nrel_using;nrel_cooking};;
+*);;
+
+
+

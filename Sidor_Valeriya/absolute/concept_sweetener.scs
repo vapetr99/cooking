@@ -1,0 +1,62 @@
+
+concept_sweetener => nrel_system_idtf: [сахарозаменитель](*<- lang_ru;;*);;
+concept_sweetener => nrel_system_idtf: [sweetener](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_sweetener;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Сахарозаменитель -  вещества и химические соединения, применяемые вместо сахара. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(сахарозаменитель)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+-> concept_substance;;
+ -> concept_chemical_compound;;
+ -> concept_sugar;;
+ -> nrel_used_instead;;
+        *);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_sweetener;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Cахарозаменители приводят некоторых людей к перееданию.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(сахарозаменитель)](*<- lang_ru;;*);;
+ <= nrel_using_constants: ...
+        (*
+-> concept_people;;
+ -> nrel_lead;;
+ -> nrel_overeating;;
+        *);;
+*);;
+
+
+concept_sweetener => nrel_inclusion:concept_fructose;;
+concept_sweetener => nrel_inclusion:concept_stevia;;
+concept_sweetener => nrel_inclusion:concept_sorbitol;;
+concept_sweetener => nrel_inclusion:concept_erythritol;;
+concept_sweetener => nrel_inclusion:concept_sucralose;;
+concept_sweetener => nrel_inclusion:concept_aspartame;;
+concept_sweetener => nrel_inclusion:concept_saccharin;;
+
+
+
+
+concept_natural_sweetener<-...
+(*
+	->concept_synthetic_sweetener;;
+	=>nrel_main_idtf:[Разбиение по признаку происхождения.](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_sweetener;;
+*);;
+
+
+

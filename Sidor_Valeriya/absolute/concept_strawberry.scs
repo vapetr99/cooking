@@ -1,0 +1,58 @@
+
+concept_strawberry => nrel_system_idtf: [клубника](*<- lang_ru;;*);;
+concept_strawberry => nrel_system_idtf: [strawberry](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_strawberry;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Клубникой часто называют большеплодную землянику.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(клубника)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+ -> concept_large_fruited_strawberries;;
+->nrel_calling;;
+        *);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_strawberry;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В клубнике содержатся вещества, которые, по мнению учёных, снижают риск развития воспалений.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(клубника)](*<- lang_ru;;*);;
+ <= nrel_using_constants: ...
+        (*
+-> concept_substance;;
+-> concept_scientist;;
+ -> concept_inflammation;;
+-> concept_risk;;
+ -> nrel_reduce;;
+ -> nrel_contain;;
+        *);;
+*);;
+
+
+
+concept_strawberry<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//strawberry.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;
+
+

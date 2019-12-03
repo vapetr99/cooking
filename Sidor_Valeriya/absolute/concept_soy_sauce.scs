@@ -1,0 +1,58 @@
+
+concept_soy_sauce => nrel_system_idtf: [соевый соус](*<- lang_ru;;*);;
+concept_soy_sauce => nrel_system_idtf: [soy sauce](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_soy_sauce;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Cоевый соус один из основных компонентов азиатской кухни, продукт ферментации (брожения) соевых бобов под воздействием грибов.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(соевый соус)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_mushroom;concept_soybean;concept_Asian_cuisine; nrel_main_component;nrel_fermentation;nrel_influence};;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_soy_sauce;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [До сих пор существуют разногласия по поводу родины соевого соуса.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(соевый соус)](*<- lang_ru;;*);;
+ <= nrel_using_constants:{concept_controversy; concept_homeland};;
+*);;
+
+
+concept_soy_sauce => nrel_inclusion:concept_usukuti;;
+concept_soy_sauce => nrel_inclusion:concept_tamari;;
+concept_soy_sauce => nrel_inclusion:concept_shanchow;;
+concept_soy_sauce => nrel_inclusion:concept_congo;;
+concept_soy_sauce => nrel_inclusion:concept_inuy;;
+
+
+
+concept_soy_sauce<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//soy_sauce.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;
+
+
+
+
+
+
+

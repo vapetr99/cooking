@@ -1,0 +1,52 @@
+
+concept_sushi => nrel_system_idtf: [суши](*<- lang_ru;;*);;
+concept_sushi => nrel_system_idtf: [sushi](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_sushi;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Суши - блюдо, приготовленное из риса с уксусной приправой и различных морепродуктов, и других ингредиентов.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(суши)](*<- lang_ru;;*);;
+    <= nrel_using_constants:{concept_dish;concept_rice;concept_vinegar;concept_seafood;concept_ingredient;nrel_cooking};;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_sushi;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Суши — потенциальный источник гельминтов](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(суши)](*<- lang_ru;;*);;
+ <= nrel_using_constants:{concept_potential_source;concept_helminth};;
+*);;
+
+
+concept_sushi => nrel_inclusion:concept_poppies;;
+concept_sushi => nrel_inclusion:concept_temaki;;
+concept_sushi => nrel_inclusion:concept_nigiri;;
+concept_sushi => nrel_inclusion:concept_gunkans;;
+
+
+concept_sushi<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//sushi.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;
+
+
+

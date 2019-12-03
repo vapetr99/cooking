@@ -1,0 +1,59 @@
+
+concept_muesli => nrel_system_idtf: [мюсли](*<- lang_ru;;*);;
+concept_muesli => nrel_system_idtf: [muesli](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_muesli;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Мюсли - еда, приготовленная из злаков, сухофруктов, орехов, отрубей, ростков пшеницы, мёда и специй. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(мюсли)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+-> concept_food;;
+ -> concept_cereal;;
+ -> concept_nut;;
+ -> concept_honey;;
+-> concept_bran;;
+ -> concept_wheat_germ;;
+ -> concept_spice;;
+ -> concept_dried_fruit;;
+ -> nrel_cooking;;
+        *);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_muesli;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Мюсли были изобретены швейцарским врачом для пациентов госпиталя.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(мюсли)](*<- lang_ru;;*);;
+ <= nrel_using_constants: ...
+        (*
+-> concept_hospital;;
+ -> concept_patient;;
+-> concept_swiss_doctor;;
+ -> nrel_inventing;;
+        *);;
+*);;
+
+
+
+
+concept_raw_muesli<-...
+(*
+	->concept_baked_muesli;;
+	=>nrel_main_idtf:[Разбиение по способу обработки.](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_muesli;;
+*);;
+
+
+

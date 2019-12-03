@@ -1,0 +1,42 @@
+
+concept_peanut_paste => nrel_system_idtf: [арахисовая паста](*<- lang_ru;;*);;
+concept_peanut_paste => nrel_system_idtf: [peanut paste](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_peanut_paste;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Арахисовая паста —  паста из перетёртого арахиса, в которую может добавляться растительное масло и соль.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(арахисовая паста)](*<- lang_ru;;*);;
+    <= nrel_using_constants: {concept_salt;concept_vegetable_oil;concept_peanut;nrel_adding;nrel_grind; concept_paste};;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_peanut_paste;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Арахисовую пасту используют во время американского завтрака.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(арахисовая паста)](*<- lang_ru;;*);;
+ <= nrel_using_constants:{concept_time;concept_american_breakfast;nrel_using};;
+*);;
+
+
+
+
+concept_peanut_paste_with_nuts<-...
+(*
+	->concept_peanut_paste_without_nuts;;
+	=>nrel_main_idtf:[Разбиение по признаку наличию кусочков арахиса.](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_peanut_paste;;
+*);;
+
+
+

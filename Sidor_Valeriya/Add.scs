@@ -1,0 +1,280 @@
+
+concept_sweetness
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [сладость]
+		(* <- lang_ru;; *);;
+
+concept_chocolate
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [шоколад]
+		(* <- lang_ru;; *);;
+
+concept_butter
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [масло]
+		(* <- lang_ru;; *);;
+
+concept_nut
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [орех]
+		(* <- lang_ru;; *);;
+
+concept_thick_consistency
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [густая консистенция]
+		(* <- lang_ru;; *);;
+
+concept_composition
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [состав]
+		(* <- lang_ru;; *);;
+
+concept_ice_cream
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [мороженое]
+		(* <- lang_ru;; *);;
+
+concept_pancake
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [блины]
+		(* <- lang_ru;; *);;
+
+concept_biscuits
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [бисквиты]
+		(* <- lang_ru;; *);;
+
+concept_cake
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [пирожные]
+		(* <- lang_ru;; *);;
+
+
+concept_platorm 
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [платформа]
+		(* <- lang_ru;; *);;
+
+concept_food
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [еда]
+		(* <- lang_ru;; *);;
+
+concept_table
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [стол]
+		(* <- lang_ru;; *);;
+
+concept_dish
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [блюдо]
+		(* <- lang_ru;; *);;
+
+
+concept_small_dish
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [небольшое блюдо]
+		(* <- lang_ru;; *);;
+
+
+concept_wood_tray
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [деревянный поднос]
+		(* <- lang_ru;; *);;
+
+concept_plastic_tray
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [пластиковый поднос]
+		(* <- lang_ru;; *);;
+
+concept_metal_tray
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [металический поднос]
+		(* <- lang_ru;; *);;
+
+concept_fiberglass_tray
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [стекловолоконный поднос]
+		(* <- lang_ru;; *);;
+
+concept_controversy
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [разногласия]
+		(* <- lang_ru;; *);;
+
+concept_homeland
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [родина]
+		(* <- lang_ru;; *);;
+
+concept_chocolate_paste_with_nuts
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [шоколадная паста с орехами]
+		(* <- lang_ru;; *);;
+
+concept_chocolate_paste_without_nuts
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [шоколадная паста без орехов]
+		(* <- lang_ru;; *);;
+
+concept_gianduia
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [гяндуя]
+		(* <- lang_ru;; *);;
+
+concept_inuy
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [иниу]
+		(* <- lang_ru;; *);;
+
+concept_usukuti
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [усукути]
+		(* <- lang_ru;; *);;
+
+concept_tamari
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [тамари]
+		(* <- lang_ru;; *);;
+
+concept_shanchow
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [шанчоу]
+		(* <- lang_ru;; *);;
+
+concept_congo
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [конго]
+		(* <- lang_ru;; *);;
+
+
+concept_mushroom
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [грибы]
+		(* <- lang_ru;; *);;
+
+concept_soybean
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [бобы]
+		(* <- lang_ru;; *);;
+
+concept_Asian_cuisine
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [азиатская кухня]
+		(* <- lang_ru;; *);;
+
+
+
+concept_vegetables
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [овощи]
+		(* <- lang_ru;; *);;
+
+concept_fruit
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [фрукты]
+		(* <- lang_ru;; *);;
+
+concept_green
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [зелень]
+		(* <- lang_ru;; *);;
+
+
+
+concept_color
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [цвет]
+		(* <- lang_ru;; *);;
+
+
+concept_skin
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [кожица]
+		(* <- lang_ru;; *);;
+
+
+concept_processed_product
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [обработанный продукт]
+		(* <- lang_ru;; *);;
+
+concept_product
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [продукт]
+		(* <- lang_ru;; *);;
+
+
+concept_steam
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [пар]
+		(* <- lang_ru;; *);;
+
+concept_boiling_water
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [кипяток]
+		(* <- lang_ru;; *);;
+
+
+
+
+sc_node_norole_relation->nrel_keep;;
+nrel_keep=>nrel_main_idtf:
+[сохранять*](* <-lang_ru;; *);;
+
+sc_node_norole_relation->nrel_smell;;
+nrel_smell=>nrel_main_idtf:
+[запах*](* <-lang_ru;; *);;
+
+sc_node_norole_relation->nrel_remove;;
+nrel_remove=>nrel_main_idtf:
+[удаление*](* <-lang_ru;; *);;
+
+sc_node_norole_relation->nrel_short_term_processing;;
+nrel_short_term_processing=>nrel_main_idtf:
+[кратковременная обработка*](* <-lang_ru;; *);;
+
+
+sc_node_norole_relation->nrel_influence;;
+nrel_influence=>nrel_main_idtf:
+[влияние*](* <-lang_ru;; *);;
+
+sc_node_norole_relation->nrel_fermentation;;
+nrel_fermentation=>nrel_main_idtf:
+[брожение*](* <-lang_ru;; *);;
+
+sc_node_norole_relation->nrel_main_component;;
+nrel_main_component=>nrel_main_idtf:
+[основной компонент*](* <-lang_ru;; *);;
+
+
+sc_node_norole_relation->nrel_designing;;
+nrel_designing=>nrel_main_idtf:
+[предназначен*](* <-lang_ru;; *);;
+
+sc_node_norole_relation->nrel_carrying;;
+nrel_carrying=>nrel_main_idtf:
+[перенос*](* <-lang_ru;; *);;
+
+sc_node_norole_relation->nrel_serving;;
+nrel_serving=>nrel_main_idtf:
+[подача*](* <-lang_ru;; *);;
+
+
+sc_node_norole_relation->nrel_including;;
+nrel_including=>nrel_main_idtf:
+[включение*](* <-lang_ru;; *);;
+
+
+sc_node_norole_relation->nrel_manufactured;;
+nrel_manufactured=>nrel_main_idtf:
+[изготовленный*](* <-lang_ru;; *);;
+
+
+sc_node_norole_relation->nrel_adding;;
+nrel_adding=>nrel_main_idtf:
+[добавление*](* <-lang_ru;; *);;
+
+sc_node_norole_relation->nrel_having;;
+nrel_having=>nrel_main_idtf:
+[имеющий*](* <-lang_ru;; *);;

@@ -1,0 +1,47 @@
+sc_node_not_relation -> concept_fig;;
+
+cconcept_fig => nrel_system_idtf: [concept_fig];;
+concept_fig => nrel_system_idtf: [инжир](*<- lang_ru;;*);;
+concept_fig => nrel_system_idtf: [fig](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_fig ;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Инжир — плод субтропического листопадного растения рода Фикус.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(инжир)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+-> concept_fruit;;
+ -> concept_subtropical_deciduous_plant;;
+ -> concept_genus_Ficus;;
+        *);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_fig;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Инжир противопоказан при сахарном диабете.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(инжир)](*<- lang_ru;;*);;
+ <= nrel_using_constants: ...
+        (*
+ -> concept_diabetes;;
+ -> nrel_contraindicated;;
+        *);;
+*);;
+
+
+concept_fig => nrel_inclusion:concept_fig_brunswick;;
+concept_fig => nrel_inclusion:concept_dalmatian_fig;;
+
+
+

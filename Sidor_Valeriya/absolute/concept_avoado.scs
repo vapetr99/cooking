@@ -1,0 +1,40 @@
+
+concept_avocado => nrel_system_idtf: [авокадо](*<- lang_ru;;*);;
+concept_avocado => nrel_system_idtf: [avocado](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_avocado ;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Авокадо - плод растения Персе́я америка́нская](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(авокадо)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+-> concept_fruit;;
+ -> concept_plant_Perseus_American;;
+        *);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_avocado;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В пищу употребляют только мякоть плода.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(авокадо)](*<- lang_ru;;*);;
+ <= nrel_using_constants: ...
+        (*
+ -> concept_food;;
+ -> concept_pulp;;
+ -> concept_fruit;;
+ -> nrel_using;;
+        *);;
+*);;
+

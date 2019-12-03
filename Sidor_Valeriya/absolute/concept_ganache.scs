@@ -1,0 +1,45 @@
+sc_node_not_relation -> concept_ganache;;
+
+
+concept_ganache => nrel_system_idtf: [ганаш](*<- lang_ru;;*);;
+concept_ganache => nrel_system_idtf: [ganache](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_ganache;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Ганаш - крем из шоколада и сливок.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(ганаш)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_cream;concept_chocolate};;
+        
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_ganache;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Ганаш можно подать и с фруктами: клубникой или виноградом.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(ганаш)](*<- lang_ru;;*);;
+ => nrel_using_constants:{concept_fruit;concept_grape;concept_strawberries;nrel_serve};;
+*);;
+
+
+
+
+concept_ganache_with_milk_chocolate<-{concept_ganache_with_white_chocolate}
+(*
+	->concept_ganache_with_dark_chocolate;;
+	=>nrel_main_idtf:[Разбиение по виду шоколада.](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_ganache;;
+*);;
+
+
+

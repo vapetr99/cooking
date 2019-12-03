@@ -1,0 +1,54 @@
+
+nrel_melting => nrel_main_idtf: [расплавление*](*<- lang_ru;;*);;
+nrel_melting => nrel_idtf: [melting*](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: nrel_melting;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Расплавление — переход из твёрдого состояния в жидкое под действием тепла.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(расправление*)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_solid_state;;
+            -> concept_liquid;;
+            -> concept_heat;;
+->nrel_influence;;
+            -> nrel_transition;;
+        *);;
+*);;
+
+
+
+
+nrel_melting => nrel_definitional_domain: nrel_melting;;
+nrel_melting => nrel_first_domain: concept_product;;
+nrel_melting => nrel_second_domain: concept_result;;
+
+
+parameter -> arity;;
+arity -> binary_relation;;
+binary_relation -> nrel_melting;;
+binary_relation => nrel_measurement: 2;;
+number -> 2;;
+
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: isymetric_relation;;
+
+antireflexive_relation -> nrel_melting;;
+antitransitive_relation -> nrel_melting;;
+isymetric_relation -> nrel_melting;;
+
+oriented_relation -> nrel_melting;;
+
+
+
+

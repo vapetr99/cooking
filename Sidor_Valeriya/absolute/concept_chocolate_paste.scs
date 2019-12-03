@@ -1,0 +1,55 @@
+
+concept_chocolate_paste => nrel_system_idtf: [шоколадная паста](*<- lang_ru;;*);;
+concept_chocolate_paste => nrel_system_idtf: [chocolate paste](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_chocolate_paste;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Шоколадная паста — сладость, изготовляемая из шоколада и масла, почти всегда с добавлением орехов, имеющая густую консистенцию. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(шоколадная паста)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_sweetness;concept_chocolate;concept_butter;concept_nut;concept_thick_consistency;nrel_manufactured;nrel_adding; nrel_having};;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_chocolate_paste;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Шоколадная паста включается в состав тортов, пирожных, бисквитов, блинов, мороженого.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(шоколадная паста)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{concept_composition;concept_ice_cream;concept_pancake;concept_biscuits;concept_cake;nrel_including};;
+*);;
+
+
+concept_chocolate_paste => nrel_inclusion:concept_gianduia;;
+
+
+
+
+concept_chocolate_paste_with_nuts<-{concept_chocolate_paste_without_nuts}
+(*
+	=>nrel_main_idtf:[Разбиение по признаку наличия орехов.](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_chocolate_paste;;
+*);;
+
+
+concept_chocolate_paste<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//chocolate_paste.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

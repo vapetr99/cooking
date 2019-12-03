@@ -1,0 +1,62 @@
+
+concept_mango => nrel_system_idtf: [манго](*<- lang_ru;;*);;
+concept_mango => nrel_system_idtf: [mango](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_mango;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Ма́нго — плоды растений рода Манго семейства Анакардиевые. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(манго)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+-> concept_fruit;;
+ -> concept_plant;;
+ -> concept_sort;;
+ -> concept_kind;;
+        *);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_mango;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Манго положительно воздействовует на костную ткань человека](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(манго)](*<- lang_ru;;*);;
+ <= nrel_using_constants: ...
+        (*
+-> concept_bone_tissue;;
+ -> concept_person;;
+ -> nrel_positive_effect;;
+        *);;
+*);;
+
+
+concept_mango => nrel_inclusion:concept_chakanan;;
+concept_mango => nrel_inclusion:concept_mangga_gading;;
+concept_mango => nrel_inclusion:concept_mangga_golek;;
+concept_mango => nrel_inclusion:concept_mango_snake_tongue;;
+concept_mango => nrel_inclusion:concept_fralan;;
+
+
+
+
+concept_thai_mango<-...
+(*
+	->concept_balinese_mango;;
+	->concept_indian_mango;;
+->concept_vietnamese_mango;;
+	=>nrel_main_idtf:[Разбиение по признаку страны происхождения.](* <- lang_ru;; *);;
+	=>nrel_subdividing:concept_mango;;
+*);;
+
+
+

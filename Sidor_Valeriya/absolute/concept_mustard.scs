@@ -1,0 +1,59 @@
+
+concept_mustard => nrel_system_idtf: [горчица](*<- lang_ru;;*);;
+concept_mustard => nrel_system_idtf: [mustard](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_mustard;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Горчица - приправа из семян растения горчицы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(горчица)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+-> concept_seasoning;;
+ -> concept_seed;;
+ -> concept_mustard_plant;;
+        *);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_mustard;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Летучие вещества в горчице стимулируют аппетит.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(горчица)](*<- lang_ru;;*);;
+ <= nrel_using_constants: ...
+        (*
+-> concept_volatile_substances;;
+ -> concept_appetite;;
+ -> nrel_stimulating;;
+        *);;
+*);;
+
+
+concept_mustard => nrel_inclusion:concept_bavarian_mustard;;
+concept_mustard => nrel_inclusion:concept_dijon_mustard;;
+concept_mustard => nrel_inclusion:concept_provencal_mustard;;
+
+
+concept_mustard<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//mustard.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;
+

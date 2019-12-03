@@ -1,0 +1,39 @@
+
+concept_mascarpone => nrel_system_idtf: [маскарпоне](*<- lang_ru;;*);;
+concept_mascarpone => nrel_system_idtf: [mascarpone](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_mascarpone;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Маскарпоне — сливочный сыр.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(маскарпоне)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+-> concept_cream_cheese;;
+        *);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_mascarpone;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Маскарпоне часто используется в приготовлении чизкейков.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(маскарпоне)](*<- lang_ru;;*);;
+ <= nrel_using_constants: ...
+        (*
+-> concept_cheesecake;;
+ -> nrel_cooking;;
+ -> nrel_using;;
+        *);;
+*);;
+
+

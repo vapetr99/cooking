@@ -1,0 +1,41 @@
+
+concept_jamon => nrel_system_idtf: [хамон](*<- lang_ru;;*);;
+concept_jamon => nrel_system_idtf: [jamon](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_jamon;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Хамон —  испанский национальный деликатес, сыровяленый свиной окорок.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(хамон)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+-> concept_spanish_national_delicacy;;
+-> concept_jerky_pork_ham;;
+
+        *);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_jamon;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Употребляют хамон нарезанным на тонкие ломтики](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(хамон)](*<- lang_ru;;*);;
+ <= nrel_using_constants: {nrel_use;concept_thin_slices;nrel_cutting};;
+*);;
+
+
+concept_jamon => nrel_inclusion:concept_jamon_serrano;;
+concept_jamon => nrel_inclusion:concept_jamon_iberico;;
+
+
+

@@ -1,0 +1,43 @@
+concept_oven_tray=>nrel_idtf:[oven tray] (* <- lang_en;; *);;
+concept_oven_tray=>nrel_main_idtf:[противень] (* <- lang_ru;; *);;
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_oven_tray;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Железный лист с загнутыми краями для жарения, печения.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(манго)](*<- lang_ru;;*);;
+ <= nrel_using_constants:{concept_iron_sheet;concept_curled_edge;nrel_frying;nrel_ovening};;
+*);;
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_oven_tray;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Изготавливают обычно противни из стали и алюминия.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(манго)](*<- lang_ru;;*);;
+    <= nrel_using_constants:{concept_steel;concept_aluminum;nrel_making};;
+*);;
+
+
+concept_oven_tray<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//oven.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

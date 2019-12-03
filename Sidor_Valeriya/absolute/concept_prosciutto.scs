@@ -1,0 +1,35 @@
+
+concept_prosciutto => nrel_system_idtf: [прошутто](*<- lang_ru;;*);;
+concept_prosciutto => nrel_system_idtf: [prosciutto](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_prosciutto;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Прошутто - итальянская ветчина, сделанная из окорока, натёртого солью.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(прошутто)](*<- lang_ru;;*);;
+    <= nrel_using_constants: {concept_italian_ham;concept_ham;concept_salt;nrel_grated_with;nrel_making};;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_prosciutto;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Для прошутто выращивают свиней, откармливая фруктами и кукурузой.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(прошутто)](*<- lang_ru;;*);;
+ <= nrel_using_constants:{concept_pig;concept_fruit;concept_corn; nrel_fattering;nrel_raise};;
+*);;
+
+
+concept_prosciutto => nrel_inclusion:concept_parma_ham;;
+
+
+
