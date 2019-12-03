@@ -1,6 +1,7 @@
+sc_node_not_relation -> concept_sweetener;;
 
-concept_sweetener => nrel_system_idtf: [сахарозаменитель](*<- lang_ru;;*);;
-concept_sweetener => nrel_system_idtf: [sweetener](*<- lang_en;;*);;
+concept_sweetener => nrel_main_idtf: [сахарозаменитель](*<- lang_ru;;*);;
+concept_sweetener => nrel_main_idtf: [sweetener](*<- lang_en;;*);;
 
 
 definition -> ...

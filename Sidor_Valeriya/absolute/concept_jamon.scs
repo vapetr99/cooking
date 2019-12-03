@@ -1,6 +1,7 @@
+sc_node_not_relation -> concept_jamon;;
 
-concept_jamon => nrel_system_idtf: [хамон](*<- lang_ru;;*);;
-concept_jamon => nrel_system_idtf: [jamon](*<- lang_en;;*);;
+concept_jamon => nrel_main_idtf: [хамон](*<- lang_ru;;*);;
+concept_jamon => nrel_main_idtf: [jamon](*<- lang_en;;*);;
 
 
 definition -> ...

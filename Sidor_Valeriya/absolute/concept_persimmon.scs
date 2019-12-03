@@ -1,6 +1,7 @@
+sc_node_not_relation -> concept_persimmon;;
 
-concept_persimmon  => nrel_system_idtf: [хурма](*<- lang_ru;;*);;
-concept_persimmon => nrel_system_idtf: [persimmon ](*<- lang_en;;*);;
+concept_persimmon  => nrel_main_idtf: [хурма](*<- lang_ru;;*);;
+concept_persimmon => nrel_main_idtf: [persimmon ](*<- lang_en;;*);;
 
 
 definition -> ...

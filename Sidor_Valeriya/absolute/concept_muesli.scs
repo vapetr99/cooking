@@ -1,6 +1,7 @@
+sc_node_not_relation -> concept_muesli;;
 
-concept_muesli => nrel_system_idtf: [мюсли](*<- lang_ru;;*);;
-concept_muesli => nrel_system_idtf: [muesli](*<- lang_en;;*);;
+concept_muesli => nrel_main_idtf: [мюсли](*<- lang_ru;;*);;
+concept_muesli => nrel_main_idtf: [muesli](*<- lang_en;;*);;
 
 
 definition -> ...

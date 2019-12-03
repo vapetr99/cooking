@@ -1,3 +1,4 @@
+sc_node_norole_relation -> nrel_melting;;
 
 nrel_melting => nrel_main_idtf: [расплавление*](*<- lang_ru;;*);;
 nrel_melting => nrel_idtf: [melting*](*<- lang_en;;*);;

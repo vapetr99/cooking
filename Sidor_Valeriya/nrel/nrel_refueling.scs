@@ -1,4 +1,4 @@
-
+sc_node_norole_relation -> nrel_refueling;;
 
 nrel_refueling => nrel_main_idtf: [заправление*](*<- lang_ru;;*);;
 nrel_refueling => nrel_idtf: [refueling*](*<- lang_en;;*);;

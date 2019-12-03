@@ -1,6 +1,7 @@
+sc_node_not_relation -> concept_soy_sauce;;
 
-concept_soy_sauce => nrel_system_idtf: [соевый соус](*<- lang_ru;;*);;
-concept_soy_sauce => nrel_system_idtf: [soy sauce](*<- lang_en;;*);;
+concept_soy_sauce => nrel_main_idtf: [соевый соус](*<- lang_ru;;*);;
+concept_soy_sauce => nrel_main_idtf: [soy sauce](*<- lang_en;;*);;
 
 
 definition -> ...

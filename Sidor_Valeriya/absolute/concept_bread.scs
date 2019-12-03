@@ -1,6 +1,5 @@
+sc_node_not_relation -> concept_bread;;
 
-concept_bread =>  nrel_main_idtf: [хлеб](*<- lang_ru;;*);;
-concept_bread => nrel_main_idtf: [bread](*<- lang_en;;*);;
 
 
 definition -> ...

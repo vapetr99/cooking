@@ -1,6 +1,7 @@
+sc_node_not_relation -> concept_sushi;;
 
-concept_sushi => nrel_system_idtf: [суши](*<- lang_ru;;*);;
-concept_sushi => nrel_system_idtf: [sushi](*<- lang_en;;*);;
+concept_sushi => nrel_main_idtf: [суши](*<- lang_ru;;*);;
+concept_sushi => nrel_main_idtf: [sushi](*<- lang_en;;*);;
 
 
 definition -> ...

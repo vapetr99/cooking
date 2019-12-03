@@ -1,6 +1,7 @@
+sc_node_not_relation -> concept_prunes;;
 
-concept_prunes => nrel_system_idtf: [чернослив](*<- lang_ru;;*);;
-concept_prunes => nrel_system_idtf: [prunes](*<- lang_en;;*);;
+concept_prunes => nrel_main_idtf: [чернослив](*<- lang_ru;;*);;
+concept_prunes => nrel_main_idtf: [prunes](*<- lang_en;;*);;
 
 
 definition -> ...

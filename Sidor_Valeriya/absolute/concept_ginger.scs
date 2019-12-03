@@ -1,6 +1,6 @@
-
-concept_ginger => nrel_system_idtf: [имбирь](*<- lang_ru;;*);;
-concept_ginger => nrel_system_idtf: [ginger](*<- lang_en;;*);;
+sc_node_not_relation -> concept_ginger;;
+concept_ginger => nrel_main_idtf: [имбирь](*<- lang_ru;;*);;
+concept_ginger => nrel_main_idtf: [ginger](*<- lang_en;;*);;
 
 
 definition -> ...

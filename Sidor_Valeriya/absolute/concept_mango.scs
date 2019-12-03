@@ -1,6 +1,8 @@
+sc_node_not_relation -> concept_mango;;
 
-concept_mango => nrel_system_idtf: [манго](*<- lang_ru;;*);;
-concept_mango => nrel_system_idtf: [mango](*<- lang_en;;*);;
+
+concept_mango => nrel_main_idtf: [манго](*<- lang_ru;;*);;
+concept_mango => nrel_main_idtf: [mango](*<- lang_en;;*);;
 
 
 definition -> ...

@@ -1,6 +1,7 @@
+sc_node_not_relation -> concept_prosciutto;;
 
-concept_prosciutto => nrel_system_idtf: [прошутто](*<- lang_ru;;*);;
-concept_prosciutto => nrel_system_idtf: [prosciutto](*<- lang_en;;*);;
+concept_prosciutto => nrel_main_idtf: [прошутто](*<- lang_ru;;*);;
+concept_prosciutto => nrel_main_idtf: [prosciutto](*<- lang_en;;*);;
 
 
 definition -> ...

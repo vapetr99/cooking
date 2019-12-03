@@ -1,3 +1,4 @@
+sc_node_not_relation -> concept_oven_tray;;
 concept_oven_tray=>nrel_idtf:[oven tray] (* <- lang_en;; *);;
 concept_oven_tray=>nrel_main_idtf:[противень] (* <- lang_ru;; *);;
 

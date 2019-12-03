@@ -1,6 +1,7 @@
+sc_node_not_relation -> concept_mustard;;
 
-concept_mustard => nrel_system_idtf: [горчица](*<- lang_ru;;*);;
-concept_mustard => nrel_system_idtf: [mustard](*<- lang_en;;*);;
+concept_mustard => nrel_main_idtf: [горчица](*<- lang_ru;;*);;
+concept_mustard => nrel_main_idtf: [mustard](*<- lang_en;;*);;
 
 
 definition -> ...

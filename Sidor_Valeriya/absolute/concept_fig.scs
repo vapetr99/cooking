@@ -1,8 +1,7 @@
 sc_node_not_relation -> concept_fig;;
 
-cconcept_fig => nrel_system_idtf: [concept_fig];;
-concept_fig => nrel_system_idtf: [инжир](*<- lang_ru;;*);;
-concept_fig => nrel_system_idtf: [fig](*<- lang_en;;*);;
+concept_fig => nrel_main_idtf: [инжир](*<- lang_ru;;*);;
+concept_fig => nrel_main_idtf: [fig](*<- lang_en;;*);;
 
 
 definition -> ...

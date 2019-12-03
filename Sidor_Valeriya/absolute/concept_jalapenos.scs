@@ -1,6 +1,6 @@
-
-concept_jalapenos => nrel_system_idtf: [халапеньо](*<- lang_ru;;*);;
-concept_jalapenos => nrel_system_idtf: [concept jalapenos](*<- lang_en;;*);;
+sc_node_not_relation -> concept_jalapenos;;
+concept_jalapenos => nrel_main_idtf: [халапеньо](*<- lang_ru;;*);;
+concept_jalapenos => nrel_main_idtf: [concept jalapenos](*<- lang_en;;*);;
 
 
 definition -> ...

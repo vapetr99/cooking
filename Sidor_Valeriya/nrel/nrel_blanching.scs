@@ -2,7 +2,6 @@
 sc_node_norole_relation -> nrel_blanching;;
 
 
-nrel_blanching => nrel_system_idtf: [nrel_blanching];;
 nrel_blanching => nrel_main_idtf: [бланширование*](*<- lang_ru;;*);;
 nrel_blanching => nrel_idtf: [blanching*](*<- lang_en;;*);;
 

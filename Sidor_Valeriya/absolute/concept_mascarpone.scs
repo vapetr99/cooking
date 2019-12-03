@@ -1,6 +1,7 @@
+sc_node_not_relation -> concept_mascarpone;;
 
-concept_mascarpone => nrel_system_idtf: [маскарпоне](*<- lang_ru;;*);;
-concept_mascarpone => nrel_system_idtf: [mascarpone](*<- lang_en;;*);;
+concept_mascarpone => nrel_main_idtf: [маскарпоне](*<- lang_ru;;*);;
+concept_mascarpone => nrel_main_idtf: [mascarpone](*<- lang_en;;*);;
 
 
 definition -> ...

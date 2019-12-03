@@ -1,3 +1,5 @@
+sc_node_norole_relation -> nrel_impregnation;;
+
 
  nrel_impregnation => nrel_main_idtf: [пропитывание*](*<- lang_ru;;*);;
  nrel_impregnation => nrel_idtf: [impregnation*](*<- lang_en;;*);;

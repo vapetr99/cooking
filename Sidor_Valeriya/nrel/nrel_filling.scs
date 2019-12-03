@@ -1,3 +1,4 @@
+sc_node_norole_relation -> nrel_filling;;
 
 nrel_filling => nrel_main_idtf: [начинение*](*<- lang_ru;;*);;
 nrel_filling => nrel_idtf: [filling*](*<- lang_en;;*);;

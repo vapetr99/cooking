@@ -1,6 +1,6 @@
-
-concept_chocolate_paste => nrel_system_idtf: [шоколадная паста](*<- lang_ru;;*);;
-concept_chocolate_paste => nrel_system_idtf: [chocolate paste](*<- lang_en;;*);;
+sc_node_not_relation -> concept_chocolate_paste;;
+concept_chocolate_paste => nrel_main_idtf: [шоколадная паста](*<- lang_ru;;*);;
+concept_chocolate_paste => nrel_main_idtf: [chocolate paste](*<- lang_en;;*);;
 
 
 definition -> ...

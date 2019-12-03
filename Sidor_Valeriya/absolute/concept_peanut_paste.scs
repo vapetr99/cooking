@@ -1,6 +1,7 @@
+sc_node_not_relation -> concept_peanut_paste;;
 
-concept_peanut_paste => nrel_system_idtf: [арахисовая паста](*<- lang_ru;;*);;
-concept_peanut_paste => nrel_system_idtf: [peanut paste](*<- lang_en;;*);;
+concept_peanut_paste => nrel_main_idtf: [арахисовая паста](*<- lang_ru;;*);;
+concept_peanut_paste => nrel_main_idtf: [peanut paste](*<- lang_en;;*);;
 
 
 definition -> ...

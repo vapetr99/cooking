@@ -1,4 +1,4 @@
-
+sc_node_not_relation -> concept_tray;;
 concept_tray=>nrel_idtf:[tray] (* <- lang_en;; *);;
 concept_tray=>nrel_main_idtf:[поднос] (* <- lang_ru;; *);;
 

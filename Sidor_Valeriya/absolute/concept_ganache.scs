@@ -1,8 +1,8 @@
 sc_node_not_relation -> concept_ganache;;
 
 
-concept_ganache => nrel_system_idtf: [ганаш](*<- lang_ru;;*);;
-concept_ganache => nrel_system_idtf: [ganache](*<- lang_en;;*);;
+concept_ganache => nrel_main_idtf: [ганаш](*<- lang_ru;;*);;
+concept_ganache => nrel_main_idtf: [ganache](*<- lang_en;;*);;
 
 
 definition -> ...
